@@ -3,7 +3,7 @@ import Container from '@material-ui/core/Container';
 import DatePickers from '../Components/DateTimePicker';
 import BasicButtonGroup from '../Components/GroupButton';
 import MaterialUIPickers from '../Components/datetime';
-import SimpleBottomNavigation from '../Components/bottomnavigation';
+
 
 
 
@@ -22,8 +22,6 @@ export default function Home() {
            < DatePickers></DatePickers>
            < BasicButtonGroup/>
            < MaterialUIPickers/>
-           
-             <SimpleBottomNavigation/>
         </Container>
     </React.Fragment>
   );

@@ -3,9 +3,12 @@ import ButtonAppBar from './Components/AppBar.js'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Home from './Pages/Home.js'
 import Gallery from './Pages/Gallery.js'
-import mainpage from './Pages/mainpage';
-import final from './Pages/mainpage';
-import home2 from './Pages/mainpage';
+import SimpleBottomNavigation from './Components/bottomnavigation';
+import ReservationStep from './Pages/ReservationStep.js'
+import ContactDetails from './Pages/ContactDetails.js'
+import FinalBook from './Pages/FinalBook'
+import DineoutHome from './Pages/DineoutHome'
+
 
 function App() {
   return (
@@ -20,14 +23,19 @@ function App() {
             <Route path={process.env.PUBLIC_URL + '/'} exact > <Home/> </Route>
             <Route path={process.env.PUBLIC_URL + '/home'} > <Home/> </Route>
             <Route path={process.env.PUBLIC_URL + '/gallery'}  > <Gallery/> </Route>
-            <Route path={process.env.PUBLIC_URL + '/mainpage'}  > <mainpage/> </Route>
-            <Route path={process.env.PUBLIC_URL + '/final'}  > <final/> </Route>
-            <Route path={process.env.PUBLIC_URL + '/home2'}  > <home2/> </Route>
+            <Route path={process.env.PUBLIC_URL + '/reservationstep'}  > <ReservationStep/> </Route>
+            <Route path={process.env.PUBLIC_URL + '/contactdetails'}  > <ContactDetails/> </Route>
+            <Route path={process.env.PUBLIC_URL + '/finalbook'}  > <FinalBook/> </Route>
+            <Route path={process.env.PUBLIC_URL + '/dineouthome'}  > <DineoutHome/> </Route>
+            
+            
           </Switch>
-
+          
       <footer className="App-footer">
         This is a footer
+        <SimpleBottomNavigation></SimpleBottomNavigation>
       </footer>
+
     </div>
   );
   }

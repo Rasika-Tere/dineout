@@ -1,15 +1,19 @@
 import React from 'react';
 import Container from '@material-ui/core/Container';
-import BasicButtonGroup from '../Components/GroupButton';
+import BasicTextFields from '../Components/TextField';
+import TextButtons from '../Components/Textbutton';
+
 
 export default function Gallery() {
   return (
     <React.Fragment>
       <Container fixed>
         <p>
-          This is your gallery page
+          This is your Contact Details Page
+          <BasicTextFields/>
+          <TextButtons/>
         </p>
-       <BasicButtonGroup/>
+       
       </Container>
     </React.Fragment>
   );
