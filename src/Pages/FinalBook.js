@@ -3,6 +3,7 @@ import Container from '@material-ui/core/Container';
 import TextButtons from '../Components/Textbutton';
 import RecipeReviewCard from '../Components/card';
 import ContainedButtons from '../Components/ContainedButtons';
+import CircularIndeterminate from '../Components/LoadingIcon';
 
 export default function Gallery() {
   return (
@@ -13,6 +14,7 @@ export default function Gallery() {
           <TextButtons/>
           <RecipeReviewCard/>
           <ContainedButtons/>
+          <CircularIndeterminate/>
         </p>
       
       </Container>

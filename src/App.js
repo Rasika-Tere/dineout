@@ -8,6 +8,8 @@ import ReservationStep from './Pages/ReservationStep.js'
 import ContactDetails from './Pages/ContactDetails.js'
 import FinalBook from './Pages/FinalBook'
 import DineoutHome from './Pages/DineoutHome'
+import Intropage from './Pages/IntroPage'
+
 
 
 function App() {
@@ -27,6 +29,8 @@ function App() {
             <Route path={process.env.PUBLIC_URL + '/contactdetails'}  > <ContactDetails/> </Route>
             <Route path={process.env.PUBLIC_URL + '/finalbook'}  > <FinalBook/> </Route>
             <Route path={process.env.PUBLIC_URL + '/dineouthome'}  > <DineoutHome/> </Route>
+            <Route path={process.env.PUBLIC_URL + '/intropage'}  > <Intropage/> </Route>
+            
             
             
           </Switch>
