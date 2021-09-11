@@ -1,7 +1,8 @@
 import React from 'react';
 import Container from '@material-ui/core/Container';
 import BasicButtonGroup from '../Components/GroupButton';
-import CenteredGrid from '../Components/BasicGrid';
+import CenteredGrid from '../Components/grid3';
+
 
 export default function Gallery() {
   return (
@@ -12,6 +13,7 @@ export default function Gallery() {
         </p>
        <BasicButtonGroup/> 
        <CenteredGrid/>
+       
       </Container>
     </React.Fragment>
   );

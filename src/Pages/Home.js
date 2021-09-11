@@ -3,8 +3,7 @@ import Container from '@material-ui/core/Container';
 import DatePickers from '../Components/DateTimePicker';
 import BasicButtonGroup from '../Components/GroupButton';
 import MaterialUIPickers from '../Components/datetime';
-import SpacingGrid from '../Components/grid';
-import CenteredGrid from '../Components/BasicGrid';
+
 
 export default function Home() {
   return (
@@ -20,8 +19,7 @@ export default function Home() {
         < DatePickers></DatePickers>
         < BasicButtonGroup />
         < MaterialUIPickers />
-        <SpacingGrid/>
-        <CenteredGrid/>
+       
 
       </Container>
     </React.Fragment>
