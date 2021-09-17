@@ -6,7 +6,8 @@ import MaterialUIPickers from '../Components/datetime';
 import TextField from '@material-ui/core/TextField';
 import SimplePaper from '../Components/paper';
 import SimpleAccordion from '../Components/accordian';
-import BasicImageList from '../Components/Layout/ImageList';
+import RecipeReviewCard from '../Components/card';
+
 
 export default function Home() {
   return (
@@ -25,7 +26,7 @@ export default function Home() {
         < BasicButtonGroup />
         < MaterialUIPickers />
         <SimpleAccordion/>
-        <BasicImageList/>
+        <RecipeReviewCard/>
        
 
       </Container>
