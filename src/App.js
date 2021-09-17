@@ -18,8 +18,10 @@ function App() {
       {/* Header (Navigation Bar) */}
       <header className="App-header">
       <ButtonAppBar/>
+     
       </header>
-      
+       {/* < img src={require('./Assets/illustration1.png').default} height={200} width={200} /> */}
+     
       {/* Router - Pages */}
           <Switch>
             <Route path={process.env.PUBLIC_URL + '/'} exact > <Home/> </Route>
@@ -37,9 +39,9 @@ function App() {
           
       <footer className="App-footer">
         This is a footer
+        
         <SimpleBottomNavigation></SimpleBottomNavigation>
       </footer>
-
     </div>
   );
   }

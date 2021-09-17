@@ -20,7 +20,6 @@ export default function Gallery() {
           <SwipeableTextMobileStepper/>
           <SingleLineImageList/>
           <SwipeableTextMobileStepper/>
-      
           
           </p>
       </Container>

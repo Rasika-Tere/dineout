@@ -3,7 +3,8 @@ import Container from '@material-ui/core/Container';
 import TextButtons from '../Components/Textbutton';
 import RecipeReviewCard from '../Components/card';
 import ContainedButtons from '../Components/ContainedButtons';
-import CircularIndeterminate from '../Components/LoadingIcon';
+
+
 
 export default function Gallery() {
   return (
@@ -12,11 +13,10 @@ export default function Gallery() {
         <p>
           This is your Final Book page
           <TextButtons/>
-          <RecipeReviewCard/>
+         <RecipeReviewCard/>  
           <ContainedButtons/>
-          <CircularIndeterminate/>
+     
         </p>
-      
       </Container>
     </React.Fragment>
   );
