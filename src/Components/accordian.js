@@ -6,6 +6,8 @@ import AccordionDetails from '@material-ui/core/AccordionDetails';
 import Typography from '@material-ui/core/Typography';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import ContainedButtons from './ContainedButtons';
+import CenteredGrid from './grid3';
+import TimeButtons from './TimeButtons';
 
 
 const useStyles = makeStyles((theme) => ({
@@ -33,35 +35,12 @@ export default function SimpleAccordion() {
         </AccordionSummary>
         <AccordionDetails>
           
-           <ContainedButtons/>
-           
-
+        <TimeButtons/>
+          
         </AccordionDetails>
       </Accordion>
-      <Accordion>
-        <AccordionSummary
-          expandIcon={<ExpandMoreIcon />}
-          aria-controls="panel2a-content"
-          id="panel2a-header"
-        >
-          <Typography className={classes.heading}>Accordion 2</Typography>
-        </AccordionSummary>
-        <AccordionDetails>
-          <Typography>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex,
-            sit amet blandit leo lobortis eget.
-          </Typography>
-        </AccordionDetails>
-      </Accordion>
-      <Accordion disabled>
-        <AccordionSummary
-          expandIcon={<ExpandMoreIcon />}
-          aria-controls="panel3a-content"
-          id="panel3a-header"
-        >
-          <Typography className={classes.heading}>Disabled Accordion</Typography>
-        </AccordionSummary>
-      </Accordion>
+      
+      
     </div>
   );
 }

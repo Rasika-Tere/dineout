@@ -17,7 +17,7 @@ export default function ContainedButtons() {
     <div className={classes.root}>
      
       <Button variant="contained" color="primary">
-        12.15
+        12.00
       </Button>
      
     </div>

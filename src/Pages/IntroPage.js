@@ -2,6 +2,9 @@ import React from 'react';
 import Container from '@material-ui/core/Container';
 import BasicButtonGroup from '../Components/GroupButton';
 import CenteredGrid from '../Components/grid3';
+import ContainedButtons from '../Components/ContainedButtons';
+import TimeButtons from '../Components/TimeButtons';
+import NestedGrid from '../Components/TimeButtons copy';
 
 
 export default function Gallery() {
@@ -11,7 +14,9 @@ export default function Gallery() {
         <p>
           This is your gallery page
         </p>
-       <BasicButtonGroup/> 
+       
+       <NestedGrid/>
+       <TimeButtons/>
        <CenteredGrid/>
        
       </Container>
