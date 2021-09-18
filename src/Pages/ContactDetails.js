@@ -1,11 +1,10 @@
 import React from 'react';
 import Container from '@material-ui/core/Container';
-import BasicTextFields from '../Components/TextField';
-import TextButtons from '../Components/Textbutton';
-import BasicButtonGroup from '../Components/GroupButton';
 import Illustration2 from '../Components/illustration2';
 import ContactDetails from '../Components/ContactDetailsPage/ContactDetails';
 import DetailsTextFields from '../Components/ContactDetailsPage/DetailsTextField';
+import ConfrimButton from '../Components/ContactDetailsPage/ConfirmButton';
+import GuestNumber from '../Components/GuestNumber';
 
 
 
@@ -20,9 +19,9 @@ export default function Gallery() {
           <Illustration2/>
           Enter Your Details
           <DetailsTextFields/>
+          <GuestNumber/>
+          <ConfrimButton/>
           
-          <BasicButtonGroup/>
-          <TextButtons/>
         </p>
        
       </Container>

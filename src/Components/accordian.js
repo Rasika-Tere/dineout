@@ -34,7 +34,8 @@ export default function SimpleAccordion() {
         <AccordionDetails>
           
            <ContainedButtons/>
-            
+           
+
         </AccordionDetails>
       </Accordion>
       <Accordion>
