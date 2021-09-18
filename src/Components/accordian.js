@@ -32,11 +32,9 @@ export default function SimpleAccordion() {
           <Typography className={classes.heading}>Accordion 1</Typography>
         </AccordionSummary>
         <AccordionDetails>
-          <Typography>
+          
            <ContainedButtons/>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex,
-            sit amet blandit leo lobortis eget.
-          </Typography>
+            
         </AccordionDetails>
       </Accordion>
       <Accordion>

@@ -3,6 +3,10 @@ import Container from '@material-ui/core/Container';
 import TextButtons from '../Components/Textbutton';
 import MaterialUIPickers from '../Components/datetime';
 import SimpleAccordion from '../Components/accordian';
+import UploadButtons from '../Components/IconButton';
+import Illustration1 from '../Components/illustration';
+import GuestInput from '../Components/GuestInput';
+import GuestNumber from '../Components/GuestNumber';
 
 
 
@@ -11,13 +15,12 @@ export default function Gallery() {
   return (
     <React.Fragment>
       <Container fixed>
-        <p>
-        
-        </p>
-        <TextButtons/>
-        {/* < img src={require('./Assets/illustration1.png').default} height={200} width={200} /> */}
+       
+        <UploadButtons/>
+        <Illustration1/>
        <MaterialUIPickers/>
        <TextButtons/>
+       <GuestNumber/>
        <SimpleAccordion/>
       </Container>
       

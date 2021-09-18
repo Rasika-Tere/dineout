@@ -20,7 +20,7 @@ function App() {
       <ButtonAppBar/>
      
       </header>
-       {/* < img src={require('./Assets/illustration1.png').default} height={200} width={200} /> */}
+
      
       {/* Router - Pages */}
           <Switch>
