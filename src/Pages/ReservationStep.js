@@ -5,7 +5,6 @@ import MaterialUIPickers from '../Components/datetime';
 import SimpleAccordion from '../Components/accordian';
 import UploadButtons from '../Components/IconButton';
 import Illustration1 from '../Components/illustration';
-import GuestInput from '../Components/GuestInput';
 import GuestNumber from '../Components/GuestNumber';
 
 

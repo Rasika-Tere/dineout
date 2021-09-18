@@ -3,6 +3,12 @@ import Container from '@material-ui/core/Container';
 import BasicTextFields from '../Components/TextField';
 import TextButtons from '../Components/Textbutton';
 import BasicButtonGroup from '../Components/GroupButton';
+import Illustration2 from '../Components/illustration2';
+import ContactDetails from '../Components/ContactDetailsPage/ContactDetails';
+import DetailsTextFields from '../Components/ContactDetailsPage/DetailsTextField';
+
+
+
 
 
 export default function Gallery() {
@@ -10,8 +16,11 @@ export default function Gallery() {
     <React.Fragment>
       <Container fixed>
         <p>
-          This is your Contact Details Page
-          <BasicTextFields/>
+          <ContactDetails/>
+          <Illustration2/>
+          Enter Your Details
+          <DetailsTextFields/>
+          
           <BasicButtonGroup/>
           <TextButtons/>
         </p>

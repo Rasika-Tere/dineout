@@ -1,8 +1,8 @@
 import React from 'react';
 import Container from '@material-ui/core/Container';
-import TextButtons from '../Components/Textbutton';
 import RecipeReviewCard from '../Components/card';
-import ContainedButtons from '../Components/ContainedButtons';
+import ReservationDetails from '../Components/FinalBookPage/ReservationDetails';
+import ContinueBrowsingButton from '../Components/FinalBookPage/ContinueBrowsingButton';
 
 
 
@@ -11,10 +11,9 @@ export default function Gallery() {
     <React.Fragment>
       <Container fixed>
         <p>
-          This is your Final Book page
-          <TextButtons/>
-         <RecipeReviewCard/>  
-          <ContainedButtons/>
+          <ReservationDetails/>
+          <RecipeReviewCard/>  
+          <ContinueBrowsingButton/>
      
         </p>
       </Container>

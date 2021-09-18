@@ -2,7 +2,7 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import ImageList from '@material-ui/core/ImageList';
 import ImageListItem from '@material-ui/core/ImageListItem';
-import Image from '../Assets/illustration1.png';
+import Image from '../Assets/illustration2.png';
 
 
 const useStyles = makeStyles((theme) => ({
@@ -31,7 +31,7 @@ const itemData = [
   ];
   
 
-export default function Illustration1() {
+export default function Illustration2() {
   const classes = useStyles();
   return (
     <div className={classes.root}>

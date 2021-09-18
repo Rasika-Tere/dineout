@@ -3,12 +3,12 @@ import ButtonAppBar from './Components/AppBar.js'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Home from './Pages/Home.js'
 import Gallery from './Pages/Gallery.js'
-import SimpleBottomNavigation from './Components/bottomnavigation';
 import ReservationStep from './Pages/ReservationStep.js'
 import ContactDetails from './Pages/ContactDetails.js'
 import FinalBook from './Pages/FinalBook'
 import DineoutHome from './Pages/DineoutHome'
 import Intropage from './Pages/IntroPage'
+
 
 
 
@@ -32,15 +32,15 @@ function App() {
             <Route path={process.env.PUBLIC_URL + '/finalbook'}  > <FinalBook/> </Route>
             <Route path={process.env.PUBLIC_URL + '/dineouthome'}  > <DineoutHome/> </Route>
             <Route path={process.env.PUBLIC_URL + '/intropage'}  > <Intropage/> </Route>
-            
+           
             
             
           </Switch>
           
       <footer className="App-footer">
-        This is a footer
+       
         
-        <SimpleBottomNavigation></SimpleBottomNavigation>
+        {/* <SimpleBottomNavigation></SimpleBottomNavigation> */}
       </footer>
     </div>
   );
