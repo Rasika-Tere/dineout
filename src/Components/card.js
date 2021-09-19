@@ -1,3 +1,6 @@
+
+// this is the centre card
+
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import clsx from 'clsx';
@@ -53,7 +56,8 @@ export default function RecipeReviewCard() {
       <CardHeader
         
         
-        title="Shrimp and Chorizo Paella"
+        title="Hurrycane" 
+        // i chnaged the title
         subheader="September 14, 2016"
       />
       <CardMedia
@@ -66,7 +70,7 @@ export default function RecipeReviewCard() {
           This impressive paella is a perfect party dish and a fun meal to cook together with your
           guests. Add 1 cup of frozen peas along with the mussels, if you like.
         </Typography>
-        <Button>
+        <Button variant="contained" color="Secondary">
           Download as image
         </Button>
       </CardContent>

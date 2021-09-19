@@ -20,7 +20,6 @@ export default function Gallery() {
            Best Offers
           <SwipeableTextMobileStepper/>
           
-         
           {/* this is the carousal for restaurants near you */}
            Restaurants Near You
           <SwipeableTextMobileStepper/>

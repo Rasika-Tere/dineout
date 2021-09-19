@@ -1,3 +1,6 @@
+
+// this comppnent is primary search app bar
+
 import React from 'react';
 import { alpha, makeStyles } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';

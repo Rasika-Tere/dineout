@@ -1,3 +1,6 @@
+
+// this component is the time selection
+
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
@@ -16,6 +19,8 @@ export default function TimeButtons() {
 
   return (
     <div className={classes.root}>
+     
+     {/* i repeated the buttons for the different times */}
      
      <Grid item xs={4} md={12} spacing={3}>
       <Button variant="contained" color="primary">
