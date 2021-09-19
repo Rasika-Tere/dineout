@@ -1,5 +1,4 @@
 import './App.css';
-import ButtonAppBar from './Components/AppBar.js'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Home from './Pages/Home.js'
 import Gallery from './Pages/Gallery.js'
@@ -9,6 +8,8 @@ import FinalBook from './Pages/FinalBook'
 import DineoutHome from './Pages/DineoutHome'
 import Intropage from './Pages/IntroPage'
 import SimpleBottomNavigation from './Components/bottomnavigation';
+import PrimarySearchAppBar from './Components/AppBar';
+
 
 
 
@@ -18,7 +19,7 @@ function App() {
     <div className="App">
       {/* Header (Navigation Bar) */}
       <header className="App-header">
-      <ButtonAppBar/>
+      
      
       </header>
 
@@ -39,8 +40,6 @@ function App() {
           </Switch>
           
       <footer className="App-footer">
-       
-        
          <SimpleBottomNavigation/>
       </footer>
     </div>
