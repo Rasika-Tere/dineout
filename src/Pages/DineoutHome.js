@@ -18,9 +18,12 @@ export default function Gallery() {
           This is your dineout home page
           <PrimarySearchAppBar/>
           <SwipeableTextMobileStepper/>
+          Best Offers
           <SwipeableTextMobileStepper/>
+          Restaurants Near You
           <SwipeableTextMobileStepper/>
           <SingleLineImageList/>
+          Super Savers
           <SwipeableTextMobileStepper/>
           <BottomNavigation/>
           

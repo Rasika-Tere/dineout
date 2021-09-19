@@ -31,7 +31,7 @@ export default function SimpleAccordion() {
           aria-controls="panel1a-content"
           id="panel1a-header"
         >
-          <Typography className={classes.heading}>Accordion 1</Typography>
+          <Typography className={classes.heading}>Time</Typography>
         </AccordionSummary>
         <AccordionDetails>
           

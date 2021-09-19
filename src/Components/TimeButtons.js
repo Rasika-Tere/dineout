@@ -19,7 +19,7 @@ export default function TimeButtons() {
      
      <Grid item xs={4} md={12} spacing={3}>
       <Button variant="contained" color="primary">
-        12.15
+        12.00
       </Button>
       </Grid>
 
@@ -31,43 +31,61 @@ export default function TimeButtons() {
 
       <Grid item xs={4} md={12} spacing={3}>
       <Button variant="contained" color="primary">
-        12.15
+        12.30
       </Button>
       </Grid>
 
       <Grid item xs={12} md={12} spacing={3}>
       <Button variant="contained" color="primary">
-        12.15
+        12.45
       </Button>
       </Grid>
 
       <Grid item xs={12} md={12} spacing={3}>
       <Button variant="contained" color="primary">
-        12.15
+        01.00
       </Button>
       </Grid>
 
       <Grid item xs={12} md={12} spacing={3}>
       <Button variant="contained" color="primary">
-        12.15
+        01.15
       </Button>
       </Grid>
 
       <Grid item xs={12} md={12} spacing={3}>
       <Button variant="contained" color="primary">
-        12.15
+        01.30
       </Button>
       </Grid>
 
       <Grid item xs={12} md={12} spacing={3}>
       <Button variant="contained" color="primary">
-        12.15
+        01.45
       </Button>
       </Grid>
 
       <Grid item xs={2} md={12} spacing={3}>
       <Button variant="contained" color="primary">
-        12.15
+        02.00
+      </Button>
+      </Grid>
+
+      <Grid item xs={12} md={12} spacing={3}>
+      <Button variant="contained" color="primary">
+        02.15
+      </Button>
+      </Grid>
+
+      <Grid item xs={12} md={12} spacing={3}>
+      <Button variant="contained" color="primary">
+        02.30
+      </Button>
+      </Grid>
+
+      <Grid item xs={2} md={12} spacing={3}>
+      <Button variant="contained" color="primary">
+        02.45
       </Button>
       </Grid>
 

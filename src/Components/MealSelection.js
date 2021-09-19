@@ -5,8 +5,8 @@ import AccordionSummary from '@material-ui/core/AccordionSummary';
 import AccordionDetails from '@material-ui/core/AccordionDetails';
 import Typography from '@material-ui/core/Typography';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
-import TimeButtons from './TimeButtons';
-
+import Grid from '@material-ui/core/Grid';
+import Button from '@material-ui/core/Button';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -29,13 +29,33 @@ export default function MealSelection() {
           aria-controls="panel1a-content"
           id="panel1a-header"
         >
-          <Typography className={classes.heading}>Accordion 1</Typography>
+          <Typography className={classes.heading}>Meal</Typography>
         </AccordionSummary>
         <AccordionDetails>
+        <Grid item xs={4} md={12} spacing={3}>
+        <Button variant="contained" color="Secondary">
         Breakfast  
+        </Button>
+        </Grid>
+        
+        <Grid item xs={4} md={12} spacing={3}>
+        <Button variant="contained" color="Secondary">
         Lunch
+        </Button>
+        </Grid>
+        
+        <Grid item xs={4} md={12} spacing={3}>
+        <Button variant="contained" color="Secondary">
         Snacks
+        </Button>
+        </Grid>
+       
+        <Grid item xs={4} md={12} spacing={3}>
+        <Button variant="contained" color="Secondary">
         Dinner
+        </Button>
+        </Grid>
+
         </AccordionDetails>
       </Accordion>
       
