@@ -1,6 +1,6 @@
 import React from 'react';
 import Container from '@material-ui/core/Container';
-import SearchAppBar from '../Components/searchbar';
+
 import SwipeableTextMobileStepper from '../Components/carousal';
 import SingleLineImageList from '../Components/SingleImageList';
 import { BottomNavigation } from '@material-ui/core';

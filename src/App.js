@@ -8,6 +8,7 @@ import ContactDetails from './Pages/ContactDetails.js'
 import FinalBook from './Pages/FinalBook'
 import DineoutHome from './Pages/DineoutHome'
 import Intropage from './Pages/IntroPage'
+import SimpleBottomNavigation from './Components/bottomnavigation';
 
 
 
@@ -40,7 +41,7 @@ function App() {
       <footer className="App-footer">
        
         
-        {/* <SimpleBottomNavigation></SimpleBottomNavigation> */}
+         <SimpleBottomNavigation/>
       </footer>
     </div>
   );
