@@ -27,7 +27,7 @@ export default function Gallery() {
           <GuestNumber/>
           
           {/* this is the confirm button */}
-          <ConfirmButton/> 
+          <ConfirmButton/>
           
         </p>
        
