@@ -12,23 +12,23 @@ export default function Gallery() {
           {/* for top search bar */}
           <PrimarySearchAppBar/> 
         
-         {/* this is the carousal for advertisements */}
+         {/* this is the carousal for advertisements, component name is caorusal1 */}
           <SwipeableTextMobileStepper/>
           
          
-         {/* this is the carousal for best offers */}
+         {/* this is the carousal for best offers, component name is caorusal2 */}
            Best Offers
           <SwipeableTextMobileStepper/>
           
-          {/* this is the carousal for restaurants near you */}
+          {/* this is the carousal for restaurants near you, component name is caorusal3 */}
            Restaurants Near You
           <SwipeableTextMobileStepper/>
          
-         {/* this is the swippable image list for top picks */}
+         {/* this is the swippable image list for top picks, component name is singleimagelist */}
            Top Picks
          <SingleLineImageList/>
           
-          {/* this is the carousal for super savers */}
+          {/* this is the carousal for super savers, component name is caorusal4 */}
           Super Savers
           <SwipeableTextMobileStepper/>
           
