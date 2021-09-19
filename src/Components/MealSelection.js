@@ -1,3 +1,6 @@
+
+// i added buttons within the accordian for the meal options
+
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Accordion from '@material-ui/core/Accordion';
@@ -32,6 +35,9 @@ export default function MealSelection() {
           <Typography className={classes.heading}>Meal</Typography>
         </AccordionSummary>
         <AccordionDetails>
+        
+        {/* i reapeted the buttons here and also changed their color */}
+
         <Grid item xs={4} md={12} spacing={3}>
         <Button variant="contained" color="Secondary">
         Breakfast  

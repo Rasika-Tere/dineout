@@ -1,7 +1,11 @@
+
+// this component is a single image list
+
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import ImageList from '@material-ui/core/ImageList';
 import ImageListItem from '@material-ui/core/ImageListItem';
+// here ilimported the illustration
 import Image from '../Assets/illustration2.png';
 
 

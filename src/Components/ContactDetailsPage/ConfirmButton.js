@@ -1,3 +1,6 @@
+
+// this is the confirm button (and the continue button)
+
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
@@ -17,6 +20,7 @@ export default function ConfrimButton() {
     <div className={classes.root}>
      
       <Button variant="contained" color="Secondary">
+        {/* changed the color to secondary */}
         Confirm 
       </Button>
      

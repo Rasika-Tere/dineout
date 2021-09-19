@@ -16,15 +16,17 @@ export default function Gallery() {
          {/* the contact deatils title */}
           <ContactDetails/>
           
-          {/* the illustration on the page */}
+          {/* the illustration on the page, done by single image list */}
           <Illustration2/>
         
          {/* enter your details text */}
           Enter Your Details
           <DetailsTextFields/>
           
+          {/* this is a group button component to add the number of guests */}
           <GuestNumber/>
-          {/* this is the continue button, I was unabe to rename it */}
+          
+          {/* this is the confirm button */}
           <ConfirmButton/> 
           
         </p>

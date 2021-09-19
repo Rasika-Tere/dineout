@@ -1,3 +1,7 @@
+
+// this component is the text button with back arrow icon
+
+
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
@@ -17,6 +21,7 @@ export default function ReservationDetails() {
   return (
     <div className={classes.root}>
       
+      {/* i changed the color here */}
       <Button color="Secondary">
       <ArrowBackIosIcon/>
         Reservation Details 

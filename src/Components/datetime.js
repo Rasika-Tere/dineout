@@ -1,3 +1,6 @@
+
+// this component is for selecting the date and i removed the extra date and time picker.
+
 import 'date-fns';
 import React from 'react';
 import Grid from '@material-ui/core/Grid';
