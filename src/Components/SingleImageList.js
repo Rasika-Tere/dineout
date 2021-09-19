@@ -5,8 +5,9 @@ import ImageListItem from '@material-ui/core/ImageListItem';
 import ImageListItemBar from '@material-ui/core/ImageListItemBar';
 import IconButton from '@material-ui/core/IconButton';
 import StarBorderIcon from '@material-ui/icons/StarBorder';
-import Image from '../Assets/poptates.jpg';
-import Image2 from '../Assets/ss.png';
+import Image from '../Assets/cook.png';
+import Image2 from '../Assets/listaurants.png';
+import Image3 from '../Assets/bridges.png';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -47,6 +48,15 @@ const itemData = [
    
   ];
 
+  const itemData3 = [
+    {
+      img2: Image3,
+     title: 'Image',
+     author: 'author',
+    },
+   
+  ];
+
 export default function SingleLineImageList() {
   const classes = useStyles();
   return (
@@ -70,6 +80,23 @@ export default function SingleLineImageList() {
                 </ImageListItem>
             ))}
             {itemData2.map((item) => (
+                <ImageListItem key={item.img2}>
+                    <img src={item.img2} alt={item.title} />
+                    <ImageListItemBar
+                        title={item.title}
+                        classes={{
+                            root: classes.titleBar,
+                            title: classes.title,
+                        }}
+                        actionIcon={
+                            <IconButton aria-label={`star ${item.title}`}>
+                                <StarBorderIcon className={classes.title} />
+                            </IconButton>
+                        }
+                    />
+                </ImageListItem>
+            ))}
+            {itemData3.map((item) => (
                 <ImageListItem key={item.img2}>
                     <img src={item.img2} alt={item.title} />
                     <ImageListItemBar

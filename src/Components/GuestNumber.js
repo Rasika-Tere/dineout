@@ -28,7 +28,7 @@ export default function GuestNumber() {
       <RemoveIcon/>
       </Fab>
     <GuestInput/> 
-      <Fab color="primary" aria-label="add">
+      <Fab color="secondary" aria-label="add">
         <AddIcon />
       </Fab>
 

@@ -6,6 +6,8 @@ import SimpleAccordion from '../Components/accordian';
 import UploadButtons from '../Components/IconButton';
 import Illustration1 from '../Components/illustration';
 import GuestNumber from '../Components/GuestNumber';
+import ConfirmButton from '../Components/ConfirmButton';
+import MealSelection from '../Components/MealSelection';
 
 
 
@@ -18,9 +20,10 @@ export default function Gallery() {
         <UploadButtons/>
         <Illustration1/>
        <MaterialUIPickers/>
-       <TextButtons/>
-       <GuestNumber/>
+       
+       <MealSelection/>
        <SimpleAccordion/>
+       <ConfirmButton/>
       </Container>
       
     </React.Fragment>
