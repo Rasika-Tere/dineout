@@ -5,6 +5,9 @@ import BottomNavigationAction from '@material-ui/core/BottomNavigationAction';
 import RestoreIcon from '@material-ui/icons/Restore';
 import FavoriteIcon from '@material-ui/icons/Favorite';
 import LocationOnIcon from '@material-ui/icons/LocationOn';
+import HomeIcon from '@material-ui/icons/Home';
+import { AccountBalance, AccountBalanceWallet, Group, LocalDining, Payment } from '@material-ui/icons';
+
 
 const useStyles = makeStyles({
   root: {
@@ -25,9 +28,11 @@ export default function SimpleBottomNavigation() {
       showLabels
       className={classes.root}
     >
-      <BottomNavigationAction label="Recents" icon={<RestoreIcon />} />
-      <BottomNavigationAction label="Favorites" icon={<FavoriteIcon />} />
-      <BottomNavigationAction label="Nearby" icon={<LocationOnIcon />} />
+      <BottomNavigationAction label="Home" icon={<HomeIcon />} />
+      <BottomNavigationAction label="Book a Table" icon={<LocalDining />} />
+      <BottomNavigationAction label="Dineout Passport" icon={<AccountBalanceWallet />} />
+      <BottomNavigationAction label="Payment" icon={<Payment />} />
+      <BottomNavigationAction label="Community" icon={<Group />} />
     </BottomNavigation>
   );
 }
