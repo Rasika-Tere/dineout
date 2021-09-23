@@ -38,7 +38,7 @@ const images = [
   },
 ];
 
-function SwipeableTextMobileStepper() {
+function carousal4() {
   const theme = useTheme();
   const [activeStep, setActiveStep] = React.useState(0);
   const maxSteps = images.length;

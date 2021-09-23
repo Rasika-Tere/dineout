@@ -1,11 +1,12 @@
 import React from 'react';
 import Container from '@material-ui/core/Container';
-import Illustration2 from '../Components/illustration2';
+import Illustration2 from '../Components/Illustration2';
 import ContactDetails from '../Components/ContactDetailsPage/ContactDetails';
 import DetailsTextFields from '../Components/ContactDetailsPage/DetailsTextField';
 import GuestNumber from '../Components/GuestNumber';
-import ConfirmButton from '../Components/ConfirmButton';
-
+import ContinueButton from '../Components/ContinueButton';
+import {Link, Router} from "react-router-dom";
+import { Button } from '@material-ui/core';
 
 export default function Gallery() {
   return (
@@ -27,7 +28,14 @@ export default function Gallery() {
           <GuestNumber/>
           
           {/* this is the confirm button */}
-          <ConfirmButton/>
+          <ContinueButton/> 
+          
+          <Link to={process.env.PUBLIC_URL + '/reservationstep'}>
+          <Button variant="contained" color="primary" href="">
+           Link
+      </Button>
+      </Link>
+ 
           
         </p>
        
