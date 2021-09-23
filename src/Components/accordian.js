@@ -6,7 +6,7 @@ import AccordionDetails from '@material-ui/core/AccordionDetails';
 import Typography from '@material-ui/core/Typography';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import ContainedButtons from './ContainedButtons';
-import CenteredGrid from './grid3';
+import CenteredGrid from './Grid3';
 import TimeButtons from './TimeButtons';
 
 
