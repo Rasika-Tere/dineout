@@ -3,7 +3,7 @@ import Container from '@material-ui/core/Container';
 import Illustration2 from '../Components/Illustration2';
 import ContactDetails from '../Components/ContactDetailsPage/ContactDetails';
 import DetailsTextFields from '../Components/ContactDetailsPage/DetailsTextField';
-import GuestNumber from '../Components/GuestNumber';
+import GuestNumber from '../Components/ContactDetailsPage/GuestNumber';
 import ContinueButton from '../Components/ContinueButton';
 import { Link, Router } from "react-router-dom";
 import { Button } from '@material-ui/core';

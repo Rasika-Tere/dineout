@@ -2,11 +2,12 @@ import React from 'react';
 import Container from '@material-ui/core/Container';
 import MaterialUIPickers from '../Components/datetime';
 import SimpleAccordion from '../Components/ReservationPage/accordian';
-import Illustration1 from '../Components/Illustration';
+import Illustration1 from '../Components/Illustration1';
 import ConfirmButton from '../Components/ConfirmButton';
-import MealSelection from '../Components/MealSelection';
+import MealSelection from '../Components/ReservationPage/MealSelection';
 import { Link, Router } from "react-router-dom";
 import ReservationDetailsTitle from '../Components/ReservationPage/ReservationDetailsTitle';
+import Illustration2 from '../Components/Illustration2';
 
 export default function Gallery() {
   return (
@@ -16,7 +17,7 @@ export default function Gallery() {
         <ReservationDetailsTitle />
 
         {/* illustration on the page, done with single image list */}
-        <Illustration1 />
+        <Illustration1/>
 
         {/* for selecting the date, the component name is datetime, i was unabel to rename it */}
         <MaterialUIPickers />
