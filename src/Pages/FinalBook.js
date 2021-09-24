@@ -6,6 +6,7 @@ import Container from '@material-ui/core/Container';
 import RecipeReviewCard from '../Components/card';
 import ReservationDetails from '../Components/FinalBookPage/ReservationDetailsTitle';
 import ContinueBrowsingButton from '../Components/FinalBookPage/ContinueBrowsingButton';
+import FinalCard from '../Components/FinalBookPage/FinalCard';
 
 export default function Gallery() {
   return (
@@ -16,7 +17,7 @@ export default function Gallery() {
           <ReservationDetails/>
          
          {/* this is the centre card with button */}
-          <RecipeReviewCard/>  
+          <FinalCard/>  
          
           {/* this is continue browsing button */}
           <ContinueBrowsingButton/>
