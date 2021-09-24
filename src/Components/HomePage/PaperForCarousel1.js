@@ -1,8 +1,6 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
-import BasicButtonGroup from './GroupButton';
-
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -16,15 +14,14 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function SimplePaper() {
+export default function PaperForCarousel() {
   const classes = useStyles();
 
   return (
     <div className={classes.root}>
       <Paper elevation={0} />
       <Paper />
-      <Paper elevation={10} />
-      <BasicButtonGroup/>
+      <Paper elevation={3} />
     </div>
   );
 }

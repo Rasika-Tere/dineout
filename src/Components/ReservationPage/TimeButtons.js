@@ -21,79 +21,81 @@ export default function TimeButtons() {
     <div className={classes.root}>
      
      {/* i repeated the buttons for the different times */}
-     
-     <Grid item xs={4} md={12} spacing={3}>
+     <Grid container spacing={3}>
+
+     <Grid item xs={4} >
       <Button variant="contained" color="primary">
         12.00
       </Button>
       </Grid>
 
-      <Grid item xs={8} md={12} spacing={3}>
+      <Grid item xs={4} >
       <Button variant="contained" color="primary">
         12.15
       </Button>
       </Grid>
 
-      <Grid item xs={4} md={12} spacing={3}>
+      <Grid item xs={4} >
       <Button variant="contained" color="primary">
         12.30
       </Button>
       </Grid>
 
-      <Grid item xs={12} md={12} spacing={3}>
+      <Grid item xs={4} >
       <Button variant="contained" color="primary">
         12.45
       </Button>
       </Grid>
 
-      <Grid item xs={12} md={12} spacing={3}>
+      <Grid item xs={4} >
       <Button variant="contained" color="primary">
         01.00
       </Button>
       </Grid>
 
-      <Grid item xs={12} md={12} spacing={3}>
+      <Grid item xs={4} >
       <Button variant="contained" color="primary">
         01.15
       </Button>
       </Grid>
 
-      <Grid item xs={12} md={12} spacing={3}>
+      <Grid item xs={4} >
       <Button variant="contained" color="primary">
         01.30
       </Button>
       </Grid>
 
-      <Grid item xs={12} md={12} spacing={3}>
+      <Grid item xs={4} >
       <Button variant="contained" color="primary">
         01.45
       </Button>
       </Grid>
 
-      <Grid item xs={2} md={12} spacing={3}>
+      <Grid item xs={4} >
       <Button variant="contained" color="primary">
         02.00
       </Button>
       </Grid>
 
-      <Grid item xs={12} md={12} spacing={3}>
+      <Grid item xs={4} >
       <Button variant="contained" color="primary">
         02.15
       </Button>
       </Grid>
 
-      <Grid item xs={12} md={12} spacing={3}>
+      <Grid item xs={4} >
       <Button variant="contained" color="primary">
         02.30
       </Button>
       </Grid>
 
-      <Grid item xs={2} md={12} spacing={3}>
+      <Grid item xs={4} >
       <Button variant="contained" color="primary">
         02.45
       </Button>
       </Grid>
-
+      
+      </Grid>
     </div>
   );
 }

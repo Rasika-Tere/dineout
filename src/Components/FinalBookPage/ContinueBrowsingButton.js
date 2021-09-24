@@ -4,6 +4,7 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
+import {Link, Router} from "react-router-dom";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -19,10 +20,12 @@ export default function ContinueBrowsingButton() {
   return (
     <div className={classes.root}>
      
-      <Button variant="contained" color="Secondary">
+     <Link to={process.env.PUBLIC_URL + '/home'}>
+      <Button variant="contained" color="Secondary"  href="">
         Continue Browsing 
       </Button>
-     
+      </Link>
+   
     </div>
   );
 }

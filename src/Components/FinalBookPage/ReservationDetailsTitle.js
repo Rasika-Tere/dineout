@@ -1,11 +1,9 @@
-
-// this component is the text button with back arrow icon
-
-
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
+// I added the back icon here
 import ArrowBackIosIcon from '@material-ui/icons/ArrowBackIos';
+import {Link, Router} from "react-router-dom";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -15,18 +13,18 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function ReservationDetails() {
+export default function ReservationDetailsTitle() {
   const classes = useStyles();
 
   return (
     <div className={classes.root}>
       
-      {/* i changed the color here */}
-      <Button color="Secondary">
+      <Link to={process.env.PUBLIC_URL + '/contactdetails'}>
+      <Button color="Secondary" href="">
       <ArrowBackIosIcon/>
-        Reservation Details 
+        Reservation Details
       </Button>
-     
+      </Link>
     
     </div>
   );

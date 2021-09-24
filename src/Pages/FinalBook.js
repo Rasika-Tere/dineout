@@ -4,7 +4,7 @@
 import React from 'react';
 import Container from '@material-ui/core/Container';
 import RecipeReviewCard from '../Components/card';
-import ReservationDetails from '../Components/FinalBookPage/ReservationDetails';
+import ReservationDetails from '../Components/FinalBookPage/ReservationDetailsTitle';
 import ContinueBrowsingButton from '../Components/FinalBookPage/ContinueBrowsingButton';
 
 export default function Gallery() {
