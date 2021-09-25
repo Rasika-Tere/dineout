@@ -26,7 +26,7 @@ function App() {
           </Switch>
           
       <footer className="App-footer">
-         <SimpleBottomNavigation/>
+         {/* <SimpleBottomNavigation/> */}
       </footer>
     </div>
   );

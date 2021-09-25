@@ -1,10 +1,7 @@
-
-// this is the continue button, I was unabe to rename it
-
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
-
+import { Link, Router } from "react-router-dom";
 const useStyles = makeStyles((theme) => ({
   root: {
     '& > *': {
@@ -13,16 +10,18 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function ConfirmButton() {
+export default function ContinueButton() {
   const classes = useStyles();
 
   return (
     <div className={classes.root}>
-     
-      <Button variant="contained" color="Secondary">
+      
+      <Link to={process.env.PUBLIC_URL + '/contactdetails'}>
+      <Button variant="contained" color="secondary">
         Continue
       </Button>
-     
+      </Link>
+      
     </div>
   );
 }

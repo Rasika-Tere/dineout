@@ -9,29 +9,29 @@ import KeyboardArrowRight from '@material-ui/icons/KeyboardArrowRight';
 
 const tutorialSteps = [
   {
-    label: 'San Francisco – Oakland Bay Bridge, United States',
+    label: 'Hurrycane',
     imgPath:
-      'https://images.unsplash.com/photo-1537944434965-cf4679d1a598?auto=format&fit=crop&w=400&h=250&q=60',
+      'https://im.whatshot.in/img/2020/Sep/12875-e-1600803324.jpg',
   },
   {
-    label: 'Bird',
+    label: 'Mostly Grills',
     imgPath:
-      'https://images.unsplash.com/photo-1538032746644-0212e812a9e7?auto=format&fit=crop&w=400&h=250&q=60',
+      'https://theculturetrip.com/wp-content/uploads/2014/02/56-241172-neel-restaurant.jpg',
   },
   {
-    label: 'Bali, Indonesia',
+    label: 'Bombay High',
     imgPath:
-      'https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=400&h=250&q=80',
+      'https://d4t7t8y8xqo0t.cloudfront.net/resized/750X436/eazytrendz%2F3158%2Ftrend20210615090914.jpg',
   },
   {
-    label: 'NeONBRAND Digital Marketing, Las Vegas, United States',
+    label: 'Lake View Cafe',
     imgPath:
-      'https://images.unsplash.com/photo-1518732714860-b62714ce0c59?auto=format&fit=crop&w=400&h=250&q=60',
+      'https://c.ndtvimg.com/2020-01/hqocblio_restaurant-_625x300_14_January_20.jpg',
   },
   {
-    label: 'Goč, Serbia',
+    label: 'Earth Plate',
     imgPath:
-      'https://images.unsplash.com/photo-1512341689857-198e7e2f3ca8?auto=format&fit=crop&w=400&h=250&q=60',
+      'https://curlytales.com/wp-content/uploads/2018/04/WhatsApp-Image-2018-04-20-at-16.36.17-e1524222408678.jpeg',
   },
 ];
 
@@ -56,7 +56,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function Carousel4() {
+export default function SuperSaversCarousel() {
   const classes = useStyles();
   const theme = useTheme();
   const [activeStep, setActiveStep] = React.useState(0);

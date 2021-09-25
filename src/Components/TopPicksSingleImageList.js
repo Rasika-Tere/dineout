@@ -65,7 +65,7 @@ const itemData = [
    
   ];
 
-export default function SingleLineImageList() {
+export default function TopPicksSingleLineImageList() {
   const classes = useStyles();
   return (
     <div className={classes.root}>

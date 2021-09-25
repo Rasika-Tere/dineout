@@ -1,13 +1,14 @@
 import React from 'react';
 import Container from '@material-ui/core/Container';
-import MaterialUIPickers from '../Components/datetime';
+import MaterialUIPickers from '../Components/ReservationPage/datetime';
 import SimpleAccordion from '../Components/ReservationPage/accordian';
 import Illustration1 from '../Components/Illustration1';
-import ConfirmButton from '../Components/ConfirmButton';
+
 import MealSelection from '../Components/ReservationPage/MealSelection';
 import { Link, Router } from "react-router-dom";
 import ReservationDetailsTitle from '../Components/ReservationPage/ReservationDetailsTitle';
-import Illustration2 from '../Components/Illustration2';
+import ContinueButton from '../Components/ReservationPage/ContinueButton';
+
 
 export default function Gallery() {
   return (
@@ -29,9 +30,7 @@ export default function Gallery() {
         <SimpleAccordion />
 
         {/* the continue button, but i was unable to rename it */}
-        <Link to={process.env.PUBLIC_URL + '/contactdetails'}>
-          <ConfirmButton />
-        </Link>
+       <ContinueButton/>
       </Container>
 
     </React.Fragment>

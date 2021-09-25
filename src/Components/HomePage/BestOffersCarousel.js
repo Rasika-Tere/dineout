@@ -12,7 +12,6 @@ const tutorialSteps = [
     label: 'San Francisco – Oakland Bay Bridge, United States',
     imgPath:
       'https://images.unsplash.com/photo-1537944434965-cf4679d1a598?auto=format&fit=crop&w=400&h=250&q=60',
-      
   },
   {
     label: 'Bird',
@@ -57,7 +56,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function Carousel1() {
+export default function BestOffersCarousel() {
   const classes = useStyles();
   const theme = useTheme();
   const [activeStep, setActiveStep] = React.useState(0);
@@ -92,7 +91,6 @@ export default function Carousel1() {
             {theme.direction === 'rtl' ? <KeyboardArrowLeft /> : <KeyboardArrowRight />}
           </Button>
         }
-        
         backButton={
           <Button size="small" onClick={handleBack} disabled={activeStep === 0}>
             {theme.direction === 'rtl' ? <KeyboardArrowRight /> : <KeyboardArrowLeft />}
