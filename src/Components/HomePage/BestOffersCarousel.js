@@ -9,29 +9,29 @@ import KeyboardArrowRight from '@material-ui/icons/KeyboardArrowRight';
 
 const tutorialSteps = [
   {
-    label: 'San Francisco – Oakland Bay Bridge, United States',
+    label: '',
     imgPath:
-      'https://images.unsplash.com/photo-1537944434965-cf4679d1a598?auto=format&fit=crop&w=400&h=250&q=60',
+      'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiNuAHmjQobyYHdgSqB2wm-yKMjlChAUOImaiIzlteKmVu4MUQbb0E0dkMMtktGJLKMlE&usqp=CAU',
   },
   {
-    label: 'Bird',
+    label: '',
     imgPath:
-      'https://images.unsplash.com/photo-1538032746644-0212e812a9e7?auto=format&fit=crop&w=400&h=250&q=60',
+      'https://static.toiimg.com/img/70481630/Master.jpg',
   },
   {
-    label: 'Bali, Indonesia',
+    label: '',
     imgPath:
-      'https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=400&h=250&q=80',
+      'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxbFhLceg4r3zU-X8kJ1HQxnMgpthGpjOuVwPS9oo6_V1aJm78dfTNZ_iWXC8LMK5-zCs&usqp=CAU',
   },
   {
-    label: 'NeONBRAND Digital Marketing, Las Vegas, United States',
+    label: '',
     imgPath:
-      'https://images.unsplash.com/photo-1518732714860-b62714ce0c59?auto=format&fit=crop&w=400&h=250&q=60',
+      'https://www.dineout.co.in/blog/wp-content/uploads/2021/02/GIRF_Blog1-3.jpg',
   },
   {
-    label: 'Goč, Serbia',
+    label: '',
     imgPath:
-      'https://images.unsplash.com/photo-1512341689857-198e7e2f3ca8?auto=format&fit=crop&w=400&h=250&q=60',
+      'https://blog.dineout-cdn.co.in/blog/wp-content/uploads/2020/01/Blog_GIRF2020-2-1030x485.jpg',
   },
 ];
 

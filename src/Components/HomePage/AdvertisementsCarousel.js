@@ -9,30 +9,30 @@ import KeyboardArrowRight from '@material-ui/icons/KeyboardArrowRight';
 
 const tutorialSteps = [
   {
-    label: 'San Francisco – Oakland Bay Bridge, United States',
+    label: '',
     imgPath:
-      'https://images.unsplash.com/photo-1537944434965-cf4679d1a598?auto=format&fit=crop&w=400&h=250&q=60',
+      'https://i1.wp.com/stylingupmylife.com/wp-content/uploads/2019/08/girfbannerweb.jpg?fit=1200%2C417&ssl=1',
       
   },
   {
-    label: 'Bird',
+    label: '',
     imgPath:
-      'https://images.unsplash.com/photo-1538032746644-0212e812a9e7?auto=format&fit=crop&w=400&h=250&q=60',
+      'https://blog.dineout-cdn.co.in/blog/wp-content/uploads/2019/06/Blog-banner-1030x538.png',
   },
   {
-    label: 'Bali, Indonesia',
+    label: '',
     imgPath:
-      'https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=400&h=250&q=80',
+      'https://in.bmscdn.com/nmcms/events/banner/desktop/media-desktop-dineout-steppinout-food-festival-bangalore-0-2020-12-7-t-14-39-43.jpg',
   },
   {
-    label: 'NeONBRAND Digital Marketing, Las Vegas, United States',
+    label: '',
     imgPath:
-      'https://images.unsplash.com/photo-1518732714860-b62714ce0c59?auto=format&fit=crop&w=400&h=250&q=60',
+      'https://in.bmscdn.com/nmcms/events/banner/desktop/media-desktop-dineout-steppinout-food-festival-bangalore-0-2021-1-29-t-13-25-7.jpg',
   },
   {
-    label: 'Goč, Serbia',
+    label: '',
     imgPath:
-      'https://images.unsplash.com/photo-1512341689857-198e7e2f3ca8?auto=format&fit=crop&w=400&h=250&q=60',
+      'https://static.toiimg.com/img/73986705/Master.jpg',
   },
 ];
 

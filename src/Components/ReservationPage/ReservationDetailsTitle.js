@@ -1,7 +1,6 @@
 
 // this component is the text button with back arrow icon
 
-
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';

@@ -5,6 +5,7 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
 import ArrowBackIosIcon from '@material-ui/icons/ArrowBackIos';
+import { Link, Router } from "react-router-dom";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -19,13 +20,14 @@ export default function ContactDetails() {
 
   return (
     <div className={classes.root}>
-      
-      <Button color="Secondary">
-      <ArrowBackIosIcon/>
-        Contact Details
-      </Button>
-     
-    
+
+      <Link to={process.env.PUBLIC_URL + '/reservationstep'}>
+        <Button color="Secondary">
+          <ArrowBackIosIcon />
+          Contact Details
+        </Button>
+      </Link>
+
     </div>
   );
 }

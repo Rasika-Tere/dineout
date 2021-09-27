@@ -1,6 +1,6 @@
 import React from 'react';
 import Container from '@material-ui/core/Container';
-import PrimarySearchAppBar from '../Components/HomePage/AppBar';
+import PrimarySearchAppBar from '../Components/HomePage/PrimarysearchBar';
 import Grid from '@material-ui/core/Grid';
 import SuperSaversCarousel from '../Components/HomePage/SuperSaversCarousel';
 import AdvertisementsCarousel from '../Components/HomePage/AdvertisementsCarousel';
