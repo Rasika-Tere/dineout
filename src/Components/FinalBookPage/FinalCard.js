@@ -9,7 +9,7 @@ import CardMedia from '@material-ui/core/CardMedia';
 import CardContent from '@material-ui/core/CardContent';
 import Typography from '@material-ui/core/Typography';
 import { red } from '@material-ui/core/colors';
-import { Button } from '@material-ui/core';
+import AlertDialog from './DownloadAsImagePopup';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -45,28 +45,31 @@ export default function FinalCard() {
   return (
     <Card className={classes.root}>
       <CardHeader
-        
-        
-        title="Hurrycane" 
+
+
+        title="Hurrycane"
         // i chnaged the title
         subheader="September 14, 2016"
+        
       />
       <CardMedia
         className={classes.media}
-        image="https://images.unsplash.com/photo-1453728013993-6d66e9c9123a?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8dmlld3xlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&w=1000&q=80"
+        image="https://im1.dineout.co.in/images/uploads/restaurant/sharpen/3/h/u/p34715-15465832805c2efcf0192e6.jpg?tr=tr:n-medium"
         title="Paella dish"
+
       />
       <CardContent>
         <Typography variant="body2" color="textSecondary" component="p">
-          This impressive paella is a perfect party dish and a fun meal to cook together with your
-          guests. Add 1 cup of frozen peas along with the mussels, if you like.
+          Reservation Details
+          Reva Sahani
+          Friday, August 20, 2021 at 11.00AM
+          2 Guests
+          ID: DO XXXX XXXX
         </Typography>
-        <Button variant="contained" color="Secondary">
-          Download as image
-        </Button>
+        <AlertDialog />
       </CardContent>
-     
-      
+
+
     </Card>
   );
 }

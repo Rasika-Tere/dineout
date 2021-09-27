@@ -3,7 +3,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
 // I added the back icon here
 import ArrowBackIosIcon from '@material-ui/icons/ArrowBackIos';
-import {Link, Router} from "react-router-dom";
+import { Link, Router } from "react-router-dom";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -18,14 +18,14 @@ export default function ReservationDetailsTitle() {
 
   return (
     <div className={classes.root}>
-      
+
       <Link to={process.env.PUBLIC_URL + '/contactdetails'}>
-      <Button color="Secondary" href="">
-      <ArrowBackIosIcon/>
-        Reservation Details
-      </Button>
+        <Button color="Secondary" href="">
+          <ArrowBackIosIcon />
+          Reservation Details
+        </Button>
       </Link>
-    
+
     </div>
   );
 }
