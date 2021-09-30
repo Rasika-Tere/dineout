@@ -5,6 +5,7 @@ import ReservationStep from './Pages/ReservationStep.js'
 import ContactDetails from './Pages/ContactDetails.js'
 import FinalBook from './Pages/FinalBook'
 import SimpleBottomNavigation from './Components/HomePage/bottomnavigation';
+import Grid from './Pages/Grid.js'
 
 function App() {
   return (
@@ -22,7 +23,8 @@ function App() {
             <Route path={process.env.PUBLIC_URL + '/home'} > <Home/> </Route>
             <Route path={process.env.PUBLIC_URL + '/reservationstep'}  > <ReservationStep/> </Route>
             <Route path={process.env.PUBLIC_URL + '/contactdetails'}  > <ContactDetails/> </Route>
-            <Route path={process.env.PUBLIC_URL + '/finalbook'}  > <FinalBook/> </Route>          
+            <Route path={process.env.PUBLIC_URL + '/finalbook'}  > <FinalBook/> </Route> 
+            <Route path={process.env.PUBLIC_URL + '/grid'}  > <Grid/> </Route>                 
           </Switch>
           
       <footer className="App-footer">

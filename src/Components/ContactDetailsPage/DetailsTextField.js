@@ -22,6 +22,11 @@ export default function DetailsTextFields() {
   return (
     <form className={classes.root} noValidate autoComplete="off">
       {/* for adding the name */}
+
+      <Grid container spacing={3} justifyContent="center"
+      alignItems="center"
+> 
+  
       <TextField id="filled-basic" label="Name" variant="filled" />
       {/* i duplicated the text field to add the phone number  */}
       <TextField id="filled-basic" label="Mobile No." variant="filled" />
@@ -32,6 +37,7 @@ export default function DetailsTextFields() {
       <Grid xs={12}> 
         Select No. of Guests (max.20)
         <TextField id="filled-basic" label="1" variant="filled" />
+      </Grid>
       </Grid>
     </form>
   );

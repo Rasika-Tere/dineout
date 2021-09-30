@@ -7,16 +7,25 @@ import AdvertisementsCarousel from '../Components/HomePage/AdvertisementsCarouse
 import BestOffersCarousel from '../Components/HomePage/BestOffersCarousel';
 import TopPicksSingleLineImageList from '../Components/TopPicksSingleImageList';
 import RestaurantsNearYou from '../Components/HomePage/RestauranrsNearYou';
+import { BottomNavigation } from '@material-ui/core';
+import HomeGrid from '../Components/HomePage/HomeGrid';
 
 export default function Gallery() {
   return (
+    <div className="App">
+
+    <header className="App-header">
+    {/* for top search bar */}
+    <PrimarySearchAppBar />
+    </header>
     <React.Fragment>
       <Container fixed>
         <p>
-          {/* for top search bar */}
-          <PrimarySearchAppBar />
+       
+
+          <HomeGrid/>
           
-          <Grid item xs={12} >
+          <Grid item xs={12} lg={5} >
           {/* this is the carousal for advertisements, component name is caorusal1 */}
            <AdvertisementsCarousel/>
           </Grid>
@@ -42,5 +51,10 @@ export default function Gallery() {
         </p>
       </Container>
     </React.Fragment>
+    <footer className="App-footer" position="sticky ">
+       <BottomNavigation/>
+      </footer>
+    </div>
+
   );
 }
