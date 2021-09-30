@@ -23,7 +23,7 @@ export default function Gallery() {
           <DetailsTextFields />
 
           {/* this is a group button component to add the number of guests */}
-          <GuestNumber />
+          {/* <GuestNumber /> */}
 
           {/* this is the confirm button */}
           <ConfirmButton />
