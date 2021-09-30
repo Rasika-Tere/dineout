@@ -1,6 +1,8 @@
 import React from 'react';
 import Container from '@material-ui/core/Container';
-import HomeGrid from '../Components/HomePage/HomeGrid';
+import FinalBookGrid from '../Components/FinalBookPage/FinalBookGrid';
+
+
 
 
 export default function Grid() {
@@ -8,7 +10,7 @@ export default function Grid() {
     
     <React.Fragment>
       <Container fixed>
-        <HomeGrid/>
+  
       </Container>
     </React.Fragment>
     

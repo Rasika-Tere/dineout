@@ -16,8 +16,8 @@ const useStyles = makeStyles((theme) => ({
     maxWidth: 345,
     textAlign: 'left',
   },
-  
-  
+
+
   media: {
     height: 0,
     paddingTop: '56.25%', // 16:9
@@ -53,33 +53,27 @@ export default function FinalCard() {
         title="Hurrycane"
         // i chnaged the title
         subheader="September 14, 2016"
-        
-        
+
+
       />
       <CardMedia
-        className={classes.media} 
+        className={classes.media}
         image="https://im1.dineout.co.in/images/uploads/restaurant/sharpen/3/h/u/p34715-15465832805c2efcf0192e6.jpg?tr=tr:n-medium"
         title="Paella dish"
 
       />
       <CardContent>
-       
+
         <Typography variant="body2" color="textSecondary" component="p">
           Reservation Details
           Reva Sahani
-        
-        </Typography>
-
-        <Typography variant="body2" color="textSecondary" component="p">
-          
           Friday, August 20, 2021 at 11.00AM
           2 Guests
           ID: DO XXXX XXXX
+
         </Typography>
         <AlertDialog />
       </CardContent>
-
-
     </Card>
   );
 }
