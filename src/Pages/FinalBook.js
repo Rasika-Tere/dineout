@@ -3,9 +3,7 @@
 
 import React from 'react';
 import Container from '@material-ui/core/Container';
-import ReservationDetails from '../Components/FinalBookPage/ReservationDetailsTitle';
-import ContinueBrowsingButton from '../Components/FinalBookPage/ContinueBrowsingButton';
-import FinalCard from '../Components/FinalBookPage/FinalCard';
+import FinalBookGrid from '../Components/FinalBookPage/FinalBookGrid';
 
 
 export default function Gallery() {
@@ -13,16 +11,8 @@ export default function Gallery() {
     <React.Fragment>
       <Container fixed>
         <p>
-          {/* this is text icon with button */}
-          <ReservationDetails />
-
-          {/* this is the centre card with button */}
-          <FinalCard />
-
-          {/* this is continue browsing button */}
-          <ContinueBrowsingButton />
-
-
+          
+          <FinalBookGrid/>
 
         </p>
       </Container>

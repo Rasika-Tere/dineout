@@ -5,6 +5,7 @@ import DialogActions from '@material-ui/core/DialogActions';
 import DialogContent from '@material-ui/core/DialogContent';
 import DialogContentText from '@material-ui/core/DialogContentText';
 import DialogTitle from '@material-ui/core/DialogTitle';
+import Grid from '@material-ui/core/Grid';
 
 export default function AlertDialog() {
   const [open, setOpen] = React.useState(false);
@@ -19,9 +20,11 @@ export default function AlertDialog() {
 
   return (
     <div>
+      <Grid item xs={12} lg={12}>
       <Button variant="contained" color="secondary" onClick={handleClickOpen}>
         Download as an Image
       </Button>
+      </Grid>
       <Dialog
         open={open}
         onClose={handleClose}

@@ -10,6 +10,7 @@ import CardContent from '@material-ui/core/CardContent';
 import Typography from '@material-ui/core/Typography';
 import { red } from '@material-ui/core/colors';
 import AlertDialog from './DownloadAsImagePopup';
+import Grid from '@material-ui/core/Grid';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -46,7 +47,10 @@ export default function FinalCard() {
   };
 
   return (
+    
+    <Grid item xs={12} lg={12}>
     <Card className={classes.root}>
+    
       <CardHeader
 
 
@@ -75,5 +79,6 @@ export default function FinalCard() {
         <AlertDialog />
       </CardContent>
     </Card>
+    </Grid>
   );
 }
