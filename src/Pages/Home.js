@@ -2,9 +2,8 @@ import React from 'react';
 import Container from '@material-ui/core/Container';
 import PrimarySearchAppBar from '../Components/HomePage/PrimarysearchBar';
 import Grid from '@material-ui/core/Grid';
-
-import { BottomNavigation } from '@material-ui/core';
 import HomeGrid from '../Components/HomePage/HomeGrid';
+import SimpleBottomNavigation from '../Components/HomePage/bottomnavigation';
 
 export default function Gallery() {
   return (
@@ -22,13 +21,11 @@ export default function Gallery() {
             
             <HomeGrid/>
 
-            {/* The bottom navigation with all the icons have been added in the footer in App.js. That is why it is apperaring on every page */}
-
           </p>
         </Container>
       </React.Fragment>
       <footer className="App-footer" position="sticky ">
-        <BottomNavigation />
+        <SimpleBottomNavigation />
       </footer>
     </div>
 
