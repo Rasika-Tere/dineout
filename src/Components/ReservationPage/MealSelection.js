@@ -38,25 +38,25 @@ export default function MealSelection() {
         
         {/* i reapeted the buttons here and also changed their color */}
 
-        <Grid item xs={4} md={12} spacing={3}>
+        <Grid item xs={3} md={12} spacing={1}>
         <Button variant="contained" color="Secondary">
         Breakfast  
         </Button>
         </Grid>
         
-        <Grid item xs={4} md={12} spacing={3}>
+        <Grid item xs={6} md={12} spacing={1}>
         <Button variant="contained" color="Secondary">
         Lunch
         </Button>
         </Grid>
         
-        <Grid item xs={4} md={12} spacing={3}>
+        <Grid item xs={9} md={12} spacing={1}>
         <Button variant="contained" color="Secondary">
         Snacks
         </Button>
         </Grid>
        
-        <Grid item xs={4} md={12} spacing={3}>
+        <Grid item xs={12} md={12} spacing={1}>
         <Button variant="contained" color="Secondary">
         Dinner
         </Button>

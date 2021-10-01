@@ -18,13 +18,17 @@ export default function AlertDialog() {
     setOpen(false);
   };
 
+
+
   return (
     <div>
-      <Grid item xs={12} lg={12}>
-      <Button variant="contained" color="secondary" onClick={handleClickOpen}>
-        Download as an Image
-      </Button>
+      <Grid item xs={12} lg={12} >
+        <Button variant="contained" color="secondary" onClick={handleClickOpen}>
+          Download as an Image
+        </Button>
       </Grid>
+
+
       <Dialog
         open={open}
         onClose={handleClose}
@@ -34,7 +38,7 @@ export default function AlertDialog() {
         <DialogTitle id="alert-dialog-title">{"Use Google's location service?"}</DialogTitle>
         <DialogContent>
           <DialogContentText id="alert-dialog-description">
-            Would you like to download your reservation booking details as an image ?
+            Would you like to download your Reservation Booking Details as an image ?
           </DialogContentText>
         </DialogContent>
         <DialogActions>

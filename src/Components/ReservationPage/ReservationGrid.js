@@ -27,7 +27,7 @@ export default function ReservationGrid() {
       <Grid container spacing={3}>
         
         {/* reservation details title */}
-        <Grid item xs={12} lg={12}>
+        <Grid item xs={10} lg={12}>
          <ReservationDetailsTitle/>
         </Grid>
 

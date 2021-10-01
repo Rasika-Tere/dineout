@@ -3,6 +3,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import ImageList from '@material-ui/core/ImageList';
 import ImageListItem from '@material-ui/core/ImageListItem';
 import Image from '../Assets/illustration1.png';
+import Grid from '@material-ui/core/Grid';
 
 
 const useStyles = makeStyles((theme) => ({
@@ -12,6 +13,7 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: 'space-around',
     overflow: 'hidden',
     backgroundColor: theme.palette.background.paper,
+    rowHeight: '200px'
   },
   imageList: {
     flexWrap: 'nowrap',
@@ -35,14 +37,19 @@ export default function Illustration1() {
   const classes = useStyles();
   return (
     <div className={classes.root}>
-        <ImageList className={classes.imageList} cols={1.0}>
+        
+        <ImageList className={classes.imageList} cols={2.0}>
             {itemData.map((item) => (
                 <ImageListItem key={item.img}>
                     <img src={item.img}  />
                    
                 </ImageListItem>
             ))}
+       
+       
         </ImageList>
+        
+       
     </div>
 );
   

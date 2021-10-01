@@ -1,21 +1,20 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
 import ContactDetails from './ContactDetailsTitle';
 import Illustration2 from '../Illustration2';
-import DetailsTextFields from './DetailsTextField';
 import ConfirmButton from './ConfirmButton';
+import NameTextFields from './NameTextField';
+import MobileNoTextFields from './MobileNoTextField';
+import EmailIdTextFields from './EmailIdTextField';
+import GuestNoTextFields from './GuestsNoTextField';
 
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
+    textAlign: 'centre'
   },
-  paper: {
-    padding: theme.spacing(2),
-    textAlign: 'center',
-    color: theme.palette.text.secondary,
-  },
+  
 }));
 
 export default function ContactDetailsGrid() {
@@ -23,10 +22,11 @@ export default function ContactDetailsGrid() {
 
   return (
     <div className={classes.root}>
-      <Grid container spacing={3}>
+
+      <Grid container spacing={0.5}>
        
        {/* the contact deatils title */}
-        <Grid item xs={12} lg={12}>
+        <Grid item xs={8} md={12} lg={12}>
           <ContactDetails/>
         </Grid>
         
@@ -35,13 +35,29 @@ export default function ContactDetailsGrid() {
           <Illustration2/>
         </Grid>
         
-         {/* enter your details text */}
-         <Grid item xs={12} lg={12}>
+         {/* for entering your details text */}
+         <Grid item xs={5} lg={12}>
          Enter Your Details
+         </Grid>
+
+        <Grid item xs={12} lg={12}>
+         <NameTextFields/>
         </Grid>
 
         <Grid item xs={12} lg={12}>
-         <DetailsTextFields/>
+         <MobileNoTextFields/>
+        </Grid>
+
+        <Grid item xs={12} lg={12}>
+         <EmailIdTextFields/>
+        </Grid>
+        
+        <Grid item xs={8} lg={12}>
+        Select No. of Guests (max.20)
+        </Grid>
+        
+        <Grid item xs={12} lg={12}>
+         <GuestNoTextFields/>
         </Grid>
 
         {/* this is the confirm button */}
