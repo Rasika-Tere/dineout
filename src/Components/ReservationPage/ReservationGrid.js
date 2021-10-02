@@ -2,11 +2,11 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 import ReservationDetailsTitle from './ReservationDetailsTitle';
-import Illustration1 from '../Illustration1';
 import MaterialUIPickers from './datetime';
 import MealSelection from './MealSelection';
 import SimpleAccordion from './accordian';
 import ContinueButton from './ContinueButton';
+import Illustration1 from '../../Assets/illustration1.png'
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -33,9 +33,13 @@ export default function ReservationGrid() {
 
 
         {/* illustration on the page, done with single image list */}
+        
         <Grid item xs={12} lg={12}>
-         <Illustration1/>
+        <img src={Illustration1} alt="" width="200" height="200">
+        </img>
         </Grid>
+
+
         
         {/* for selecting the date, the component name is datetime, i was unabel to rename it */}
         <Grid item xs={12} lg={12}>

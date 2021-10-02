@@ -9,8 +9,9 @@ import { Link, Router } from "react-router-dom";
 const useStyles = makeStyles((theme) => ({
   root: {
     '& > *': {
-      margin: theme.spacing(5),
- 
+      margin: theme.spacing(2),
+      
+      
     },
   },
 }));
@@ -21,8 +22,11 @@ export default function ContinueBrowsingButton() {
   
   return (
     <div className={classes.root}>
+    
+    
       <Link to={process.env.PUBLIC_URL + '/home'}>
         <Button variant="contained" color="Secondary" href="">
+        
           Continue Browsing
         </Button>
       </Link>

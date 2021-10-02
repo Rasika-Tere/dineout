@@ -10,7 +10,7 @@ import TimeButtons from './TimeButtons';
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    width: '100%',
+    width: '75%',
   },
   heading: {
     fontSize: theme.typography.pxToRem(15),

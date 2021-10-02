@@ -22,9 +22,11 @@ export default function AlertDialog() {
 
   return (
     <div>
-      <Grid item xs={12} lg={12} >
-        <Button variant="contained" color="secondary" onClick={handleClickOpen}>
+      <Grid item xs={10} lg={12} >
+      
+        <Button variant="contained" color="secondary" onClick={handleClickOpen }>
           Download as an Image
+          
         </Button>
       </Grid>
 

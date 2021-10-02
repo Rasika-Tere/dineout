@@ -2,12 +2,12 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 import ContactDetails from './ContactDetailsTitle';
-import Illustration2 from '../Illustration2';
 import ConfirmButton from './ConfirmButton';
 import NameTextFields from './NameTextField';
 import MobileNoTextFields from './MobileNoTextField';
 import EmailIdTextFields from './EmailIdTextField';
 import GuestNoTextFields from './GuestsNoTextField';
+import Illustration2 from '../../Assets/illustration2.png'
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -31,12 +31,14 @@ export default function ContactDetailsGrid() {
         </Grid>
         
         {/* the illustration on the page, done by single image list */}
-        <Grid item xs={12} lg={12}>
-          <Illustration2/>
+        <Grid item xs={12} md={12} lg={12}>
+        <img src={Illustration2} alt="" width="300" height="330">
+        </img>
         </Grid>
+
         
          {/* for entering your details text */}
-         <Grid item xs={5} lg={12}>
+         <Grid item xs={6} lg={12}>
          Enter Your Details
          </Grid>
 
