@@ -9,8 +9,9 @@ export default function Gallery() {
     <React.Fragment>
       <Container fixed>
 
+        {/* This grid component  contains all the other components in grids */}
         <ReservationGrid />
-        
+
       </Container>
 
     </React.Fragment>

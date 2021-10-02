@@ -6,13 +6,14 @@ import RestaurantsNearYou from './RestauranrsNearYou';
 import BestOffersCarousel from './BestOffersCarousel';
 import TopPicksSingleLineImageList from '../TopPicksSingleImageList';
 import SuperSaversCarousel from './SuperSaversCarousel';
+import PrimarySearchAppBar from './PrimarysearchBar';
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    flexGrow: 1,
+    flexGrow: 0,
   },
   paper: {
-    padding: theme.spacing(2),
+    padding: theme.spacing(1),
     textAlign: 'center',
     color: theme.palette.text.secondary,
   },
@@ -26,6 +27,7 @@ export default function HomeGrid() {
       <Grid container spacing={3} justifyContent="center"
         alignItems="center"
       >
+        
         {/* this is the carousal for advertisements, component name is caorusal1 */}
         <Grid item xs={12} lg={12}>
           <AdvertisementsCarousel />

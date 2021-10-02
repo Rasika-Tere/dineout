@@ -11,10 +11,12 @@ export default function Gallery() {
 
       <header className="App-header">
         {/* for top search bar */}
-        <Grid item xs={9.1} lg={12}>
+        <Grid item xs={12} lg={12}>
         <PrimarySearchAppBar />
         </Grid>
       </header>
+     
+     
       <React.Fragment>
         <Container fixed>
           <p>

@@ -12,6 +12,7 @@ export default function Gallery() {
       <Container fixed>
         <p>
           
+          {/* This grid component contains all the other components in grids */}
           <FinalBookGrid/>
 
         </p>

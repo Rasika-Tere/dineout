@@ -25,44 +25,38 @@ export default function ReservationGrid() {
   return (
     <div className={classes.root}>
       <Grid container spacing={3}>
-        
+
         {/* reservation details title */}
-        <Grid item xs={10} lg={12}>
-         <ReservationDetailsTitle/>
+        <Grid item xs={10} md= {12} lg={12}>
+          <ReservationDetailsTitle />
         </Grid>
 
-
-        {/* illustration on the page, done with single image list */}
-        
-        <Grid item xs={12} lg={12}>
-        <img src={Illustration1} alt="" width="200" height="200">
-        </img>
+        {/* illustration on the page */}
+        <Grid item xs={12}  md= {12} lg={12}>
+          <img src={Illustration1} alt="" width="200" height="200">
+          </img>
         </Grid>
 
-
-        
         {/* for selecting the date, the component name is datetime, i was unabel to rename it */}
         <Grid item xs={12} lg={12}>
-         <MaterialUIPickers/>
+          <MaterialUIPickers />
         </Grid>
 
         {/* for selecting the meal */}
         <Grid item xs={12} lg={12}>
-         <MealSelection/>
+          <MealSelection />
         </Grid>
 
         {/* for selecting the time of meal, the compoenent name is timebuttons, i was unabel to rename it */}
         <Grid item xs={12} lg={12}>
-         <SimpleAccordion/>
+          <SimpleAccordion />
         </Grid>
-       
+
         {/* the continue button, but i was unable to rename it */}
         <Grid item xs={12} lg={12}>
-         <ContinueButton/>
+          <ContinueButton />
         </Grid>
-        
-        
-        
+
       </Grid>
     </div>
   );

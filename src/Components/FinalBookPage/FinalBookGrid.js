@@ -1,3 +1,6 @@
+
+//This grid component contains all the other components in grids
+
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
@@ -22,22 +25,22 @@ export default function FinalBookGrid() {
   return (
     <div className={classes.root}>
       <Grid container spacing={3}>
-        
-        {/* this is text icon with button */}
-        <Grid item xs={8} lg={12}>
-          <ReservationDetailsTitle/>
-          </Grid>
-        
-        {/* this is the centre card with button */}
-        <Grid item xs={12} lg={12}>
-          <FinalCard/>
-          </Grid>
-        
-        {/* this is continue browsing button */}
-        <Grid item xs={12} lg={12}>
-          <ContinueBrowsingButton/>
+
+        {/* this is text button with icon */}
+        <Grid item xs={8} md={12} lg={12}>
+          <ReservationDetailsTitle />
         </Grid>
-        
+
+        {/* this is the centre card with button */}
+        <Grid item xs={12} md={12} lg={12}>
+          <FinalCard />
+        </Grid>
+
+        {/* this is continue browsing button */}
+        <Grid item xs={12} md={12} lg={12}>
+          <ContinueBrowsingButton />
+        </Grid>
+
       </Grid>
     </div>
   );
