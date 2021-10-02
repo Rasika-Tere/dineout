@@ -8,34 +8,28 @@ import CardHeader from '@material-ui/core/CardHeader';
 import CardMedia from '@material-ui/core/CardMedia';
 import CardContent from '@material-ui/core/CardContent';
 import Typography from '@material-ui/core/Typography';
-import { red } from '@material-ui/core/colors';
 import AlertDialog from './DownloadAsImagePopup';
 import Grid from '@material-ui/core/Grid';
+// import Hurrycane from '../../Assts/Hurrycane.png'
 
 const useStyles = makeStyles((theme) => ({
   root: {
+    // display: 'flex',
     maxWidth: 345,
     textAlign: 'left',
+    //  padding: 70 ,
+    // height: 460,
+    position: 'centre',
   },
 
 
   media: {
-    height: 0,
+    height: 100,
     paddingTop: '56.25%', // 16:9
+
   },
-  expand: {
-    transform: 'rotate(0deg)',
-    marginLeft: 'auto',
-    transition: theme.transitions.create('transform', {
-      duration: theme.transitions.duration.shortest,
-    }),
-  },
-  expandOpen: {
-    transform: 'rotate(180deg)',
-  },
-  avatar: {
-    backgroundColor: red[500],
-  },
+
+
 }));
 
 export default function FinalCard() {
@@ -57,12 +51,13 @@ export default function FinalCard() {
           title="Hurrycane"
           // i chnaged the title
           subheader="September 14, 2016"
-         
+
         />
         <CardMedia
           className={classes.media}
+          // image= {Hurrycane.png}
           image="https://im1.dineout.co.in/images/uploads/restaurant/sharpen/3/h/u/p34715-15465832805c2efcf0192e6.jpg?tr=tr:n-medium"
-         
+
         />
         <CardContent>
 
@@ -85,13 +80,13 @@ export default function FinalCard() {
           <Typography variant="body2" color="textSecondary" component="p">
             ID: DO XXXX XXXX
           </Typography>
-          
+
           <AlertDialog />
-        
+
         </CardContent>
-      
+
       </Card>
-    
+
     </Grid>
   );
 }
