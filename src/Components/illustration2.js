@@ -11,9 +11,9 @@ import Image from '../Assets/illustration2.png';
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    display: 'flex',
+    // display: 'flex',
     flexWrap: 'wrap',
-    justifyContent: 'space-around',
+    // justifyContent: 'space-around',
     overflow: 'hidden',
     backgroundColor: theme.palette.background.paper,
     rowHeight: '200px'

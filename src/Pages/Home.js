@@ -3,7 +3,7 @@ import Container from '@material-ui/core/Container';
 import PrimarySearchAppBar from '../Components/HomePage/PrimarysearchBar';
 import Grid from '@material-ui/core/Grid';
 import HomeGrid from '../Components/HomePage/HomeGrid';
-import SimpleBottomNavigation from '../Components/HomePage/bottomnavigation';
+import SimpleBottomNavigation from '../Components/HomePage/SimpleBottomNavigation';
 
 export default function Gallery() {
   return (
@@ -11,7 +11,7 @@ export default function Gallery() {
 
       <header className="App-header">
         {/* for top search bar */}
-        <Grid item xs={12} lg={12}>
+        <Grid item xs={9.1} lg={12}>
         <PrimarySearchAppBar />
         </Grid>
       </header>
@@ -25,7 +25,7 @@ export default function Gallery() {
         </Container>
       </React.Fragment>
       <footer className="App-footer" position="sticky ">
-        <SimpleBottomNavigation />
+       <SimpleBottomNavigation/>
       </footer>
     </div>
 

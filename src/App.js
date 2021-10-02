@@ -4,7 +4,7 @@ import Home from './Pages/Home.js'
 import ReservationStep from './Pages/ReservationStep.js'
 import ContactDetails from './Pages/ContactDetails.js'
 import FinalBook from './Pages/FinalBook'
-import SimpleBottomNavigation from './Components/HomePage/bottomnavigation';
+import SimpleBottomNavigation from './Components/HomePage/SimpleBottomNavigation';
 import Grid from './Pages/Grid.js'
 
 function App() {
