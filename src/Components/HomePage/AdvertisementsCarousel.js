@@ -24,7 +24,7 @@ const tutorialSteps = [
     imgPath:
       'https://in.bmscdn.com/nmcms/events/banner/desktop/media-desktop-dineout-steppinout-food-festival-bangalore-0-2020-12-7-t-14-39-43.jpg',
   },
- 
+
 ];
 
 const useStyles = makeStyles((theme) => ({

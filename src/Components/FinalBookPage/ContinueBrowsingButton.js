@@ -1,5 +1,5 @@
 
-// this is continue browsing button
+// continue browsing button, this button links back to the home page
 
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
@@ -10,13 +10,11 @@ const useStyles = makeStyles((theme) => ({
   root: {
     '& > *': {
       margin: theme.spacing(1),
-      //height: 400,
-      
-  
-}
 
-},  
- 
+    }
+
+  },
+
 }));
 
 export default function ContinueBrowsingButton() {
@@ -29,7 +27,7 @@ export default function ContinueBrowsingButton() {
 
       <Link to={process.env.PUBLIC_URL + '/home'}>
         <Button variant="contained" color="Secondary" href="">
-
+          {/* the button links back to the home page */}
           Continue Browsing
 
         </Button>

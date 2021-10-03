@@ -1,3 +1,6 @@
+
+//This grid component contains all the other components in grids sequentially
+
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
@@ -5,7 +8,7 @@ import ReservationDetailsTitle from './ReservationDetailsTitle';
 import Illustration1 from '../../Assets/illustration1.png';
 import MaterialUIPickers from './datetime';
 import MealSelection from './MealSelection';
-import SimpleAccordion from './accordian';
+import TimeAccordion from './TimeAccordion';
 import ContinueButton from './ContinueButton';
 
 const useStyles = makeStyles((theme) => ({
@@ -29,27 +32,27 @@ export default function ReservationGrid() {
 
         {/* illustration on the page */}
         <Grid item xs={12}  md= {12} lg={12}>
-          <img src={Illustration1} alt="" width="263" height="300">
+          <img src={Illustration1} alt="" width="270" height="300">
           </img>
         </Grid>
 
-        {/* for selecting the date, the component name is datetime, i was unabel to rename it */}
-        <Grid item xs={12} lg={12}>
+        {/* for selecting the date, the component name is datetime*/}
+        <Grid item xs={12} md={12}>
           <MaterialUIPickers />
         </Grid>
 
         {/* for selecting the meal */}
-        <Grid item xs={12} lg={12}>
+        <Grid item xs={12} md={12}>
           <MealSelection />
         </Grid>
 
-        {/* for selecting the time of meal, the compoenent name is timebuttons, i was unabel to rename it */}
-        <Grid item xs={12} lg={12}>
-          <SimpleAccordion />
+        {/* for selecting the time of meal*/}
+        <Grid item xs={12} md={12}>
+          <TimeAccordion/>
         </Grid>
 
-        {/* the continue button, but i was unable to rename it */}
-        <Grid item xs={12} lg={12}>
+        {/* the continue button */}
+        <Grid item xs={12} md={12}>
           <ContinueButton />
         </Grid>
 

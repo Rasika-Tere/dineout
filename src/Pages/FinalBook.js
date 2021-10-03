@@ -9,9 +9,9 @@ export default function Gallery() {
   return (
     <React.Fragment>
       <Container fixed>
-        <p>    
-       {/* This component grid has all the other components of the page in grids */}
-          <FinalBookGrid/>
+        <p>
+          {/* This component grid has all the other components of the page in grids */}
+          <FinalBookGrid />
         </p>
       </Container>
     </React.Fragment>

@@ -19,14 +19,14 @@ export default function ReservationDetailsTitle() {
 
   return (
     <div className={classes.root}>
-      
-      {/* i changed the color here */}
+
+
       <Button color="Secondary">
-      <ArrowBackIosIcon/>
-        Reservation Details 
+        <ArrowBackIosIcon />
+        Reservation Details
       </Button>
-     
-    
+
+
     </div>
   );
 }

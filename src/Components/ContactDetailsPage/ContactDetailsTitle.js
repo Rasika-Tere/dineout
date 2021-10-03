@@ -21,6 +21,7 @@ export default function ContactDetails() {
   return (
     <div className={classes.root}>
 
+      {/* this title links back to the reservation step page (previous Page) */}
       <Link to={process.env.PUBLIC_URL + '/reservationstep'}>
         <Button color="Secondary">
           <ArrowBackIosIcon />

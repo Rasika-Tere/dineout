@@ -1,5 +1,5 @@
 
-// this component is for selecting the date and i removed the extra date and time picker.
+// this component is for selecting the date and ; removed the extra date and time picker.
 
 import 'date-fns';
 import React from 'react';
@@ -13,7 +13,7 @@ import {
 
 export default function MaterialUIPickers() {
   // The first commit of Material-UI
-  
+
   const [selectedDate, setSelectedDate] = React.useState(new Date('2021-09-18T21:11:54'));
 
 
@@ -38,8 +38,8 @@ export default function MaterialUIPickers() {
             'aria-label': 'change date',
           }}
         />
-        
-        
+
+
       </Grid>
     </MuiPickersUtilsProvider>
   );

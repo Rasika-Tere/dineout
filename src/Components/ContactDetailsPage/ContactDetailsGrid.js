@@ -1,3 +1,6 @@
+
+//This grid component contains all the other components in grids sequentially
+
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
@@ -14,7 +17,7 @@ const useStyles = makeStyles((theme) => ({
     flexGrow: 0.5,
     textAlign: 'centre'
   },
-  
+
 }));
 
 export default function ContactDetailsGrid() {
@@ -24,51 +27,56 @@ export default function ContactDetailsGrid() {
     <div className={classes.root}>
 
       <Grid container spacing={0}>
-       
-       {/* the contact deatils title */}
+
+        {/* the contact deatils title */}
         <Grid item xs={8} md={12} lg={12}>
-          <ContactDetails/>
+          <ContactDetails />
         </Grid>
-        
-        {/* the illustration on the page, done by single image list */}
+
+        {/* the illustration on the page */}
         <Grid item xs={12} md={12} lg={12}>
-        <img src={Illustration2} alt="" width="270" height="350">
-        </img>
+          <img src={Illustration2} alt="" width="263" height="350">
+          </img>
         </Grid>
 
-        
-         {/* for entering your details text */}
-         <Grid item xs={7} lg={12}>
-         Enter Your Details
-         </Grid>
 
+        {/* for entering your details text */}
+        <Grid item xs={7} lg={12}>
+          Enter Your Details
+        </Grid>
+
+        {/* for entering your name text */}
         <Grid item xs={12} lg={12}>
-         <NameTextFields/>
+          <NameTextFields />
         </Grid>
 
+        {/* for entering your mobile no */}
         <Grid item xs={12} lg={12}>
-         <MobileNoTextFields/>
+          <MobileNoTextFields />
         </Grid>
 
+        {/* for entering your email id */}
         <Grid item xs={12} lg={12}>
-         <EmailIdTextFields/>
+          <EmailIdTextFields />
         </Grid>
-        
+
+        {/* Select No. of Guests text */}
         <Grid item xs={10} lg={12}>
-        Select No. of Guests (max.20)
+          Select No. of Guests (max.20)
         </Grid>
-        
+
+        {/* for entering your guest no*/}
         <Grid item xs={12} lg={12}>
-         <GuestNoTextFields/>
+          <GuestNoTextFields />
         </Grid>
 
         {/* this is the confirm button */}
         <Grid item xs={12} lg={12}>
-         <ConfirmButton/>
+          <ConfirmButton />
         </Grid>
 
-        
-        
+
+
       </Grid>
     </div>
   );

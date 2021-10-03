@@ -1,3 +1,6 @@
+
+// download as image pop up button
+
 import React from 'react';
 import Button from '@material-ui/core/Button';
 import Dialog from '@material-ui/core/Dialog';
@@ -22,11 +25,10 @@ export default function AlertDialog() {
 
   return (
     <div>
+      {/* download as image pop up button */}
       <Grid item xs={10} lg={12} >
-      
-        <Button variant="contained" color="secondary" onClick={handleClickOpen }>
+        <Button variant="contained" color="secondary" onClick={handleClickOpen}>
           Download as an Image
-          
         </Button>
       </Grid>
 

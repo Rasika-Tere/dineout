@@ -1,5 +1,5 @@
 
-// i added buttons within the accordian for the meal options
+// added buttons within the accordian for the meal options
 
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
@@ -19,6 +19,8 @@ const useStyles = makeStyles((theme) => ({
     fontSize: theme.typography.pxToRem(15),
     fontWeight: theme.typography.fontWeightRegular,
   },
+
+
 }));
 
 export default function MealSelection() {
@@ -26,8 +28,8 @@ export default function MealSelection() {
 
   return (
     <div className={classes.root}>
-      
-      
+
+
       <Accordion>
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
@@ -37,38 +39,44 @@ export default function MealSelection() {
           <Typography className={classes.heading}>Meal</Typography>
         </AccordionSummary>
         <AccordionDetails>
-        
-        {/* i reapeted the buttons here and also changed their color */}
 
-        <Grid container spacing={3} justifyContent="center">
-        <Grid item xs={3} md={12} spacing={1}>
-        <Button variant="contained" color="Secondary">
-        Breakfast  
-        </Button>
-        </Grid>
-        
-        <Grid item xs={3} md={12} spacing={1}>
-        <Button variant="contained" color="Secondary">
-        Lunch
-        </Button>
-        </Grid>
-        
-        <Grid item xs={3} md={12} spacing={1}>
-        <Button variant="contained" color="Secondary">
-        Snacks
-        </Button>
-        </Grid>
-       
-        <Grid item xs={3} md={12} spacing={1}>
-        <Button variant="contained" color="Secondary">
-        Dinner
-        </Button>
-        </Grid>
-        </Grid>
+          {/* reapeted the buttons here*/}
+
+          <Grid container spacing={3} justifyContent="centre"
+            direction="column"
+            alignItems="center"
+            justify="center"
+          >
+
+
+            <Grid item xs={3} md={12} spacing={1}>
+              <Button variant="contained" color="Secondary">
+                Breakfast
+              </Button>
+            </Grid>
+
+            <Grid item xs={3} md={12} spacing={1}>
+              <Button variant="contained" color="Secondary">
+                Lunch
+              </Button>
+            </Grid>
+
+            <Grid item xs={3} md={12} spacing={1}>
+              <Button variant="contained" color="Secondary">
+                Snacks
+              </Button>
+            </Grid>
+
+            <Grid item xs={3} md={12} spacing={1}>
+              <Button variant="contained" color="Secondary">
+                Dinner
+              </Button>
+            </Grid>
+          </Grid>
         </AccordionDetails>
       </Accordion>
-      
-      
+
+
     </div>
   );
 }

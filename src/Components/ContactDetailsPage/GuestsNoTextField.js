@@ -1,5 +1,5 @@
 
-// this is the component to add the text details 
+// the component to add the guest details 
 
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
@@ -22,9 +22,7 @@ export default function GuestNoTextFields() {
 
   return (
     <form className={classes.root} noValidate autoComplete="off">
-     
 
-      
       <TextField id="filled-basic" label="Number of people arriving" variant="filled" />
 
     </form>

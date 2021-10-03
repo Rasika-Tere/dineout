@@ -1,3 +1,6 @@
+
+// added buttons within the accordian for the timeoptions
+
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Accordion from '@material-ui/core/Accordion';
@@ -11,13 +14,11 @@ import TimeButtons from './TimeButtons';
 const useStyles = makeStyles((theme) => ({
   root: {
     width: '100%',
-    display: 'flex',
 
-    alignItems: 'center',
 
   },
-  space:{
-    paddingLeft:10,
+  space: {
+    paddingLeft: 10,
   },
 
   heading: {
@@ -26,7 +27,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function SimpleAccordion() {
+export default function TimeAccordion() {
   const classes = useStyles();
 
   return (
@@ -40,15 +41,14 @@ export default function SimpleAccordion() {
           <Typography className={classes.heading}>Time</Typography>
         </AccordionSummary>
         <AccordionDetails>
-          
-        <TimeButtons className={classes.space}/>
 
-        {/* <TimeButtons/> */}
-          
+          {/* spacing of the time buttons */}
+          <TimeButtons className={classes.space} />
+
         </AccordionDetails>
       </Accordion>
-      
-      
+
+
     </div>
   );
 }

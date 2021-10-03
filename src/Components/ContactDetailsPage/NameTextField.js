@@ -1,5 +1,5 @@
 
-// this is the component to add the text details 
+// this is the component to add the name details 
 
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
@@ -25,7 +25,7 @@ export default function NameTextFields() {
 
 
       <TextField id="filled-basic" label="Name" variant="filled" />
-      {/* i duplicated the text field to add the name  */}
+    
 
     </form>
   );

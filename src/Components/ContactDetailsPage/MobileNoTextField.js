@@ -1,5 +1,5 @@
 
-// this is the component to add the text details 
+// this is the component to add the mobile no details 
 
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
@@ -24,7 +24,7 @@ export default function MobileNoTextFields() {
     <form className={classes.root} noValidate autoComplete="off">
 
       <TextField id="filled-basic" label="Mobile No." variant="filled" />
-      {/* i duplicated the text field to add the phone number  */}
+
 
 
     </form>

@@ -1,3 +1,6 @@
+
+// the continue button
+
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
@@ -15,7 +18,7 @@ export default function ContinueButton() {
 
   return (
     <div className={classes.root}>
-      
+      {/* this button links to the contact details page (the next page) */}
       <Link to={process.env.PUBLIC_URL + '/contactdetails'}>
       <Button variant="contained" color="secondary">
         Continue

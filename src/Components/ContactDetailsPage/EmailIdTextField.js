@@ -1,5 +1,5 @@
 
-// this is the component to add the text details 
+// the component to add the email id details 
 
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
@@ -22,12 +22,10 @@ export default function EmailIdTextFields() {
 
   return (
     <form className={classes.root} noValidate autoComplete="off">
-      
+
       <TextField id="filled-basic" label="Email Id" variant="filled" />
-      {/* i duplicated the text field to add the email id  */}
 
 
-     
     </form>
   );
 }
