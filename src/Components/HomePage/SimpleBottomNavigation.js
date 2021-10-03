@@ -52,19 +52,7 @@ export default function SimpleBottomNavigation() {
             <img src={Community} height={40} width={50}/>
           </IconButton>} />
         
-         
-         
-         
-         
-         
-         
-        
-          
-        
-
-        
-         
-        
+   
 
       
 

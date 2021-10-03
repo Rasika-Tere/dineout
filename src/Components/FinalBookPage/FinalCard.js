@@ -93,6 +93,9 @@ export default function FinalCard() {
               ID: DO XXXX XXXX
             </Typography>
 
+            {/* download as image button */}
+            <AlertDialog />
+
           </CardContent>
 
         </Card>
