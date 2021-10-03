@@ -1,9 +1,12 @@
+
+// This component grid has all the other components of the page in sequence
+
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 import AdvertisementsCarousel from './AdvertisementsCarousel';
 import BestOffersCarousel from './BestOffersCarousel';
-import RestaurantsNearYou from './RestauranrsNearYou';
+import RestaurantsNearYouCarousel from './RestauranrsNearYouCarousel';
 import TopPicksSingleLineImageList from '../HomePage/TopPicksSingleImageList'
 import SuperSaversCarousel from './SuperSaversCarousel';
 
@@ -20,7 +23,7 @@ export default function HomeGrid() {
   return (
     <div className={classes.root}>
       <Grid container spacing={3} justifyContent="center"
-        alignItems="center"
+        alignItems="left"
       >
 
         {/* this is the carousal for advertisements, component name is caorusal1 */}
@@ -43,7 +46,7 @@ export default function HomeGrid() {
 
         {/* this is the carousal for restaurants near you, component name is caorusal3 */}
         <Grid item xs={12} lg={12}>
-          <RestaurantsNearYou />
+          <RestaurantsNearYouCarousel/>
         </Grid>
 
         {/* this is the swippable image list for top picks, component name is singleimagelist */}

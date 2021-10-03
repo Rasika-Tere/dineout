@@ -21,12 +21,16 @@ const useStyles = makeStyles((theme) => ({
     flexWrap: 'wrap',
     justifyContent: 'space-around',
     overflow: 'hidden',
+    width: '74%',
+    height: 130,
     backgroundColor: theme.palette.background.paper,
   },
   imageList: {
     flexWrap: 'nowrap',
     // Promote the list into his own layer on Chrome. This cost memory but helps keeping high FPS.
     transform: 'translateZ(0)',
+    width: '100%',
+    
   },
   title: {
     color: theme.palette.primary.light,
@@ -42,6 +46,8 @@ const itemData = [
       img: Image,
      title: 'Image',
      author: 'author',
+     height: 100,
+     
     },
    
   ];
@@ -70,6 +76,7 @@ export default function TopPicksSingleLineImageList() {
   return (
     <div className={classes.root}>
         <ImageList className={classes.imageList} cols={2.0}>
+        
         {/* image cook */}
             {itemData.map((item) => (
                 <ImageListItem key={item.img}>

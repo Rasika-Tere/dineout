@@ -13,7 +13,7 @@ import Button from '@material-ui/core/Button';
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    width: '75%',
+    width: '100%',
   },
   heading: {
     fontSize: theme.typography.pxToRem(15),

@@ -18,14 +18,17 @@ import MoreIcon from '@material-ui/icons/MoreVert';
 const useStyles = makeStyles((theme) => ({
   grow: {
     flexGrow: 1,
+    width: 290,
   },
   menuButton: {
     marginRight: theme.spacing(2),
+
   },
   title: {
     display: 'none',
     [theme.breakpoints.up('sm')]: {
       display: 'block',
+
     },
   },
   search: {
@@ -33,7 +36,7 @@ const useStyles = makeStyles((theme) => ({
     borderRadius: theme.shape.borderRadius,
     backgroundColor: alpha(theme.palette.common.white, 0.15),
     '&:hover': {
-      backgroundColor: alpha(theme.palette.common.white, 0.25),
+      // backgroundColor: alpha(theme.palette.common.white, 0.25),
     },
     marginRight: theme.spacing(2),
     marginLeft: 0,
