@@ -26,33 +26,33 @@ export default function ReservationGrid() {
       <Grid container spacing={3}>
 
         {/* reservation details title */}
-        <Grid item xs={10} md= {12} lg={12}>
+        <Grid item xs={10} md= {12} >
           <ReservationDetailsTitle />
         </Grid>
 
         {/* illustration on the page */}
-        <Grid item xs={12}  md= {12} lg={12}>
+        <Grid item xs={12}  md= {12} >
           <img src={Illustration1} alt="" width="270" height="300">
           </img>
         </Grid>
 
         {/* for selecting the date, the component name is datetime*/}
-        <Grid item xs={12} md={12}>
+        <Grid item xs={12} md= {12}>
           <MaterialUIPickers />
         </Grid>
 
         {/* for selecting the meal */}
-        <Grid item xs={12} md={12}>
+        <Grid item xs={12} md= {12}>
           <MealSelection />
         </Grid>
 
         {/* for selecting the time of meal*/}
-        <Grid item xs={12} md={12}>
+        <Grid item xs={12} md= {12} >
           <TimeAccordion/>
         </Grid>
 
         {/* the continue button */}
-        <Grid item xs={12} md={12}>
+        <Grid item xs={12} md= {12} >
           <ContinueButton />
         </Grid>
 

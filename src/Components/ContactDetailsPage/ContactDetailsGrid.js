@@ -29,49 +29,49 @@ export default function ContactDetailsGrid() {
       <Grid container spacing={0}>
 
         {/* the contact deatils title */}
-        <Grid item xs={8} md={12} lg={12}>
+        <Grid item xs={8} md={12} >
           <ContactDetails />
         </Grid>
 
         {/* the illustration on the page */}
-        <Grid item xs={12} md={12} lg={12}>
+        <Grid item xs={12} md={12} >
           <img src={Illustration2} alt="" width="263" height="350">
           </img>
         </Grid>
 
 
         {/* for entering your details text */}
-        <Grid item xs={7} lg={12}>
+        <Grid item xs={7} >
           Enter Your Details
         </Grid>
 
         {/* for entering your name text */}
-        <Grid item xs={12} lg={12}>
+        <Grid item xs={12} >
           <NameTextFields />
         </Grid>
 
         {/* for entering your mobile no */}
-        <Grid item xs={12} lg={12}>
+        <Grid item xs={12} >
           <MobileNoTextFields />
         </Grid>
 
         {/* for entering your email id */}
-        <Grid item xs={12} lg={12}>
+        <Grid item xs={12} >
           <EmailIdTextFields />
         </Grid>
 
         {/* Select No. of Guests text */}
-        <Grid item xs={10} lg={12}>
+        <Grid item xs={10} >
           Select No. of Guests (max.20)
         </Grid>
 
         {/* for entering your guest no*/}
-        <Grid item xs={12} lg={12}>
+        <Grid item xs={12} >
           <GuestNoTextFields />
         </Grid>
 
         {/* this is the confirm button */}
-        <Grid item xs={12} lg={12}>
+        <Grid item xs={12} >
           <ConfirmButton />
         </Grid>
 
