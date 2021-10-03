@@ -33,7 +33,7 @@ export default function ReservationGrid() {
 
         {/* illustration on the page */}
         <Grid item xs={12}  md= {12} lg={12}>
-          <img src={Illustration1} alt="" width="200" height="200">
+          <img src={Illustration1} alt="" width="358" height="300">
           </img>
         </Grid>
 

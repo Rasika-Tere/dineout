@@ -31,7 +31,7 @@ export default function MaterialUIPickers() {
           margin="normal"
           id="date-picker-inline"
           label="Date picker inline"
-          // fullWidth
+          fullWidth
           value={selectedDate}
           onChange={handleDateChange}
           KeyboardButtonProps={{

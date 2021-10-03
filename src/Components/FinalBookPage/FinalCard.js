@@ -20,6 +20,7 @@ const useStyles = makeStyles((theme) => ({
     //  padding: 70 ,
     // height: 460,
     position: 'centre',
+    aligncontent: 'centre',
   },
 
 
@@ -49,7 +50,7 @@ export default function FinalCard() {
 
 
           title="Hurrycane"
-          // i chnaged the title
+          // i changed the title
           subheader="September 14, 2016"
 
         />

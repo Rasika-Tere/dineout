@@ -11,7 +11,7 @@ import ConfirmButton from './ConfirmButton';
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    flexGrow: 1,
+    flexGrow: 0.5,
     textAlign: 'centre'
   },
   
@@ -23,7 +23,7 @@ export default function ContactDetailsGrid() {
   return (
     <div className={classes.root}>
 
-      <Grid container spacing={0.5}>
+      <Grid container spacing={0}>
        
        {/* the contact deatils title */}
         <Grid item xs={8} md={12} lg={12}>
@@ -32,13 +32,13 @@ export default function ContactDetailsGrid() {
         
         {/* the illustration on the page, done by single image list */}
         <Grid item xs={12} md={12} lg={12}>
-        <img src={Illustration2} alt="" width="300" height="330">
+        <img src={Illustration2} alt="" width="320" height="350">
         </img>
         </Grid>
 
         
          {/* for entering your details text */}
-         <Grid item xs={6} lg={12}>
+         <Grid item xs={5} lg={12}>
          Enter Your Details
          </Grid>
 

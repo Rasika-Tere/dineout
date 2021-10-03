@@ -12,7 +12,7 @@ const tutorialSteps = [
     label: '',
     imgPath:
       'https://i1.wp.com/stylingupmylife.com/wp-content/uploads/2019/08/girfbannerweb.jpg?fit=1200%2C417&ssl=1',
-      
+
   },
   {
     label: '',
@@ -41,7 +41,7 @@ const useStyles = makeStyles((theme) => ({
     maxWidth: 400,
     flexGrow: 1,
     width: '74%',
-    
+
 
   },
   header: {
@@ -50,7 +50,7 @@ const useStyles = makeStyles((theme) => ({
     //height: 50,
     paddingLeft: theme.spacing(4),
     backgroundColor: theme.palette.background.default,
-  
+
   },
   img: {
     height: 255,
@@ -87,21 +87,21 @@ export default function AdvertisementsCarousel() {
         alt={tutorialSteps[activeStep].label}
       />
       <MobileStepper
-        steps={maxSteps}
+        variant="dots"
+        steps={5}
         position="static"
-        variant="text"
         activeStep={activeStep}
+        className={classes.root}
         nextButton={
           <Button size="small" onClick={handleNext} disabled={activeStep === maxSteps - 1}>
-            Next
             {theme.direction === 'rtl' ? <KeyboardArrowLeft /> : <KeyboardArrowRight />}
           </Button>
         }
-        
+
         backButton={
           <Button size="small" onClick={handleBack} disabled={activeStep === 0}>
             {theme.direction === 'rtl' ? <KeyboardArrowRight /> : <KeyboardArrowLeft />}
-            Back
+
           </Button>
         }
       />
