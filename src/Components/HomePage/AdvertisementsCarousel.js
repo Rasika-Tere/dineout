@@ -24,16 +24,7 @@ const tutorialSteps = [
     imgPath:
       'https://in.bmscdn.com/nmcms/events/banner/desktop/media-desktop-dineout-steppinout-food-festival-bangalore-0-2020-12-7-t-14-39-43.jpg',
   },
-  {
-    label: '',
-    imgPath:
-      'https://in.bmscdn.com/nmcms/events/banner/desktop/media-desktop-dineout-steppinout-food-festival-bangalore-0-2021-1-29-t-13-25-7.jpg',
-  },
-  {
-    label: '',
-    imgPath:
-      'https://static.toiimg.com/img/73986705/Master.jpg',
-  },
+ 
 ];
 
 const useStyles = makeStyles((theme) => ({
@@ -41,8 +32,6 @@ const useStyles = makeStyles((theme) => ({
     maxWidth: 400,
     flexGrow: 1,
     width: '100%',
-
-
   },
   header: {
     display: 'flex',
@@ -50,7 +39,6 @@ const useStyles = makeStyles((theme) => ({
     //height: 50,
     paddingLeft: theme.spacing(4),
     backgroundColor: theme.palette.background.default,
-
   },
   img: {
     height: 255,
@@ -88,7 +76,7 @@ export default function AdvertisementsCarousel() {
       />
       <MobileStepper
         variant="dots"
-        steps={5}
+        steps={3}
         position="static"
         activeStep={activeStep}
         className={classes.root}

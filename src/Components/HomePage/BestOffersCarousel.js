@@ -23,16 +23,8 @@ const tutorialSteps = [
     imgPath:
       'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxbFhLceg4r3zU-X8kJ1HQxnMgpthGpjOuVwPS9oo6_V1aJm78dfTNZ_iWXC8LMK5-zCs&usqp=CAU',
   },
-  {
-    label: '',
-    imgPath:
-      'https://www.dineout.co.in/blog/wp-content/uploads/2021/02/GIRF_Blog1-3.jpg',
-  },
-  {
-    label: '',
-    imgPath:
-      'https://blog.dineout-cdn.co.in/blog/wp-content/uploads/2020/01/Blog_GIRF2020-2-1030x485.jpg',
-  },
+  
+  
 ];
 
 const useStyles = makeStyles((theme) => ({
@@ -40,8 +32,6 @@ const useStyles = makeStyles((theme) => ({
     maxWidth: 400,
     flexGrow: 1,
     width: '100%',
-
-
   },
   header: {
     display: 'flex',
@@ -86,7 +76,7 @@ export default function BestOffersCarousel() {
       />
       <MobileStepper
         variant="dots"
-        steps={5}
+        steps={3}
         position="static"
         activeStep={activeStep}
         className={classes.root}

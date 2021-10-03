@@ -23,16 +23,7 @@ const tutorialSteps = [
     imgPath:
       'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAVdv0Ftw2EziLsBHK8r17ZBlECVXUs31-qQ&usqp=CAU',
   },
-  {
-    label: 'Biryani and Curries',
-    imgPath:
-      'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRW8inQoX6QHaH6nJN9O35ljQ1I3F2k9GxVew&usqp=CAU',
-  },
-  {
-    label: 'French Cafe',
-    imgPath:
-      'https://restaurantindia.s3.ap-south-1.amazonaws.com/s3fs-public/content12711.jpg',
-  },
+  
 ];
 
 const useStyles = makeStyles((theme) => ({
@@ -84,7 +75,7 @@ export default function RestaurantsNearYouCarousel() {
       />
       <MobileStepper
         variant="dots"
-        steps={5}
+        steps={3}
         position="static"
         activeStep={activeStep}
         className={classes.root}

@@ -23,23 +23,14 @@ const tutorialSteps = [
     imgPath:
       'https://d4t7t8y8xqo0t.cloudfront.net/resized/750X436/eazytrendz%2F3158%2Ftrend20210615090914.jpg',
   },
-  {
-    label: 'Lake View Cafe',
-    imgPath:
-      'https://c.ndtvimg.com/2020-01/hqocblio_restaurant-_625x300_14_January_20.jpg',
-  },
-  {
-    label: 'Earth Plate',
-    imgPath:
-      'https://curlytales.com/wp-content/uploads/2018/04/WhatsApp-Image-2018-04-20-at-16.36.17-e1524222408678.jpeg',
-  },
+
 ];
 
 const useStyles = makeStyles((theme) => ({
   root: {
     maxWidth: 400,
     flexGrow: 1,
-    width: '100',
+    width: '100%',
   },
   header: {
     display: 'flex',
@@ -84,7 +75,7 @@ export default function SuperSaversCarousel() {
       />
       <MobileStepper
         variant="dots"
-        steps={5}
+        steps={3}
         position="static"
         activeStep={activeStep}
         className={classes.root}

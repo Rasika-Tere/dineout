@@ -14,11 +14,11 @@ import Grid from '@material-ui/core/Grid';
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    // display: 'flex',
-    maxWidth: 370,
+    
+    maxWidth: 700,
     textAlign: 'left',
     padding: 1,
-    // height: 460,
+    height: 560,
     position: 'centre',
     aligncontent: 'centre',
   },
@@ -26,8 +26,8 @@ const useStyles = makeStyles((theme) => ({
 
   media: {
     height: 100,
+    // paddingTop: '56.25%', // 16:9
     paddingTop: '56.25%', // 16:9
-
   },
 
 

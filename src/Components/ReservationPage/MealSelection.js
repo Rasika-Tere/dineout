@@ -40,30 +40,31 @@ export default function MealSelection() {
         
         {/* i reapeted the buttons here and also changed their color */}
 
+        <Grid container spacing={3} justifyContent="center">
         <Grid item xs={3} md={12} spacing={1}>
         <Button variant="contained" color="Secondary">
         Breakfast  
         </Button>
         </Grid>
         
-        <Grid item xs={6} md={12} spacing={1}>
+        <Grid item xs={3} md={12} spacing={1}>
         <Button variant="contained" color="Secondary">
         Lunch
         </Button>
         </Grid>
         
-        <Grid item xs={9} md={12} spacing={1}>
+        <Grid item xs={3} md={12} spacing={1}>
         <Button variant="contained" color="Secondary">
         Snacks
         </Button>
         </Grid>
        
-        <Grid item xs={12} md={12} spacing={1}>
+        <Grid item xs={3} md={12} spacing={1}>
         <Button variant="contained" color="Secondary">
         Dinner
         </Button>
         </Grid>
-
+        </Grid>
         </AccordionDetails>
       </Accordion>
       
