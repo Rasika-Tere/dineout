@@ -15,9 +15,9 @@ import Grid from '@material-ui/core/Grid';
 const useStyles = makeStyles((theme) => ({
   root: {
     // display: 'flex',
-    maxWidth: 345,
+    maxWidth: 370,
     textAlign: 'left',
-    //  padding: 70 ,
+    padding: 1,
     // height: 460,
     position: 'centre',
     aligncontent: 'centre',
@@ -43,51 +43,60 @@ export default function FinalCard() {
 
   return (
 
-    <Grid item xs={12} lg={12}>
-      <Card className={classes.root}>
+    <Grid container spacing={3}
 
-        <CardHeader
+      direction="column"
+      alignItems="center"
+      justify="center"
+      style={{ minHeight: '100vh' }}
+
+    >
+      <Grid item xs={12} lg={12}>
+
+        <Card className={classes.root}>
+
+          <CardHeader
 
 
-          title="Hurrycane"
-          // i changed the title
-          subheader="September 14, 2016"
+            title="Hurrycane"
+            // i changed the title
+            subheader="September 14, 2016"
 
-        />
-        <CardMedia
-          className={classes.media}
-          // image= {Hurrycane.png}
-          image="https://im1.dineout.co.in/images/uploads/restaurant/sharpen/3/h/u/p34715-15465832805c2efcf0192e6.jpg?tr=tr:n-medium"
+          />
+          <CardMedia
+            className={classes.media}
+            // image= {Hurrycane.png}
+            image="https://im1.dineout.co.in/images/uploads/restaurant/sharpen/3/h/u/p34715-15465832805c2efcf0192e6.jpg?tr=tr:n-medium"
 
-        />
-        <CardContent>
+          />
+          <CardContent>
 
-          <Typography variant="body2" color="textSecondary" component="p">
-            Reservation Details
-          </Typography>
+            <Typography variant="body2" color="textSecondary" component="p">
+              Reservation Details
+            </Typography>
 
-          <Typography variant="body2" color="textSecondary" component="p">
-            Reva Sahani
-          </Typography>
+            <Typography variant="body2" color="textSecondary" component="p">
+              Reva Sahani
+            </Typography>
 
-          <Typography variant="body2" color="textSecondary" component="p">
-            Friday, August 20, 2021 at 11.00AM
-          </Typography>
+            <Typography variant="body2" color="textSecondary" component="p">
+              Friday, August 20, 2021 at 11.00AM
+            </Typography>
 
-          <Typography variant="body2" color="textSecondary" component="p">
-            2 Guests
-          </Typography>
+            <Typography variant="body2" color="textSecondary" component="p">
+              2 Guests
+            </Typography>
 
-          <Typography variant="body2" color="textSecondary" component="p">
-            ID: DO XXXX XXXX
-          </Typography>
+            <Typography variant="body2" color="textSecondary" component="p">
+              ID: DO XXXX XXXX
+            </Typography>
 
-          <AlertDialog />
+            <AlertDialog />
 
-        </CardContent>
+          </CardContent>
 
-      </Card>
-
+        </Card>
+      </Grid>
     </Grid>
   );
 }

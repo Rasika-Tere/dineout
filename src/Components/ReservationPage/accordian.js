@@ -11,7 +11,15 @@ import TimeButtons from './TimeButtons';
 const useStyles = makeStyles((theme) => ({
   root: {
     width: '100%',
+    display: 'flex',
+
+    alignItems: 'center',
+
   },
+  space:{
+    paddingLeft:10,
+  },
+
   heading: {
     fontSize: theme.typography.pxToRem(15),
     fontWeight: theme.typography.fontWeightRegular,
@@ -33,7 +41,9 @@ export default function SimpleAccordion() {
         </AccordionSummary>
         <AccordionDetails>
           
-        <TimeButtons/>
+        <TimeButtons className={classes.space}/>
+
+        {/* <TimeButtons/> */}
           
         </AccordionDetails>
       </Accordion>

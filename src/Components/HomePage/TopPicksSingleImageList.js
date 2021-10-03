@@ -21,7 +21,7 @@ const useStyles = makeStyles((theme) => ({
     flexWrap: 'wrap',
     justifyContent: 'space-around',
     overflow: 'hidden',
-    width: '74%',
+    width: '100%',
     height: 130,
     backgroundColor: theme.palette.background.paper,
   },

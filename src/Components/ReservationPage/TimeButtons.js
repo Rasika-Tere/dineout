@@ -21,15 +21,15 @@ export default function TimeButtons() {
     <div className={classes.root}>
      
      {/* i repeated the buttons for the different times */}
-     <Grid container spacing={1}>
+     <Grid container spacing={2}>
 
-     <Grid item xs={3} >
+     <Grid item xs={4} >
       <Button variant="contained" color="primary">
         12.00
       </Button>
       </Grid>
 
-      <Grid item xs={4.4} >
+      <Grid item xs={4} >
       <Button variant="contained" color="primary">
         12.15
       </Button>
@@ -41,7 +41,7 @@ export default function TimeButtons() {
       </Button>
       </Grid>
 
-      <Grid item xs={3} >
+      <Grid item xs={4} >
       <Button variant="contained" color="primary">
         12.45
       </Button>
@@ -59,7 +59,7 @@ export default function TimeButtons() {
       </Button>
       </Grid>
 
-      <Grid item xs={3} >
+      <Grid item xs={4} >
       <Button variant="contained" color="primary">
         01.30
       </Button>
@@ -77,7 +77,7 @@ export default function TimeButtons() {
       </Button>
       </Grid>
 
-      <Grid item xs={3} >
+      <Grid item xs={4} >
       <Button variant="contained" color="primary">
         02.15
       </Button>

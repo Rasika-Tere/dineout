@@ -23,7 +23,11 @@ export default function HomeGrid() {
   return (
     <div className={classes.root}>
       <Grid container spacing={3} justifyContent="center"
-        alignItems="left"
+       
+        alignItems="center"
+        justify="center"
+        style={{ minHeight: '100vh' }}
+        direction="column"
       >
 
         {/* this is the carousal for advertisements, component name is caorusal1 */}

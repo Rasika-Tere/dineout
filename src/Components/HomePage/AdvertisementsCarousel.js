@@ -40,7 +40,7 @@ const useStyles = makeStyles((theme) => ({
   root: {
     maxWidth: 400,
     flexGrow: 1,
-    width: '74%',
+    width: '100%',
 
 
   },

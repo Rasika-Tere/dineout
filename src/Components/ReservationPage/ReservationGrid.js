@@ -12,11 +12,7 @@ const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
   },
-  paper: {
-    padding: theme.spacing(2),
-    textAlign: 'center',
-    color: theme.palette.text.secondary,
-  },
+  
 }));
 
 export default function ReservationGrid() {
@@ -33,7 +29,7 @@ export default function ReservationGrid() {
 
         {/* illustration on the page */}
         <Grid item xs={12}  md= {12} lg={12}>
-          <img src={Illustration1} alt="" width="358" height="300">
+          <img src={Illustration1} alt="" width="263" height="300">
           </img>
         </Grid>
 

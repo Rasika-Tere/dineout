@@ -32,13 +32,13 @@ export default function ContactDetailsGrid() {
         
         {/* the illustration on the page, done by single image list */}
         <Grid item xs={12} md={12} lg={12}>
-        <img src={Illustration2} alt="" width="320" height="350">
+        <img src={Illustration2} alt="" width="270" height="350">
         </img>
         </Grid>
 
         
          {/* for entering your details text */}
-         <Grid item xs={5} lg={12}>
+         <Grid item xs={7} lg={12}>
          Enter Your Details
          </Grid>
 
@@ -54,7 +54,7 @@ export default function ContactDetailsGrid() {
          <EmailIdTextFields/>
         </Grid>
         
-        <Grid item xs={8} lg={12}>
+        <Grid item xs={10} lg={12}>
         Select No. of Guests (max.20)
         </Grid>
         
