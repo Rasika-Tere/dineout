@@ -2,12 +2,12 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 import ContactDetails from './ContactDetailsTitle';
-import ConfirmButton from './ConfirmButton';
+import Illustration2 from '../../Assets/illustration2.png';
 import NameTextFields from './NameTextField';
 import MobileNoTextFields from './MobileNoTextField';
 import EmailIdTextFields from './EmailIdTextField';
 import GuestNoTextFields from './GuestsNoTextField';
-import Illustration2 from '../../Assets/illustration2.png'
+import ConfirmButton from './ConfirmButton';
 
 const useStyles = makeStyles((theme) => ({
   root: {

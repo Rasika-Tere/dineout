@@ -5,16 +5,13 @@ import React from 'react';
 import Container from '@material-ui/core/Container';
 import FinalBookGrid from '../Components/FinalBookPage/FinalBookGrid';
 
-
 export default function Gallery() {
   return (
     <React.Fragment>
       <Container fixed>
-        <p>
-          
-          {/* This grid component contains all the other components in grids */}
+        <p>    
+       {/* This component grid has all the other components of the page in grids */}
           <FinalBookGrid/>
-
         </p>
       </Container>
     </React.Fragment>

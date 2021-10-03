@@ -9,11 +9,11 @@ import ImageListItemBar from '@material-ui/core/ImageListItemBar';
 import IconButton from '@material-ui/core/IconButton';
 import StarBorderIcon from '@material-ui/icons/StarBorder';
 // the image cook is imported
-import Image from '../Assets/cook.png';
+import Image from '../../Assets/cook.png';
 // the image listaurants is imported
-import Image2 from '../Assets/listaurants.png';
+import Image2 from '../../Assets/listaurants.png';
 // the image bridges is imported
-import Image3 from '../Assets/bridges.png';
+import Image3 from '../../Assets/bridges.png';
 
 const useStyles = makeStyles((theme) => ({
   root: {

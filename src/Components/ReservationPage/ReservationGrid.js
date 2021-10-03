@@ -2,11 +2,11 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 import ReservationDetailsTitle from './ReservationDetailsTitle';
+import Illustration1 from '../../Assets/illustration1.png';
 import MaterialUIPickers from './datetime';
 import MealSelection from './MealSelection';
 import SimpleAccordion from './accordian';
 import ContinueButton from './ContinueButton';
-import Illustration1 from '../../Assets/illustration1.png'
 
 const useStyles = makeStyles((theme) => ({
   root: {

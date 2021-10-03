@@ -2,21 +2,16 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 import AdvertisementsCarousel from './AdvertisementsCarousel';
-import RestaurantsNearYou from './RestauranrsNearYou';
 import BestOffersCarousel from './BestOffersCarousel';
-import TopPicksSingleLineImageList from '../TopPicksSingleImageList';
+import RestaurantsNearYou from './RestauranrsNearYou';
+import TopPicksSingleLineImageList from '../HomePage/TopPicksSingleImageList'
 import SuperSaversCarousel from './SuperSaversCarousel';
-import PrimarySearchAppBar from './PrimarysearchBar';
 
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 0,
   },
-  paper: {
-    padding: theme.spacing(1),
-    textAlign: 'center',
-    color: theme.palette.text.secondary,
-  },
+
 }));
 
 export default function HomeGrid() {
@@ -27,7 +22,7 @@ export default function HomeGrid() {
       <Grid container spacing={3} justifyContent="center"
         alignItems="center"
       >
-        
+
         {/* this is the carousal for advertisements, component name is caorusal1 */}
         <Grid item xs={12} lg={12}>
           <AdvertisementsCarousel />
@@ -53,23 +48,21 @@ export default function HomeGrid() {
 
         {/* this is the swippable image list for top picks, component name is singleimagelist */}
         <Grid item xs={12} lg={12}>
-        Top Picks
+          Top Picks
         </Grid>
 
         <Grid item xs={12} lg={12}>
-        <TopPicksSingleLineImageList/>
+          <TopPicksSingleLineImageList />
         </Grid>
 
         {/* this is the carousal for super savers, component name is caorusal4 */}
         <Grid item xs={12} lg={12}>
-        Super Savers
+          Super Savers
         </Grid>
 
         <Grid item xs={12} lg={12}>
-        <SuperSaversCarousel/>
+          <SuperSaversCarousel />
         </Grid>
-
-       
       </Grid>
     </div>
   );

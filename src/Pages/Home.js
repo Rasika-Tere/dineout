@@ -1,3 +1,6 @@
+
+// this is the home page
+
 import React from 'react';
 import Container from '@material-ui/core/Container';
 import PrimarySearchAppBar from '../Components/HomePage/PrimarysearchBar';
@@ -10,24 +13,26 @@ export default function Gallery() {
     <div className="App">
 
       <header className="App-header">
-        {/* for top search bar */}
-        <Grid item xs={12} lg={12}>
-        <PrimarySearchAppBar />
+        {/* added top search bar */}
+        <Grid item xs={12} md={12} lg={12}>
+          <PrimarySearchAppBar />
         </Grid>
       </header>
-     
-     
+
+
       <React.Fragment>
         <Container fixed>
           <p>
-            
-            <HomeGrid/>
-
+            {/* This component grid has all the other components of the page in grids */}
+            <HomeGrid />
           </p>
         </Container>
       </React.Fragment>
+
+
+      {/* added bottom navigation */}
       <footer className="App-footer" position="sticky ">
-       <SimpleBottomNavigation/>
+        <SimpleBottomNavigation />
       </footer>
     </div>
 
