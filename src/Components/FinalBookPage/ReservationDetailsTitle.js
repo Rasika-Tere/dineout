@@ -9,6 +9,7 @@ const useStyles = makeStyles((theme) => ({
   root: {
     '& > *': {
       margin: theme.spacing(1),
+      
     },
   },
 }));
@@ -20,7 +21,7 @@ export default function ReservationDetailsTitle() {
     <div className={classes.root}>
       {/* this title links back to the contact details page (previous Page) */}
       <Link to={process.env.PUBLIC_URL + '/contactdetails'}>
-        <Button color="Secondary" href="">
+        <Button color="secondary" href="">
           <ArrowBackIosIcon />
           Reservation Details
         </Button>

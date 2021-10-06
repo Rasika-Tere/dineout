@@ -39,7 +39,7 @@ export default function AlertDialog() {
         aria-labelledby="alert-dialog-title"
         aria-describedby="alert-dialog-description"
       >
-        <DialogTitle id="alert-dialog-title">{"Use Google's location service?"}</DialogTitle>
+        <DialogTitle id="alert-dialog-title">{"Want to use Dineout Reservation services?"}</DialogTitle>
         <DialogContent>
           <DialogContentText id="alert-dialog-description">
             Would you like to download your Reservation Booking Details as an image ?
