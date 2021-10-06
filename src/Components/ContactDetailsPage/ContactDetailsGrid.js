@@ -41,37 +41,37 @@ export default function ContactDetailsGrid() {
 
 
         {/* for entering your details text */}
-        <Grid item xs={7} >
+        <Grid item xs={7} md={12}>
           Enter Your Details
         </Grid>
 
         {/* for entering your name text */}
-        <Grid item xs={12} >
+        <Grid item xs={12} md={12}>
           <NameTextFields />
         </Grid>
 
         {/* for entering your mobile no */}
-        <Grid item xs={12} >
+        <Grid item xs={12} md={12}>
           <MobileNoTextFields />
         </Grid>
 
         {/* for entering your email id */}
-        <Grid item xs={12} >
+        <Grid item xs={12} md={12}>
           <EmailIdTextFields />
         </Grid>
 
         {/* Select No. of Guests text */}
-        <Grid item xs={10} >
+        <Grid item xs={10} md={12}>
           Select No. of Guests (max.20)
         </Grid>
 
         {/* for entering your guest no*/}
-        <Grid item xs={12} >
+        <Grid item xs={12} md={12}>
           <GuestNoTextFields />
         </Grid>
 
         {/* this is the confirm button */}
-        <Grid item xs={12} >
+        <Grid item xs={12} md={12}>
           <ConfirmButton />
         </Grid>
 
