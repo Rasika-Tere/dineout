@@ -16,12 +16,13 @@ const useStyles = makeStyles((theme) => ({
 
 export default function ReservationDetailsTitle() {
   const classes = useStyles();
+  
 
   return (
     <div className={classes.root}>
       {/* this title links back to the contact details page (previous Page) */}
       <Link to={process.env.PUBLIC_URL + '/contactdetails'}>
-        <Button color="secondary" href="">
+        <Button color="secondary" href="" >
           <ArrowBackIosIcon />
           Reservation Details
         </Button>
