@@ -12,7 +12,8 @@ const useStyles = makeStyles((theme) => ({
     '& > *': {
       margin: theme.spacing(1),
       //  changed the size of the text box
-      width: '30ch',
+      width: '36.7ch',
+      borderRadius: 3,
     },
   },
 }));

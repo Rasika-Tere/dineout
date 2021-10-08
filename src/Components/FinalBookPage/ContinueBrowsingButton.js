@@ -10,13 +10,16 @@ const useStyles = makeStyles((theme) => ({
   root: {
     '& > *': {
       margin: theme.spacing(1),
-      background: 'linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)',
+      minHeight: '50px',
+      background: '#FF645A',
       border: 0,
-      borderRadius: 30,
+      borderRadius: 3,
       boxShadow: '0 3px 5px 2px rgba(255, 105, 135, .3)',
       color: 'white',
       height: 48,
-      padding: '0 30px',
+      fontfamily: "Times New Roman",
+      padding: '0 75px',
+      
     }
 
   },
@@ -33,11 +36,10 @@ export default function ContinueBrowsingButton() {
 
 
       <Link to={process.env.PUBLIC_URL + '/home'}>
-        <Button variant="contained" color="Secondary" href="">
+        {/* <Button variant="contained" color="secondary" href=""> */}
           {/* the button links back to the home page */}
           Continue Browsing
-
-        </Button>
+        {/* </Button> */}
       </Link>
 
     </div>

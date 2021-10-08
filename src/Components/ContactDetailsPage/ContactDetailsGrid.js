@@ -35,7 +35,7 @@ export default function ContactDetailsGrid() {
 
         {/* the illustration on the page */}
         <Grid item xs={12} md={12} >
-          <img src={Illustration2} alt="" width="263" height="350">
+          <img src={Illustration2} alt="" width="325" height="350">
           </img>
         </Grid>
 
