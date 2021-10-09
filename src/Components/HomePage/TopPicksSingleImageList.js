@@ -46,7 +46,7 @@ const itemData = [
       img: Image,
      title: 'Image',
      author: 'author',
-     height: 100,
+    
      
     },
    
@@ -75,7 +75,7 @@ export default function TopPicksSingleLineImageList() {
   const classes = useStyles();
   return (
     <div className={classes.root}>
-        <ImageList className={classes.imageList} cols={2.0}>
+        <ImageList className={classes.imageList} cols={1.5}>
         
         {/* image cook */}
             {itemData.map((item) => (

@@ -9,6 +9,7 @@ import BestOffersCarousel from './BestOffersCarousel';
 import RestaurantsNearYouCarousel from './RestauranrsNearYouCarousel';
 import TopPicksSingleLineImageList from '../HomePage/TopPicksSingleImageList'
 import SuperSaversCarousel from './SuperSaversCarousel';
+import TopP from './toppicks';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -60,6 +61,7 @@ export default function HomeGrid() {
 
         <Grid item xs={12} md={12}>
           <TopPicksSingleLineImageList />
+        <TopP/>
         </Grid>
 
         {/* this is the carousal for super savers, component name is caorusal4 */}

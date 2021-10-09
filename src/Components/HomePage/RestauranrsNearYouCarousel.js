@@ -6,39 +6,59 @@ import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
 import KeyboardArrowLeft from '@material-ui/icons/KeyboardArrowLeft';
 import KeyboardArrowRight from '@material-ui/icons/KeyboardArrowRight';
+import Grid from '@material-ui/core/Grid';
 
 const tutorialSteps = [
   {
-    label: 'Pop Tates',
+
     imgPath:
       'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFtBzsxGaQi9qqamH7d1SGcBPI4fy-RkeEfg&usqp=CAU',
+    name: 'xxx',
+    cuisine1: 'oriental',
+    cuisine2: 'jamaican',
+    cuisine3: 'columbian',
+    address: 'xxx',
   },
   {
-    label: 'Madras Cafe',
+
     imgPath:
       'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSA18C99bQq9XGB3NePuWitq4JUEgHCwgqiaA&usqp=CAU',
   },
   {
-    label: 'The Veg Centre',
+
     imgPath:
       'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAVdv0Ftw2EziLsBHK8r17ZBlECVXUs31-qQ&usqp=CAU',
   },
-  
+
 ];
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    maxWidth: 400,
+    maxWidth: 350,
     flexGrow: 1,
     width: '100%',
   },
+
+  button: {
+    color: 'white',
+    background: 'purple',
+    fontsize: 14,
+  },
+
   header: {
-    display: 'flex',
-    alignItems: 'center',
+    // display: 'flex',
+    // alignItems: 'center',
     //height: 50,
     paddingLeft: theme.spacing(4),
     backgroundColor: theme.palette.background.default,
+    fontsize: 18,
   },
+  body: {
+    paddingLeft: theme.spacing(2),
+    textalign: 'left',
+    fontsize: 18,
+  },
+
   img: {
     height: 255,
     minWidth: 400,
@@ -65,14 +85,50 @@ export default function RestaurantsNearYouCarousel() {
 
   return (
     <div className={classes.root}>
+
       <Paper square elevation={0} className={classes.header}>
         <Typography>{tutorialSteps[activeStep].label}</Typography>
       </Paper>
+
       <img
         className={classes.img}
-        src={tutorialSteps[activeStep].imgPath}
-        alt={tutorialSteps[activeStep].label}
-      />
+        src={tutorialSteps[activeStep].imgPath} />
+
+      <Grid container spacing={1} direction="row"
+        alignContent="center"
+        alignItems="center"
+      >
+       < Grid item xs={4}>
+
+        <Paper square elevation={0} className={classes.header}>
+          <Typography>{tutorialSteps[activeStep].name}</Typography>
+        </Paper>
+      </Grid>
+
+      < Grid item xs={4}>
+      <Paper square elevation={0} className={classes.header}>
+        <Typography>{tutorialSteps[activeStep].cuisine1}</Typography>
+      </Paper>
+      </Grid>
+
+      < Grid item xs={4}>
+      <Paper square elevation={0} className={classes.header}>
+        <Typography>{tutorialSteps[activeStep].cuisine2}</Typography>
+      </Paper>
+      </Grid>
+      < Grid item xs={4}>
+      <Paper square elevation={0} className={classes.header}>
+        <Typography>{tutorialSteps[activeStep].cuisine3}</Typography>
+      </Paper>
+      </Grid>
+      < Grid item xs={12}>
+      <Paper square elevation={0} className={classes.header}>
+        <Typography>{tutorialSteps[activeStep].address}</Typography>
+      </Paper>
+      </Grid>
+      </Grid>
+
+
       <MobileStepper
         variant="dots"
         steps={3}
