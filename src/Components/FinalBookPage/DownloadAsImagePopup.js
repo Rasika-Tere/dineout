@@ -8,7 +8,27 @@ import DialogActions from '@material-ui/core/DialogActions';
 import DialogContent from '@material-ui/core/DialogContent';
 import DialogContentText from '@material-ui/core/DialogContentText';
 import DialogTitle from '@material-ui/core/DialogTitle';
-import Grid from '@material-ui/core/Grid';
+import { makeStyles } from '@material-ui/core/styles';
+
+const useStyles = makeStyles((theme) => ({
+  root: {
+    '& > *': {
+      margin: theme.spacing(1),
+      background: '',
+      border: 0,
+      borderRadius: 9,
+      minheight: 150,
+      color: 'white',
+      fontfamily: "Futura",
+      fontsize: 4,
+      height: 40,
+      padding: '0 80px',
+    }
+
+  },
+
+
+}));
 
 export default function AlertDialog() {
   const [open, setOpen] = React.useState(false);
@@ -26,11 +46,11 @@ export default function AlertDialog() {
   return (
     <div>
       {/* download as image pop up button */}
-      <Grid item xs={10} lg={12} >
-        <Button variant="contained" color="secondary" onClick={handleClickOpen}>
+     
+        <Button variant="contained" color="#FF645A" onClick={handleClickOpen}>
           Download as an Image
         </Button>
-      </Grid>
+    
 
 
       <Dialog

@@ -13,6 +13,10 @@ const useStyles = makeStyles((theme) => ({
       margin: theme.spacing(1),
       //  changed the size of the text box
       width: '36.7ch',
+      background: '#F6F2EB',
+      borderRadius: 12,
+      // minheight: 15,
+      height: 38,
     },
   },
 }));
@@ -24,7 +28,7 @@ export default function NameTextFields() {
     <form className={classes.root} noValidate autoComplete="off">
 
 
-      <TextField id="filled-basic" label="Name" variant="filled" />
+      <TextField id="" label="Name" variant="filled" />
     
 
     </form>

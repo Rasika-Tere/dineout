@@ -14,16 +14,19 @@ import TimeButtons from './TimeButtons';
 const useStyles = makeStyles((theme) => ({
   root: {
     width: '100%',
+    background: '#FF645A',
 
 
   },
   space: {
     paddingLeft: 10,
+    
   },
 
   heading: {
     fontSize: theme.typography.pxToRem(15),
     fontWeight: theme.typography.fontWeightRegular,
+    
   },
 }));
 
