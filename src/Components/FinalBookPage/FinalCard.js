@@ -10,6 +10,7 @@ import CardContent from '@material-ui/core/CardContent';
 import Typography from '@material-ui/core/Typography';
 import AlertDialog from './DownloadAsImagePopup';
 import Grid from '@material-ui/core/Grid';
+import SimplePaper from './extrapaper';
 
 
 const useStyles = makeStyles((theme) => ({
@@ -22,13 +23,19 @@ const useStyles = makeStyles((theme) => ({
     position: 'centre',
     aligncontent: 'centre',
     width: 300,
-
+    bborderRadius: 19,
   },
 
 
   media: {
     height: 100,
     paddingTop: '56.25%', // 16:9
+
+    AlertDialog: {
+      // minheight: 150,
+      height: 140,
+
+    },
   },
 
 
@@ -93,8 +100,10 @@ export default function FinalCard() {
               ID: DO XXXX XXXX
             </Typography>
 
+            <SimplePaper />
+
             {/* download as image button */}
-            <AlertDialog />
+            <AlertDialog className={classes.AlertDialog} />
 
           </CardContent>
 

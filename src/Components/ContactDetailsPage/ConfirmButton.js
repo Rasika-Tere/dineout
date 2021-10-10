@@ -12,6 +12,18 @@ const useStyles = makeStyles((theme) => ({
       size: 'large',
     },
   },
+
+  button: {
+    background: '#FF645A',
+      borderRadius: 9,
+      minheight: 150,
+      color: 'white',
+      fontfamily: "Lato",
+      fontsize: 4,
+      height: 40,
+      padding: '0 125px',
+  
+    },  
 }));
 
 export default function ConfirmButton() {
@@ -21,7 +33,7 @@ export default function ConfirmButton() {
     <div className={classes.root}>
       {/* this button links to the final book page (the next page) */}
       <Link to={process.env.PUBLIC_URL + '/finalbook'}>
-        <Button variant="contained" color="secondary">
+        <Button variant="contained" className={classes.button}>
           Confirm
         </Button>
       </Link>

@@ -14,25 +14,30 @@ const useStyles = makeStyles((theme) => ({
   root: {
     '& > *': {
       margin: theme.spacing(1),
-      background: '',
-      border: 0,
-      borderRadius: 9,
-      minheight: 150,
-      color: 'white',
-      fontfamily: "Futura",
-      fontsize: 4,
-      height: 40,
-      padding: '0 80px',
+     
     }
-
   },
+    button: {
+      background: '#5C284F',
+        borderRadius: 9,
+        minheight: 150,
+        color: 'white',
+        fontfamily: "Futura",
+        fontsize: 4,
+        height: 40,
+        padding: '0 40px',
+        alignContent: 'centre',
+        width: 270,
+    },
+
+
 
 
 }));
 
 export default function AlertDialog() {
   const [open, setOpen] = React.useState(false);
-
+  const classes = useStyles();
   const handleClickOpen = () => {
     setOpen(true);
   };
@@ -47,7 +52,7 @@ export default function AlertDialog() {
     <div>
       {/* download as image pop up button */}
      
-        <Button variant="contained" color="#FF645A" onClick={handleClickOpen}>
+        <Button variant="contained" className={classes.button} onClick={handleClickOpen}>
           Download as an Image
         </Button>
     

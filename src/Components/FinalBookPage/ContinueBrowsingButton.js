@@ -10,8 +10,6 @@ const useStyles = makeStyles((theme) => ({
   root: {
     '& > *': {
       margin: theme.spacing(1),
-      
-      
     }
 
   },
@@ -20,12 +18,11 @@ const useStyles = makeStyles((theme) => ({
       borderRadius: 9,
       minheight: 150,
       color: 'white',
-      fontfamily: "Futura",
+      fontfamily: "Lato",
       fontsize: 4,
       height: 40,
-      padding: '0 80px',
+      padding: '0 78px',
   },
-
 
 }));
 
@@ -34,31 +31,13 @@ export default function ContinueBrowsingButton() {
 
   return (
 
-
     <div className={classes.root}>
       {/* this button links to the contact details page (the next page) */}
       <Link to={process.env.PUBLIC_URL + '/home'}>
-      <Button variant="contained" className={classes.button}>
-        
-          Continue Browsing
-        
+      <Button variant="contained" className={classes.button}>        
+          Continue Browsing        
       </Button>
       </Link>
     </div>
-
-
-
-    // <div>
-
-
-    // <Link to={process.env.PUBLIC_URL + '/home'} >
-    // {/* <Button variant="contained" color="secondary" href=""> */}
-    // {/* the button links back to the home page */}
-    // Continue Browsing
-    // {</Button> 
-    // </Link>
-
-
-    // </div>
   );
 }
