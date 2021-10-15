@@ -18,6 +18,7 @@ const useStyles = makeStyles((theme) => ({
       // minheight: 15,
       height: 38,
     },
+
   },
 }));
 
@@ -25,7 +26,7 @@ export default function NameTextFields() {
   const classes = useStyles();
 
   return (
-    <form className={classes.root} noValidate autoComplete="off">
+    <form className={classes.root}  noValidate autoComplete="off">
 
 
       <TextField id="" label="Name" variant="filled" />
