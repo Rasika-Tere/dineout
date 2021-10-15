@@ -8,20 +8,18 @@ import { Link, Router } from "react-router-dom";
 const useStyles = makeStyles((theme) => ({
   root: {
     '& > *': {
-      margin: theme.spacing(1),
-      
+      margin: theme.spacing(1),  
     },
   },
 
-  button: {
-    
+  button: {  
       
       minheight: 150,
       color: '#FF645A',
       fontfamily: "Futura",
-      fontsize: 24,
       height: 15,
-      
+
+  
   },
 }));
 
@@ -31,6 +29,7 @@ export default function ReservationDetailsTitle() {
 
   return (
     <div className={classes.root}>
+      
       {/* this title links back to the contact details page (previous Page) */}
       <Link to={process.env.PUBLIC_URL + '/contactdetails'}>
         <Button className={classes.button} href="" >

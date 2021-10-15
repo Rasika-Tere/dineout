@@ -12,6 +12,14 @@ const useStyles = makeStyles((theme) => ({
     '& > *': {
       margin: theme.spacing(1),
     },
+
+    button: {
+      minheight: 150,
+      color: '#FF645A',
+      fontfamily: "Futura",
+      height: 15,
+
+    },
   },
 }));
 
@@ -23,7 +31,7 @@ export default function ContactDetails() {
 
       {/* this title links back to the reservation step page (previous Page) */}
       <Link to={process.env.PUBLIC_URL + '/reservationstep'}>
-        <Button color="Secondary">
+        <Button color="Secondary"className={classes.button}>
           <ArrowBackIosIcon />
           Contact Details
         </Button>
