@@ -15,7 +15,6 @@ import SimplePaper from './extrapaper';
 
 const useStyles = makeStyles((theme) => ({
   root: {
-
     maxWidth: 900,
     textAlign: 'left',
     padding: 0.2,
@@ -26,12 +25,13 @@ const useStyles = makeStyles((theme) => ({
     borderRadius: 15,
   },
 
-  
-
-
   media: {
     height: 100,
     paddingTop: '56.25%', // 16:9
+    borderRadius: 15,
+    padding: '0 20px',
+    paddingright: 30,
+    paddingleft: 30,
 
     AlertDialog: {
       // minheight: 150,
@@ -43,6 +43,7 @@ const useStyles = makeStyles((theme) => ({
   typography: {
     fontFamily: 'Futura',
     fontSize: 15,
+    fontWeight: 'bold',
     color: '#5C284F',
   }
 
@@ -78,7 +79,6 @@ export default function FinalCard() {
 
           <CardMedia
             className={classes.media}
-
             image="https://im1.dineout.co.in/images/uploads/restaurant/sharpen/3/h/u/p34715-15465832805c2efcf0192e6.jpg?tr=tr:n-medium"
 
           />

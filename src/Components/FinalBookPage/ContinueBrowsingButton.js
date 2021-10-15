@@ -20,6 +20,7 @@ const useStyles = makeStyles((theme) => ({
       color: 'white',
       fontFamily: 'futura',
       fontSize: 14.5,
+      fontWeight: 'normal',
       height: 40,
       padding: '0 60px',
   },

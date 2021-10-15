@@ -4,13 +4,15 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
-import ContactDetails from './ContactDetailsTitle';
+import ContactDetailsTitle from './ContactDetailsTitle';
 import Illustration2 from '../../Assets/illustration2.png';
 import NameTextFields from './NameTextField';
 import MobileNoTextFields from './MobileNoTextField';
 import EmailIdTextFields from './EmailIdTextField';
 import GuestNoTextFields from './GuestsNoTextField';
 import ConfirmButton from './ConfirmButton';
+
+
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -30,7 +32,7 @@ export default function ContactDetailsGrid() {
 
         {/* the contact deatils title */}
         <Grid item xs={8} md={12} >
-          <ContactDetails />
+          <ContactDetailsTitle/>
         </Grid>
 
         {/* the illustration on the page */}
@@ -72,7 +74,7 @@ export default function ContactDetailsGrid() {
 
         {/* this is the confirm button */}
         <Grid item xs={12} md={12}>
-          <ConfirmButton />
+         <ConfirmButton/>
         </Grid>
 
 

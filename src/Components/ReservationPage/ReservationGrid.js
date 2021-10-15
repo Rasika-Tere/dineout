@@ -11,6 +11,8 @@ import MealSelection from './MealSelection';
 import TimeAccordion from './TimeAccordion';
 import ContinueButton from './ContinueButton';
 
+
+
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
@@ -27,7 +29,7 @@ export default function ReservationGrid() {
 
         {/* reservation details title */}
         <Grid item xs={10} md= {12} >
-          <ReservationDetailsTitle />
+         <ReservationDetailsTitle/>
         </Grid>
 
         {/* illustration on the page */}
@@ -53,7 +55,7 @@ export default function ReservationGrid() {
 
         {/* the continue button */}
         <Grid item xs={12} md= {12} >
-          <ContinueButton />
+         <ContinueButton/>
         </Grid>
 
       </Grid>
