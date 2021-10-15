@@ -18,10 +18,10 @@ const useStyles = makeStyles((theme) => ({
       borderRadius: 9,
       minheight: 150,
       color: 'white',
-      fontfamily: "Lato",
-      fontsize: 4,
+      fontFamily: 'futura',
+      fontSize: 14.5,
       height: 40,
-      padding: '0 78px',
+      padding: '0 60px',
   },
 
 }));

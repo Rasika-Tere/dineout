@@ -12,15 +12,11 @@ const useStyles = makeStyles((theme) => ({
     },
   },
 
-  button: {  
-      
-      minheight: 150,
-      color: '#FF645A',
-      fontfamily: "Futura",
-      height: 15,
-
-  
-  },
+  typography: {
+    fontFamily: 'Futura',
+    fontSize: 15,
+    color: '#FF645A',
+  }
 }));
 
 export default function ReservationDetailsTitle() {
@@ -32,7 +28,7 @@ export default function ReservationDetailsTitle() {
       
       {/* this title links back to the contact details page (previous Page) */}
       <Link to={process.env.PUBLIC_URL + '/contactdetails'}>
-        <Button className={classes.button} href="" >
+        <Button className={classes.typography} href="" >
           <ArrowBackIosIcon />
           Reservation Details
         </Button>

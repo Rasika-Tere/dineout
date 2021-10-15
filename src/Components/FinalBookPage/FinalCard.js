@@ -23,8 +23,10 @@ const useStyles = makeStyles((theme) => ({
     position: 'centre',
     aligncontent: 'centre',
     width: 300,
-    bborderRadius: 19,
+    borderRadius: 15,
   },
+
+  
 
 
   media: {
@@ -38,7 +40,11 @@ const useStyles = makeStyles((theme) => ({
     },
   },
 
-
+  typography: {
+    fontFamily: 'Futura',
+    fontSize: 15,
+    color: '#5C284F',
+  }
 
 }));
 
@@ -64,14 +70,12 @@ export default function FinalCard() {
 
         <Card className={classes.root}>
 
-          <CardHeader
-
-
+          <CardHeader className={classes.typography}
             title="Hurrycane"
             // changed the title
             subheader="September 14, 2016"
-
           />
+
           <CardMedia
             className={classes.media}
 
@@ -80,7 +84,7 @@ export default function FinalCard() {
           />
           <CardContent>
             {/* the text below the card */}
-            <Typography variant="body2" color="textSecondary" component="p">
+            <Typography variant="body2" color="textSecondary" component="p" className={classes.typography}>
               Reservation Details
             </Typography>
 

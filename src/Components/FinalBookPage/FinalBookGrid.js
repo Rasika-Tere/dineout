@@ -25,7 +25,7 @@ export default function FinalBookGrid() {
       <Grid container spacing={3}>
 
         {/* this is text button with icon */}
-        <Grid item xs={8} md={12} >
+        <Grid item xs={10} md={12} >
           <ReservationDetailsTitle />
         </Grid>
 
