@@ -36,7 +36,6 @@ const useStyles = makeStyles((theme) => ({
   root: {
     maxWidth: 350,
     flexGrow: 1,
-    width: '100%',
   },
 
   button: {
@@ -46,9 +45,9 @@ const useStyles = makeStyles((theme) => ({
   },
 
   header: {
-    // display: 'flex',
-    // alignItems: 'center',
-    //height: 50,
+    display: 'flex',
+    alignItems: 'center',
+    height: 50,
     paddingLeft: theme.spacing(4),
     backgroundColor: theme.palette.background.default,
     fontsize: 18,
@@ -65,7 +64,7 @@ const useStyles = makeStyles((theme) => ({
     overflow: 'hidden',
     display: 'block',
     width: '100%',
-    height: 170,
+    borderRadius: 15,
   },
 }));
 

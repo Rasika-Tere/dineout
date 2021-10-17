@@ -14,6 +14,8 @@ import TopP from './toppicks';
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 0,
+    fontFamily: 'Futura',
+    color: 'Grey',
   },
 
 }));
@@ -60,7 +62,6 @@ export default function HomeGrid() {
         </Grid>
 
         <Grid item xs={12} md={12}>
-          <TopPicksSingleLineImageList />
         <TopP/>
         </Grid>
 

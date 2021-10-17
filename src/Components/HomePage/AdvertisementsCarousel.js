@@ -31,22 +31,22 @@ const useStyles = makeStyles((theme) => ({
   root: {
     minWidth: 400,
     flexGrow: 1,
-    width: '100%',
+    
   },
   header: {
     display: 'flex',
     alignItems: 'center',
-    //height: 50,
+    height: 50,
     paddingLeft: theme.spacing(4),
     backgroundColor: theme.palette.background.default,
   },
   img: {
-    height: 255,
+    height: 170,
     minWidth: 400,
     overflow: 'hidden',
     display: 'block',
     width: '100%',
-    height: 170,
+    borderRadius: 15,
   },
 }));
 
