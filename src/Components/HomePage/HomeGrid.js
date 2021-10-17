@@ -7,7 +7,6 @@ import Grid from '@material-ui/core/Grid';
 import AdvertisementsCarousel from './AdvertisementsCarousel';
 import BestOffersCarousel from './BestOffersCarousel';
 import RestaurantsNearYouCarousel from './RestauranrsNearYouCarousel';
-import TopPicksSingleLineImageList from '../HomePage/TopPicksSingleImageList'
 import SuperSaversCarousel from './SuperSaversCarousel';
 import TopP from './toppicks';
 

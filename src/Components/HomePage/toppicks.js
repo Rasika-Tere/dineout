@@ -47,7 +47,7 @@ export default function TopP() {
         alignItems="center">
 
         <Grid item xs={8}>
-          <Typography className={classes.header}> Top Picks </Typography>
+          {/* <Typography className={classes.header}> Top Picks </Typography> */}
           {/* header of the caraousel */}</Grid>
 
         <Grid item xs={12} md={10}>

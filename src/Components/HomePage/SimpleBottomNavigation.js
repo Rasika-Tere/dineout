@@ -2,8 +2,6 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import BottomNavigation from '@material-ui/core/BottomNavigation';
 import BottomNavigationAction from '@material-ui/core/BottomNavigationAction';
-
-
 import { IconButton } from '@material-ui/core';
 import Home from '../../Assets/Home.png';
 import BookATable from '../../Assets/BookATable.png';
@@ -51,10 +49,6 @@ export default function SimpleBottomNavigation() {
           <BottomNavigationAction label="Community" icon={<IconButton>
             <img src={Community} height={40} width={50}/>
           </IconButton>} />
-        
-   
-
-      
 
     </BottomNavigation>
 

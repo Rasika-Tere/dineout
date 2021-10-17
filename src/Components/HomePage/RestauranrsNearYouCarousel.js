@@ -13,22 +13,32 @@ const tutorialSteps = [
 
     imgPath:
       'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFtBzsxGaQi9qqamH7d1SGcBPI4fy-RkeEfg&usqp=CAU',
-    name: 'xxx',
+    name: 'Bombay Grill',
     cuisine1: 'oriental',
     cuisine2: 'jamaican',
     cuisine3: 'columbian',
-    address: 'xxx',
+    address: 'Grant Road',
   },
   {
 
     imgPath:
       'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSA18C99bQq9XGB3NePuWitq4JUEgHCwgqiaA&usqp=CAU',
-  },
+      name: 'Fables',
+      cuisine1: 'Italian',
+      cuisine2: 'Burmese',
+      cuisine3: 'Chinese',
+      address: 'Juhu',
+    },
   {
 
     imgPath:
       'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAVdv0Ftw2EziLsBHK8r17ZBlECVXUs31-qQ&usqp=CAU',
-  },
+      name: 'Pop Tates',
+      cuisine1: 'Chinese',
+      cuisine2: 'Greek',
+      cuisine3: 'Mexican',
+      address: 'Kandivali West',
+    },
 
 ];
 
@@ -42,6 +52,7 @@ const useStyles = makeStyles((theme) => ({
     color: 'white',
     background: 'purple',
     fontsize: 14,
+    fontFamily: 'Futura',
   },
 
   header: {
@@ -51,11 +62,13 @@ const useStyles = makeStyles((theme) => ({
     paddingLeft: theme.spacing(4),
     backgroundColor: theme.palette.background.default,
     fontsize: 18,
+    fontFamily: 'Futura',
   },
   body: {
     paddingLeft: theme.spacing(2),
     textalign: 'left',
     fontsize: 18,
+    fontFamily: 'Futura',
   },
 
   img: {
@@ -65,6 +78,7 @@ const useStyles = makeStyles((theme) => ({
     display: 'block',
     width: '100%',
     borderRadius: 15,
+    fontFamily: 'Futura',
   },
 }));
 
