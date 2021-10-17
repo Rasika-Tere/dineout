@@ -8,6 +8,7 @@ import Grid from '@material-ui/core/Grid';
 import HomeGrid from '../Components/HomePage/HomeGrid';
 import SimpleBottomNavigation from '../Components/HomePage/SimpleBottomNavigation';
 
+
 export default function Gallery() {
   return (
     <div className="App">

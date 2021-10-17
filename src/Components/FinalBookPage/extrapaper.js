@@ -19,9 +19,9 @@ export default function SimplePaper() {
 
   return (
     <div className={classes.root}>
-     
+
       <Paper />
-     
+
     </div>
   );
 }

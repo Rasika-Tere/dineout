@@ -18,7 +18,9 @@ import ConfirmButton from './ConfirmButton';
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 0.5,
-    textAlign: 'centre'
+    textAlign: 'centre',
+    fontFamily: 'futura',
+    color: 'grey',
   },
 
 }));
@@ -33,7 +35,7 @@ export default function ContactDetailsGrid() {
 
         {/* the contact deatils title */}
         <Grid item xs={8} md={12} >
-          <ContactDetailsTitle/>
+          <ContactDetailsTitle />
         </Grid>
 
         {/* the illustration on the page */}
@@ -44,7 +46,7 @@ export default function ContactDetailsGrid() {
 
 
         {/* for entering your details text */}
-        <Grid item xs={7} md={12}>
+        <Grid item xs={6} md={12}>
           Enter Your Details
         </Grid>
 
@@ -75,11 +77,11 @@ export default function ContactDetailsGrid() {
 
         {/* this is the confirm button */}
         <Grid item xs={12} md={12}>
-         <ConfirmButton/>
+          <ConfirmButton />
         </Grid>
 
         <Grid item xs={12} md={12}>
-       
+
         </Grid>
 
 

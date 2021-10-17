@@ -14,20 +14,21 @@ const useStyles = makeStyles((theme) => ({
   root: {
     '& > *': {
       margin: theme.spacing(1),
-     
+
     }
   },
-    button: {
-      background: '#5C284F',
-        borderRadius: 9,
-        color: 'white',
-        fontFamily: "Futura",
-        fontSize: 13,
-        height: 40,
-        padding: '0 30px',
-        alignContent: 'centre',
-        width: 270,
-    },
+  // button customization  
+  button: {
+    background: '#5C284F',
+    borderRadius: 9,
+    color: 'white',
+    fontFamily: "Futura",
+    fontSize: 13,
+    height: 40,
+    padding: '0 30px',
+    alignContent: 'centre',
+    width: 270,
+  },
 
 
 
@@ -50,11 +51,11 @@ export default function AlertDialog() {
   return (
     <div>
       {/* download as image pop up button */}
-     
-        <Button variant="contained" className={classes.button} onClick={handleClickOpen}>
-          Download as an Image
-        </Button>
-    
+
+      <Button variant="contained" className={classes.button} onClick={handleClickOpen}>
+        Download as an Image
+      </Button>
+
 
 
       <Dialog

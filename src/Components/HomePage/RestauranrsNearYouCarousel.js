@@ -120,30 +120,30 @@ export default function RestaurantsNearYouCarousel() {
           </Paper>
         </Grid>
 
-        
+
         < Grid item xs={4}>
-          <Button className={classes.button}>
-            <Typography>{tutorialSteps[activeStep].cuisine1}</Typography>
-            </Button>
+
+          <Typography>{tutorialSteps[activeStep].cuisine1}</Typography>
+
         </Grid>
-       
-        
-        
-        < Grid item xs={6}>
-          <Button className={classes.button}>
-            <Typography>{tutorialSteps[activeStep].cuisine2}</Typography>
-            </Button>
+
+
+
+        < Grid item xs={4}>
+
+          <Typography>{tutorialSteps[activeStep].cuisine2}</Typography>
+
         </Grid>
-        
-       
-      
-        < Grid item xs={6}>
-          <Button className={classes.button}>
-            <Typography>{tutorialSteps[activeStep].cuisine3}</Typography>
-            </Button>
+
+
+
+        < Grid item xs={4}>
+
+          <Typography>{tutorialSteps[activeStep].cuisine3}</Typography>
+
         </Grid>
-        
-        
+
+
         < Grid item xs={12}>
           <Paper square elevation={0} className={classes.header}>
             <Typography>{tutorialSteps[activeStep].address}</Typography>

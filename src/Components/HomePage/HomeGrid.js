@@ -24,12 +24,12 @@ export default function HomeGrid() {
 
   return (
     <div className={classes.root}>
-      <Grid container spacing={3} justifyContent="center"
-       
-       alignItems="center"
-       justify="center"
-       style={{ minHeight: '100vh' }}
-       direction="column"
+      <Grid container spacing={1} justifyContent="center"
+
+        alignItems="center"
+        justify="center"
+        style={{ minHeight: '100vh' }}
+        direction="column"
       >
 
         {/* this is the carousal for advertisements, component name is caorusal1 */}
@@ -52,7 +52,7 @@ export default function HomeGrid() {
 
         {/* this is the carousal for restaurants near you, component name is caorusal3 */}
         <Grid item xs={12} md={12}>
-          <RestaurantsNearYouCarousel/>
+          <RestaurantsNearYouCarousel />
         </Grid>
 
         {/* this is the swippable image list for top picks, component name is singleimagelist */}
@@ -61,7 +61,7 @@ export default function HomeGrid() {
         </Grid>
 
         <Grid item xs={12} md={12}>
-        <TopPicksSingleLineImageList/>
+          <TopPicksSingleLineImageList />
         </Grid>
 
         {/* this is the carousal for super savers, component name is caorusal4 */}

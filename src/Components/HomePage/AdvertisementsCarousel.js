@@ -31,7 +31,7 @@ const useStyles = makeStyles((theme) => ({
   root: {
     minWidth: 400,
     flexGrow: 1,
-    
+
   },
   header: {
     display: 'flex',

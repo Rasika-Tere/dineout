@@ -19,8 +19,8 @@ const useStyles = makeStyles((theme) => ({
   imageList: {
     flexWrap: 'nowrap',
     transform: 'translateZ(0)',
-    width: 400 ,
-    borderRadius: 30 ,
+    width: 400,
+    borderRadius: 30,
   },
 }));
 

@@ -9,24 +9,31 @@ import Grid from '@material-ui/core/Grid';
 const useStyles = makeStyles((theme) => ({
   root: {
     '& > *': {
-      margin: theme.spacing(0.5),
-      
-     
+      margin: theme.spacing(0.05),
+
+
     },
- button: {
-  backgroundColor:"#FF645A",
-    Color: 'white',
-    fontFamily: 'futura',
-    fontSize: 14.5,
-    fontWeight: 'normal',
-    height: 40,
- },
- 
+    button: {
+      backgroundColor: "#FF645A",
+      Color: 'white',
+      fontFamily: 'futura',
+
+    },
+
   },
 }));
 
 export default function TimeButtons() {
   const classes = useStyles();
+  const style = {
+
+    top: 'auto',
+    right: 'auto',
+
+
+    backgroundColor: '#F2635C',
+    color: '#FFFFFF'
+  };
 
   return (
     <div className={classes.root}>
@@ -35,73 +42,73 @@ export default function TimeButtons() {
       <Grid container spacing={1}>
 
         <Grid item xs={4} >
-          <Button className={classes.button}>
+          <Button variant='contained' style={style}>
             12.00
           </Button>
         </Grid>
 
         <Grid item xs={4} >
-          <Button className={classes.button}>
+          <Button variant='contained' style={style}>
             12.15
           </Button>
         </Grid>
 
         <Grid item xs={4} >
-          <Button className={classes.button}>
+          <Button variant='contained' style={style}>
             12.30
           </Button>
         </Grid>
 
         <Grid item xs={4} >
-          <Button className={classes.button}>
+          <Button variant='contained' style={style}>
             12.45
           </Button>
         </Grid>
 
         <Grid item xs={4} >
-          <Button className={classes.button}>
+          <Button variant='contained' style={style}>
             01.00
           </Button>
         </Grid>
 
         <Grid item xs={4} >
-          <Button className={classes.button}>
+          <Button variant='contained' style={style}>
             01.15
           </Button>
         </Grid>
 
         <Grid item xs={4} >
-          <Button className={classes.button}>
+          <Button variant='contained' style={style}>
             01.30
           </Button>
         </Grid>
 
         <Grid item xs={4} >
-          <Button className={classes.button}>
+          <Button variant='contained' style={style}>
             01.45
           </Button>
         </Grid>
 
         <Grid item xs={4} >
-          <Button className={classes.button}>
+          <Button variant='contained' style={style}>
             02.00
           </Button>
         </Grid>
 
         <Grid item xs={4} >
-          <Button className={classes.button}>
+          <Button variant='contained' style={style}>
             02.15
           </Button>
         </Grid>
 
         <Grid item xs={4} >
-          <Button className={classes.button}>
+          <Button variant='contained' style={style}>
             02.30
           </Button>
         </Grid>
 
         <Grid item xs={4} >
-          <Button className={classes.button}>
+          <Button variant='contained' style={style}>
             02.45
           </Button>
         </Grid>

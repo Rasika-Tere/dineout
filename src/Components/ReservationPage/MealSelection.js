@@ -17,9 +17,7 @@ const useStyles = makeStyles((theme) => ({
     flexDirection: "column",
     alignItems: "center",
     width: "100%",
-    borderRadius: 15,
-    backgroundColor: "#F6F2EB",
-    padding: 2
+
   },
   heading: {
     fontSize: theme.typography.pxToRem(15),
@@ -28,10 +26,15 @@ const useStyles = makeStyles((theme) => ({
     color: 'grey',
   },
 
+  space: {
+    paddingLeft: 10,
+    backgroundColor: "#F6F2EB",
+
+  },
+
   button: {
 
     backgroundColor: "#FF645A",
-
     fontFamily: 'futura',
     fontSize: 8,
     fontWeight: 'normal',

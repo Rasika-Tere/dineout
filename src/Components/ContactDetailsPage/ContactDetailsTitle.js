@@ -9,10 +9,11 @@ import { Link, Router } from "react-router-dom";
 const useStyles = makeStyles((theme) => ({
   root: {
     '& > *': {
-      margin: theme.spacing(1),  
+      margin: theme.spacing(1),
     },
   },
 
+  // button customization
   typography: {
     fontFamily: 'Futura',
     fontSize: 15,
@@ -22,11 +23,11 @@ const useStyles = makeStyles((theme) => ({
 
 export default function ContactDetailsTitle() {
   const classes = useStyles();
-  
+
 
   return (
     <div className={classes.root}>
-      
+
       {/* this title links back to the contact details page (previous Page) */}
       <Link to={process.env.PUBLIC_URL + '/reservationstep'}>
         <Button className={classes.typography} href="" >

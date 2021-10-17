@@ -23,15 +23,15 @@ const tutorialSteps = [
     imgPath:
       'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxbFhLceg4r3zU-X8kJ1HQxnMgpthGpjOuVwPS9oo6_V1aJm78dfTNZ_iWXC8LMK5-zCs&usqp=CAU',
   },
-  
-  
+
+
 ];
 
 const useStyles = makeStyles((theme) => ({
   root: {
     maxWidth: 400,
     flexGrow: 1,
-    
+
   },
   header: {
     display: 'flex',

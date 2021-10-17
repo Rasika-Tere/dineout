@@ -5,13 +5,13 @@ import BottomNavigationAction from '@material-ui/core/BottomNavigationAction';
 import { IconButton } from '@material-ui/core';
 import Home from '../../Assets/Home.png';
 import BookATable from '../../Assets/BookATable.png';
-import DineoutPassport from '../../Assets/DineoutPassport.png';
+import DineoutPassports from '../../Assets/DineoutPassports.png';
 import Payment from '../../Assets/Payment.png';
 import Community from '../../Assets/Community.png';
 
 const useStyles = makeStyles({
   root: {
-
+    position: 'sticky',
   },
 });
 
@@ -28,27 +28,26 @@ export default function SimpleBottomNavigation() {
       showLabels
       className={classes.root}
     >
-      
-        
-          <BottomNavigationAction label="Home" icon={<IconButton>
-            <img src={Home} height={40} width={60}/>
-          </IconButton>} />
 
-          <BottomNavigationAction label="Book a Table" icon={<IconButton>
-            <img src={BookATable} height={40} width={50}/>
-          </IconButton>} />
-          
-          <BottomNavigationAction label="Dineout Passport" icon={<IconButton>
-            <img src={DineoutPassport} height={50} width={80}/>
-          </IconButton>} />
-          
-          <BottomNavigationAction label="Community" icon={<IconButton>
-            <img src={Payment} height={50} width={70}/>
-          </IconButton>} />
+      <BottomNavigationAction label="Home" icon={<IconButton>
+        <img src={Home} height={40} width={60} />
+      </IconButton>} />
 
-          <BottomNavigationAction label="Community" icon={<IconButton>
-            <img src={Community} height={40} width={50}/>
-          </IconButton>} />
+      <BottomNavigationAction label="Book a Table" icon={<IconButton>
+        <img src={BookATable} height={40} width={50} />
+      </IconButton>} />
+
+      <BottomNavigationAction label="Dineout Passport" icon={<IconButton>
+        <img src={DineoutPassports} height={50} width={80} />
+      </IconButton>} />
+
+      <BottomNavigationAction label="Community" icon={<IconButton>
+        <img src={Payment} height={50} width={70} />
+      </IconButton>} />
+
+      <BottomNavigationAction label="Community" icon={<IconButton>
+        <img src={Community} height={40} width={50} />
+      </IconButton>} />
 
     </BottomNavigation>
 

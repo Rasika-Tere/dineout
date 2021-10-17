@@ -13,6 +13,7 @@ const useStyles = makeStyles((theme) => ({
     }
 
   },
+  // button customization
   button: {
     background: '#FF645A',
     borderRadius: 9,

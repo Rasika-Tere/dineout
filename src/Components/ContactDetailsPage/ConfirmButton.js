@@ -13,16 +13,17 @@ const useStyles = makeStyles((theme) => ({
     }
 
   },
+  // button customization
   button: {
     background: '#FF645A',
-      borderRadius: 9,
-      minheight: 150,
-      color: 'white',
-      fontFamily: 'futura',
-      fontSize: 14.5,
-      fontWeight: 'normal',
-      height: 40,
-      padding: '0 85px',
+    borderRadius: 9,
+    minheight: 150,
+    color: 'white',
+    fontFamily: 'futura',
+    fontSize: 14.5,
+    fontWeight: 'normal',
+    height: 43,
+    padding: '0 90px',
   },
 
 }));
@@ -35,9 +36,9 @@ export default function ConfirmButton() {
     <div className={classes.root}>
       {/* this button links to the finalbook page (the next page) */}
       <Link to={process.env.PUBLIC_URL + '/finalbook'}>
-      <Button variant="contained" className={classes.button}>        
-          Confirm Button       
-      </Button>
+        <Button variant="contained" className={classes.button}>
+          Confirm Button
+        </Button>
       </Link>
     </div>
   );

@@ -8,7 +8,7 @@ import { Link, Router } from "react-router-dom";
 const useStyles = makeStyles((theme) => ({
   root: {
     '& > *': {
-      margin: theme.spacing(1),  
+      margin: theme.spacing(1),
     },
   },
 
@@ -21,18 +21,18 @@ const useStyles = makeStyles((theme) => ({
 
 export default function ReservationDetailsTitle() {
   const classes = useStyles();
-  
+
 
   return (
     <div className={classes.root}>
-      
-     
-      
-        <Button className={classes.typography} href="" >
-          <ArrowBackIosIcon />
-          Reservation Details
-        </Button>
-      
+
+
+
+      <Button className={classes.typography} href="" >
+        <ArrowBackIosIcon />
+        Reservation Details
+      </Button>
+
 
     </div>
   );
