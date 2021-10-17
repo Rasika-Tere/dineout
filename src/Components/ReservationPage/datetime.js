@@ -16,19 +16,21 @@ const useStyles = makeStyles((theme) => ({
   root: {
     '& > *': {
       margin: theme.spacing(1),
+      fontFamily: 'Futura',
+      color: 'grey',
     }
 
   },
   date: {
     background: '#FF645A',
-      borderRadius: 9,
-      minheight: 150,
-      color: 'white',
-      fontFamily: 'futura',
-      fontSize: 14.5,
-      fontWeight: 'normal',
-      height: 40,
-      padding: '0 115px',
+    borderRadius: 9,
+    minheight: 150,
+    color: 'white',
+    fontFamily: 'futura',
+    fontSize: 14.5,
+    fontWeight: 'normal',
+    height: 40,
+    padding: '0 115px',
   },
 
 }));

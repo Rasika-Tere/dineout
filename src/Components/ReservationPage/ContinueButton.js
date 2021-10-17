@@ -15,14 +15,14 @@ const useStyles = makeStyles((theme) => ({
   },
   button: {
     background: '#FF645A',
-      borderRadius: 9,
-      minheight: 150,
-      color: 'white',
-      fontFamily: 'futura',
-      fontSize: 14.5,
-      fontWeight: 'normal',
-      height: 40,
-      padding: '0 115px',
+    borderRadius: 9,
+    minheight: 150,
+    color: 'white',
+    fontFamily: 'futura',
+    fontSize: 14.5,
+    fontWeight: 'normal',
+    height: 40,
+    padding: '0 115px',
   },
 
 }));
@@ -33,11 +33,11 @@ export default function ContinueButton() {
   return (
 
     <div className={classes.root}>
-     {/* this button links to the contact details page (the next page) */}
+      {/* this button links to the contact details page (the next page) */}
       <Link to={process.env.PUBLIC_URL + '/contactdetails'}>
-      <Button variant="contained" className={classes.button}>        
-          Continue        
-      </Button>
+        <Button variant="contained" className={classes.button}>
+          Continue
+        </Button>
       </Link>
     </div>
   );

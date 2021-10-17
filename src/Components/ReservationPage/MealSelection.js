@@ -13,11 +13,32 @@ import Button from '@material-ui/core/Button';
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    width: '100%',
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+    width: "100%",
+    borderRadius: 15,
+    backgroundColor: "#F6F2EB",
+    padding: 2
   },
   heading: {
     fontSize: theme.typography.pxToRem(15),
     fontWeight: theme.typography.fontWeightRegular,
+    fontFamily: 'Futura',
+    color: 'grey',
+  },
+
+  button: {
+
+    backgroundColor: "#FF645A",
+
+    fontFamily: 'futura',
+    fontSize: 8,
+    fontWeight: 'normal',
+    fontColor: 'grey',
+    height: 25,
+    padding: 1,
+    borderColor: "#FF645A",
   },
 
 
@@ -42,33 +63,33 @@ export default function MealSelection() {
 
           {/* reapeted the buttons here*/}
 
-          <Grid container spacing={3} justifyContent="centre"
-            direction="column"
+          <Grid container spacing={1} justifyContent="centre"
+            direction="row"
             alignItems="center"
             justify="center"
           >
 
 
             <Grid item xs={3} md={12} spacing={1}>
-              <Button variant="contained" color="Secondary">
+              <Button variant="outlined" className={classes.button}>
                 Breakfast
               </Button>
             </Grid>
 
             <Grid item xs={3} md={12} spacing={1}>
-              <Button variant="contained" color="Secondary">
+              <Button variant="outlined" className={classes.button}>
                 Lunch
               </Button>
             </Grid>
 
             <Grid item xs={3} md={12} spacing={1}>
-              <Button variant="contained" color="Secondary">
+              <Button variant="outlined" className={classes.button}>
                 Snacks
               </Button>
             </Grid>
 
             <Grid item xs={3} md={12} spacing={1}>
-              <Button variant="contained" color="Secondary">
+              <Button variant="outlined" className={classes.button}>
                 Dinner
               </Button>
             </Grid>
