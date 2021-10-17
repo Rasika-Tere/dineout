@@ -23,22 +23,22 @@ const tutorialSteps = [
 
     imgPath:
       'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSA18C99bQq9XGB3NePuWitq4JUEgHCwgqiaA&usqp=CAU',
-      name: 'Fables',
-      cuisine1: 'Italian',
-      cuisine2: 'Burmese',
-      cuisine3: 'Chinese',
-      address: 'Juhu',
-    },
+    name: 'Fables',
+    cuisine1: 'Italian',
+    cuisine2: 'Burmese',
+    cuisine3: 'Chinese',
+    address: 'Juhu',
+  },
   {
 
     imgPath:
       'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAVdv0Ftw2EziLsBHK8r17ZBlECVXUs31-qQ&usqp=CAU',
-      name: 'Pop Tates',
-      cuisine1: 'Chinese',
-      cuisine2: 'Greek',
-      cuisine3: 'Mexican',
-      address: 'Kandivali West',
-    },
+    name: 'Pop Tates',
+    cuisine1: 'Chinese',
+    cuisine2: 'Greek',
+    cuisine3: 'Mexican',
+    address: 'Kandivali West',
+  },
 
 ];
 
@@ -51,15 +51,17 @@ const useStyles = makeStyles((theme) => ({
   button: {
     color: 'white',
     background: 'purple',
-    fontsize: 14,
+    fontsize: 5,
     fontFamily: 'Futura',
+    borderRadius: 10,
+    width: 100,
   },
 
   header: {
     display: 'flex',
     alignItems: 'center',
     height: 50,
-    paddingLeft: theme.spacing(4),
+    paddingLeft: theme.spacing(2),
     backgroundColor: theme.palette.background.default,
     fontsize: 18,
     fontFamily: 'Futura',
@@ -107,38 +109,47 @@ export default function RestaurantsNearYouCarousel() {
         className={classes.img}
         src={tutorialSteps[activeStep].imgPath} />
 
-      <Grid container spacing={1} direction="row"
+      <Grid container spacing={3} direction="row"
         alignContent="center"
         alignItems="center"
       >
-       < Grid item xs={4}>
+        < Grid item xs={4}>
 
-        <Paper square elevation={0} className={classes.header}>
-          <Typography>{tutorialSteps[activeStep].name}</Typography>
-        </Paper>
-      </Grid>
+          <Paper square elevation={0} className={classes.header}>
+            <Typography>{tutorialSteps[activeStep].name}</Typography>
+          </Paper>
+        </Grid>
 
-      < Grid item xs={4}>
-      <Paper square elevation={0} className={classes.header}>
-        <Typography>{tutorialSteps[activeStep].cuisine1}</Typography>
-      </Paper>
-      </Grid>
+        
+        < Grid item xs={4}>
+          <Button className={classes.button}>
+            <Typography>{tutorialSteps[activeStep].cuisine1}</Typography>
+            </Button>
+        </Grid>
+       
+        
+        
+        < Grid item xs={6}>
+          <Button className={classes.button}>
+            <Typography>{tutorialSteps[activeStep].cuisine2}</Typography>
+            </Button>
+        </Grid>
+        
+       
+      
+        < Grid item xs={6}>
+          <Button className={classes.button}>
+            <Typography>{tutorialSteps[activeStep].cuisine3}</Typography>
+            </Button>
+        </Grid>
+        
+        
+        < Grid item xs={12}>
+          <Paper square elevation={0} className={classes.header}>
+            <Typography>{tutorialSteps[activeStep].address}</Typography>
+          </Paper>
+        </Grid>
 
-      < Grid item xs={4}>
-      <Paper square elevation={0} className={classes.header}>
-        <Typography>{tutorialSteps[activeStep].cuisine2}</Typography>
-      </Paper>
-      </Grid>
-      < Grid item xs={4}>
-      <Paper square elevation={0} className={classes.header}>
-        <Typography>{tutorialSteps[activeStep].cuisine3}</Typography>
-      </Paper>
-      </Grid>
-      < Grid item xs={12}>
-      <Paper square elevation={0} className={classes.header}>
-        <Typography>{tutorialSteps[activeStep].address}</Typography>
-      </Paper>
-      </Grid>
       </Grid>
 
 
@@ -162,4 +173,3 @@ export default function RestaurantsNearYouCarousel() {
     </div>
   );
 }
-

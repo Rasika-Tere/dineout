@@ -19,6 +19,8 @@ const useStyles = makeStyles((theme) => ({
   imageList: {
     flexWrap: 'nowrap',
     transform: 'translateZ(0)',
+    width: 400 ,
+    borderRadius: 30 ,
   },
 }));
 
@@ -35,7 +37,7 @@ const itemData = [
   },
 ];
 
-export default function TopP() {
+export default function TopPicksSingleLineImageList() {
   const classes = useStyles();
 
   return (

@@ -7,8 +7,8 @@ import Grid from '@material-ui/core/Grid';
 import AdvertisementsCarousel from './AdvertisementsCarousel';
 import BestOffersCarousel from './BestOffersCarousel';
 import RestaurantsNearYouCarousel from './RestauranrsNearYouCarousel';
+import TopPicksSingleLineImageList from './TopPicksImageList';
 import SuperSaversCarousel from './SuperSaversCarousel';
-import TopP from './toppicks';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -61,7 +61,7 @@ export default function HomeGrid() {
         </Grid>
 
         <Grid item xs={12} md={12}>
-        <TopP/>
+        <TopPicksSingleLineImageList/>
         </Grid>
 
         {/* this is the carousal for super savers, component name is caorusal4 */}
