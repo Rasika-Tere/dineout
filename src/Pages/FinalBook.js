@@ -5,6 +5,7 @@ import React from 'react';
 import Container from '@material-ui/core/Container';
 import FinalBookGrid from '../Components/FinalBookPage/FinalBookGrid';
 
+
 export default function Gallery() {
   return (
     <React.Fragment>

@@ -4,9 +4,10 @@
 import React from 'react';
 import Container from '@material-ui/core/Container';
 import PrimarySearchAppBar from '../Components/HomePage/PrimarysearchBar';
-import Grid from '@material-ui/core/Grid';
 import HomeGrid from '../Components/HomePage/HomeGrid';
 import SimpleBottomNavigation from '../Components/HomePage/SimpleBottomNavigation';
+import CenteredTabs from '../Components/HomePage/Tabs';
+import Hidden from '@material-ui/core/Hidden';
 
 
 export default function Gallery() {
@@ -15,9 +16,13 @@ export default function Gallery() {
 
       <header className="App-header">
         {/* added top search bar */}
-        <Grid item xs={12} md={12} lg={12}>
-          <PrimarySearchAppBar />
-        </Grid>
+        <Hidden mdUp>
+          <PrimarySearchAppBar /> */}
+          </Hidden>
+        
+        <Hidden mdDown>
+        <CenteredTabs />
+        </Hidden>
       </header>
 
 

@@ -12,6 +12,7 @@ import AccountCircle from '@material-ui/icons/AccountCircle';
 // icon added for location
 import LocationOnOutlinedIcon from '@material-ui/icons/LocationOnOutlined';
 
+
 const useStyles = makeStyles((theme) => ({
   grow: {
     flexGrow: 1,
@@ -166,11 +167,13 @@ export default function PrimarySearchAppBar() {
             color="inherit"
           >
             {/* location icon added inside button */}
+         
             <LocationOnOutlinedIcon />
           </IconButton>
           <div className={classes.search}>
             <div className={classes.searchIcon}>
               <SearchIcon />
+              
             </div>
             <InputBase
               // text altered for placeholder according to website designed

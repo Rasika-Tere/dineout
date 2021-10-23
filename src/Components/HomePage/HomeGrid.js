@@ -10,6 +10,8 @@ import RestaurantsNearYouCarousel from './RestauranrsNearYouCarousel';
 import TopPicksSingleLineImageList from './TopPicksImageList';
 import SuperSaversCarousel from './SuperSaversCarousel';
 
+
+
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 0,
@@ -31,8 +33,8 @@ export default function HomeGrid() {
         style={{ minHeight: '100vh' }}
         direction="column"
       >
-
-        {/* this is the carousal for advertisements, component name is caorusal1 */}
+ 
+         {/* this is the carousal for advertisements, component name is caorusal1 */}
         <Grid item xs={12} md={12}>
           <AdvertisementsCarousel />
         </Grid>
