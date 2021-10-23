@@ -17,7 +17,7 @@ export default function Gallery() {
       <header className="App-header">
         {/* added top search bar */}
         <Hidden mdUp>
-          <PrimarySearchAppBar /> */}
+          <PrimarySearchAppBar /> 
           </Hidden>
         
         <Hidden mdDown>

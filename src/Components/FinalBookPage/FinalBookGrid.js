@@ -7,6 +7,9 @@ import Grid from '@material-ui/core/Grid';
 import ReservationDetailsTitle from './ReservationDetailsTitle';
 import FinalCard from './FinalCard';
 import ContinueBrowsingButton from './ContinueBrowsingButton';
+import TopBar from './TopBar';
+import DesktopCard from './DesktopCard';
+import Hidden from '@material-ui/core/Hidden';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -24,6 +27,8 @@ export default function FinalBookGrid() {
     <div className={classes.root}>
       <Grid container spacing={3}>
 
+        <TopBar/>
+
         {/* this is text button with icon */}
         <Grid item xs={10} md={12} >
           <ReservationDetailsTitle />
@@ -31,8 +36,12 @@ export default function FinalBookGrid() {
 
         {/* this is the centre card with button */}
         <Grid item xs={12} md={12} >
+        <Hidden mdUp>
           <FinalCard />
+          </Hidden>
         </Grid>
+
+        <DesktopCard/>
 
         {/* this is continue browsing button */}
         <Grid item xs={12} md={12} >

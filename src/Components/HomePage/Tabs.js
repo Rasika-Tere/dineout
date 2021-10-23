@@ -8,6 +8,11 @@ import Grid from '@material-ui/core/Grid';
 const useStyles = makeStyles({
   root: {
     flexGrow: 1,
+    color: '#FF645A',
+    fontFamily: 'Futura',
+    fontSize: 14.5,
+    fontWeight: 'normal',
+
   },
 });
 
@@ -27,18 +32,23 @@ export default function CenteredTabs() {
       <Tabs
         value={value}
         onChange={handleChange}
-        indicatorColor="primary"
-        textColor="primary"
+        indicatorColor="#FF645A"
+        textColor="#FF645A"
         left
       >
         
-        <Tab label="Home" />
-        <Tab label="Book a Tabel" />
-        <Tab label="Dineouy Passport" />
-        <Tab label="Dineout Pay" />
-        <Tab label="Community" />
+        <Grid item  md={1.4}> <Tab label="Home" /></Grid>
+        
+        <Grid item  md={2.4}><Tab label="Book a Tabel" /></Grid>
+        
+        <Grid item  md={2.4}><Tab label="Dineouy Passport" /></Grid>
+        
+        <Grid item  md={2.4}><Tab label="Dineout Pay" /></Grid>
+        
+        <Grid item  md={2.4}><Tab label="Community" /></Grid>
        
       </Tabs>
+      
       </Grid>
     </Paper>
   );
