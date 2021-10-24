@@ -35,7 +35,7 @@ export default function DesktopGoBackButton() {
 
     <div className={classes.root}>
       {/* this button links to the finalbook page (the next page) */}
-      <Link to={process.env.PUBLIC_URL + '/finalbook'}>
+      <Link to={process.env.PUBLIC_URL + '/reservationstep'}>
         <Button variant="contained" className={classes.button}>
          Go Back
         </Button>

@@ -15,6 +15,7 @@ import CenteredTabs from '../FinalBookPage/Tabs';
 import DesktopReservationDetailsTitle from './DesktopReservationDetailsTitle';
 import DesktopDateandTime from './Desktopdatetime';
 import DesktopMeal from './DesktopMealSelect';
+import DesktopContinueButton from './DesktopContinueButton ';
 
 
 
@@ -56,19 +57,18 @@ export default function ReservationGrid() {
           </Hidden>
         </Grid>
         
-        <DesktopMeal />
-
         <DesktopDateandTime />
-
-
+        
         {/* for selecting the time of meal*/}
         <Grid item xs={12} md={12} >
           <Hidden mdDown>
             <TimeAccordion />
           </Hidden>
         </Grid>
+        
+        <DesktopMeal />
 
-
+        <DesktopContinueButton/>
 
         {/* mobile Components */}
         {/* reservation details title */}
@@ -114,6 +114,8 @@ export default function ReservationGrid() {
             <ContinueButton />
           </Hidden>
         </Grid>
+
+        
 
       </Grid>
     </div>

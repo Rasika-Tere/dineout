@@ -17,7 +17,8 @@ const useStyles = makeStyles((theme) => ({
     flexDirection: "column",
     alignItems: "center",
     width: 2500,
-
+    right: 12,
+    left: 20,
 
   },
 
@@ -28,6 +29,7 @@ const useStyles = makeStyles((theme) => ({
     fontFamily: 'Futura',
     color: 'grey',
   },
+
 
   space: {
     paddingLeft: 10,
