@@ -14,9 +14,9 @@ import Button from '@material-ui/core/Button';
 const useStyles = makeStyles((theme) => ({
   root: {
     display: "flex",
-    flexDirection: "column",
-    alignItems: "center",
-    width: "100%",
+    flexDirection: "row",
+    alignItems: "row",
+    width: 600,
 
   },
   heading: {
@@ -29,6 +29,7 @@ const useStyles = makeStyles((theme) => ({
   space: {
     paddingLeft: 10,
     backgroundColor: "#F6F2EB",
+    width: 2500
 
   },
 
@@ -42,6 +43,7 @@ const useStyles = makeStyles((theme) => ({
     height: 25,
     padding: 1,
     borderColor: "#FF645A",
+    
   },
 
 

@@ -32,7 +32,8 @@ export default function ReservationGrid() {
 
   return (
     <div className={classes.root}>
-      <Grid container spacing={3}>
+      <Grid container spacing={3}
+      >
 
 
         <Hidden mdDown>
@@ -54,11 +55,18 @@ export default function ReservationGrid() {
             </img>
           </Hidden>
         </Grid>
-<DesktopMeal/>
-<DesktopDateandTime/>
+        
+        <DesktopMeal />
+
+        <DesktopDateandTime />
 
 
-
+        {/* for selecting the time of meal*/}
+        <Grid item xs={12} md={12} >
+          <Hidden mdDown>
+            <TimeAccordion />
+          </Hidden>
+        </Grid>
 
 
 

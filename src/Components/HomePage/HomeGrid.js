@@ -18,8 +18,12 @@ import FoodButtons from './FoodButtons';
 import Button from '@material-ui/core/Button';
 import FinalCard from '../FinalBookPage/FinalCard';
 import Hotel1 from './Hotel1';
-
-
+import Hotel2 from './Hotel2';
+import Hotel3 from './Hotel3';
+import Hotel4 from './Hotel4';
+import Hotel5 from './Hotel5';
+import Hotel6 from './Hotel6';
+import EXplore from './Exploore';
 
 
 
@@ -64,7 +68,7 @@ export default function HomeGrid() {
       >
         <CenteredTabs />
 
-        <img src={Main} alt="" width="1212" height="650">
+        <img src={Main} alt="" width="1212" height="650" borderRadius="15">
         </img>
 
         {/* dineout logo */}
@@ -80,11 +84,11 @@ export default function HomeGrid() {
 
         <Button> Restuarants Near you </Button>
 
-        </Grid>
+      </Grid>
 
-     
 
-      
+
+
 
 
 
@@ -153,35 +157,37 @@ export default function HomeGrid() {
       </Hidden>
 
 
-      
-      
-      
-      
+
+
+
+
       <Grid container spacing={0.5} justifyContent="center">
 
-      <Grid item md={4}>
-       <Hotel1/>
-      </Grid>
+        <Grid item md={4}>
+          <Hotel1 />
+        </Grid>
 
-      <Grid item md={4}>
-        <FinalCard />
-      </Grid>
+        <Grid item md={4}>
+          <Hotel2 />
+        </Grid>
 
-      <Grid item md={4}>
-        <FinalCard />
-      </Grid>
+        <Grid item md={4}>
+          <Hotel3 />
+        </Grid>
 
-      <Grid item md={4}>
-        <FinalCard />
-      </Grid>
+        <Grid item md={4}>
+          <Hotel4 />
+        </Grid>
 
-      <Grid item md={4}>
-        <FinalCard />
-      </Grid>
+        <Grid item md={4}>
+          <Hotel5 />
+        </Grid>
 
-      <Grid item md={4}>
-        <FinalCard />
-      </Grid>
+        <Grid item md={4}>
+          <Hotel6 />
+        </Grid>
+
+        <EXplore />
 
       </Grid>
     </div>

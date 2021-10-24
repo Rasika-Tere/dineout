@@ -17,17 +17,20 @@ const useStyles = makeStyles((theme) => ({
 
     }
   },
-  // button customization  
+  // button customization
   button: {
     background: '#5C284F',
     borderRadius: 9,
+    minheight: 150,
     color: 'white',
-    fontFamily: "Futura",
-    fontSize: 13,
+    fontFamily: 'futura',
+    fontSize: 14.5,
+    fontWeight: 'normal',
     height: 40,
-    padding: '0 30px',
-    alignContent: 'centre',
-    width: 270,
+    padding: '0 60px',
+    right: 200,
+    bottom: 230,
+
   },
 
 
@@ -55,6 +58,7 @@ export default function AlertDialog() {
       <Button variant="contained" className={classes.button} onClick={handleClickOpen}>
         Cancel Booking
       </Button>
+
 
 
 

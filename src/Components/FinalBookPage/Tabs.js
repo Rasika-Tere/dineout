@@ -13,7 +13,7 @@ const useStyles = makeStyles({
         color: 'grey',
         indicatorColor: '#FF645A',
         textColor: '#FF645A',
-        padding: 52,
+        padding: 75,
         width: 1100,
         alignContent: 'centre',
         alignItems: 'centre',

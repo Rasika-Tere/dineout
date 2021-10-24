@@ -19,6 +19,7 @@ import DesktopReservationTitle from './DesktopReservationTitle';
 import CancelButton from './CancelButton';
 import AlertDialog from './DownloadPDF';
 import DownloadPDF from './DownloadPDF';
+import DesktopContinueBrowsingButton from './DesktopContinueBrowsingButton';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -57,18 +58,6 @@ export default function FinalBookGrid() {
 
         <DesktopCard />
        
-        <Grid item md={4} >
-          <DownloadPDF />
-        </Grid>
-
-        <Grid item md={4} >
-          <CancelButton />
-        </Grid>
-
-        <Hidden  item md={4} mdDown>
-          <ContinueBrowsingButton />
-        </Hidden>
-
 
         {/* Mobile Components */}
 
@@ -95,6 +84,27 @@ export default function FinalBookGrid() {
 
 
       </Grid>
+
+
+
+
+      {/* <Grid container spacing={1} 
+      direction= "column"
+      > */}
+
+        <Hidden item md={4} mdDown>
+          <DownloadPDF />
+          </Hidden>
+
+        <Hidden item md={4} mdDown >
+          <CancelButton />
+          </Hidden>
+
+        <Hidden  item md={4} mdDown>
+          <DesktopContinueBrowsingButton/>
+        </Hidden> 
+
+{/* </Grid> */}
     </div>
   );
 }

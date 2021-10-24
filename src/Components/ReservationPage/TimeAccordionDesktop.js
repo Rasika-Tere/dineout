@@ -16,7 +16,7 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     flexDirection: "column",
     alignItems: "center",
-    width: 500,
+    width: 2500,
 
 
   },
@@ -44,7 +44,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function TimeAccordion() {
+export default function TimeAccordionDesktop() {
   const classes = useStyles();
 
   return (

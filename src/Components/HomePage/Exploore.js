@@ -1,5 +1,5 @@
 
-// continue browsing button, this button links back to the home page
+// confirm  button, this button links back to the next page
 
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
@@ -22,28 +22,24 @@ const useStyles = makeStyles((theme) => ({
     fontFamily: 'futura',
     fontSize: 14.5,
     fontWeight: 'normal',
-    height: 40,
-    padding: '0 60px',
-    right: 20,
-    bottom: 100,
-    
+    height: 43,
+    padding: '0 90px',
   },
 
 }));
 
-export default function DownloadPDF() {
+export default function EXplore() {
   const classes = useStyles();
-  
 
   return (
 
     <div className={classes.root}>
-      {/* this button links to the contact details page (the next page) */}
-    
+      {/* this button links to the finalbook page (the next page) */}
+      <Link to={process.env.PUBLIC_URL + '/finalbook'}>
         <Button variant="contained" className={classes.button}>
-          Download as PDF
+         EXplore
         </Button>
-     
+      </Link>
     </div>
   );
 }

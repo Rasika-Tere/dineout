@@ -24,14 +24,13 @@ const useStyles = makeStyles((theme) => ({
     fontWeight: 'normal',
     height: 40,
     padding: '0 60px',
-    right: 20,
-    bottom: 100,
-    
+    left: 160,
+    bottom: 270,
   },
 
 }));
 
-export default function DownloadPDF() {
+export default function DesktopContinueBrowsingButton() {
   const classes = useStyles();
   
 
@@ -39,11 +38,11 @@ export default function DownloadPDF() {
 
     <div className={classes.root}>
       {/* this button links to the contact details page (the next page) */}
-    
+      <Link to={process.env.PUBLIC_URL + '/home'}>
         <Button variant="contained" className={classes.button}>
-          Download as PDF
+          Continue Browsing
         </Button>
-     
+      </Link>
     </div>
   );
 }
