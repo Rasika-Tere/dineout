@@ -4,9 +4,7 @@ import Home from './Pages/Home.js'
 import ReservationStep from './Pages/ReservationStep.js'
 import ContactDetails from './Pages/ContactDetails.js'
 import FinalBook from './Pages/FinalBook'
-import Trial from './Pages/Trial'
 import SimpleBottomNavigation from './Components/HomePage/SimpleBottomNavigation';
-
 
 
 function App() {
@@ -26,7 +24,6 @@ function App() {
             <Route path={process.env.PUBLIC_URL + '/reservationstep'}  > <ReservationStep/> </Route>
             <Route path={process.env.PUBLIC_URL + '/contactdetails'}  > <ContactDetails/> </Route>
             <Route path={process.env.PUBLIC_URL + '/finalbook'}  > <FinalBook/> </Route> 
-            <Route path={process.env.PUBLIC_URL + '/trial'}  > <Trial/> </Route> 
           </Switch>
           
       <footer className="App-footer">

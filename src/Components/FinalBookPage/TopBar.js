@@ -11,11 +11,14 @@ import SearchIcon from '@material-ui/icons/Search';
 import AccountCircle from '@material-ui/icons/AccountCircle';
 // icon added for location
 import LocationOnOutlinedIcon from '@material-ui/icons/LocationOnOutlined';
+import { green } from '@material-ui/core/colors';
 
 
 const useStyles = makeStyles((theme) => ({
   grow: {
     flexGrow: 1,
+    border: 'green',
+    
 
   },
   menuButton: {
@@ -25,7 +28,7 @@ const useStyles = makeStyles((theme) => ({
     display: 'none',
     [theme.breakpoints.up('sm')]: {
       display: 'block',
-
+border: 'green',
 
     },
   },

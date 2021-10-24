@@ -15,10 +15,11 @@ import SimplePaper from './extrapaper';
 
 const useStyles = makeStyles((theme) => ({
   root: {
+    minHeight: 100,
     maxWidth: 900,
     textAlign: 'left',
-    padding: 0.2,
-    height: 560,
+    padding: 20,
+    height: 760,
     position: 'centre',
     aligncontent: 'centre',
     width: 1000,
@@ -59,12 +60,12 @@ export default function DesktopCard() {
 
   return (
 
-    <Grid container spacing={3}
+    <Grid container spacing={7}
 
       direction="column"
       alignItems="center"
       justify="center"
-      style={{ minHeight: '100vh' }}
+      style={{ minHeight: '120vh' }}
 
     >
       <Grid item xs={12} lg={12}>

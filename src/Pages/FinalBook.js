@@ -4,8 +4,7 @@
 import React from 'react';
 import Container from '@material-ui/core/Container';
 import FinalBookGrid from '../Components/FinalBookPage/FinalBookGrid';
-import Hidden from '@material-ui/core/Hidden';
-import CenteredTabs from '../Components/HomePage/Tabs';
+import SimpleBottomNavigation from '../Components/HomePage/SimpleBottomNavigation';
 
 
 export default function Gallery() {
@@ -15,9 +14,7 @@ export default function Gallery() {
       <header className="App-header">
        
         
-        <Hidden mdDown>
-        <CenteredTabs />
-        </Hidden>
+        
       </header>
     <React.Fragment>
       <Container fixed>
@@ -27,11 +24,13 @@ export default function Gallery() {
         </p>
       </Container>
     </React.Fragment>
-     {/* added bottom navigation */}
-     <footer className="App-footer" position="sticky ">
-        
+     
+    <footer className="App-footer" position="sticky ">
+        <SimpleBottomNavigation/>
       </footer>
     </div>
+     
+      
 
   );
 }
