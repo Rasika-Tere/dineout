@@ -6,9 +6,8 @@ import Container from '@material-ui/core/Container';
 import HomeGrid from '../Components/HomePage/HomeGrid';
 import SimpleBottomNavigation from '../Components/HomePage/SimpleBottomNavigation';
 import PrimarySearchAppBar from '../Components/HomePage/PrimarysearchBar';
-
-
-
+import TopBar from '../Components/FinalBookPage/TopBar';
+import Hidden from '@material-ui/core/Hidden';
 
 
 export default function Gallery() {
@@ -16,8 +15,15 @@ export default function Gallery() {
     <div className="App">
 
       <header className="App-header">
-        {/* added top search bar */}
-        <PrimarySearchAppBar/>
+        {/* added top search bar for mobile version */}
+        <Hidden mdUp>
+          <PrimarySearchAppBar />
+        </Hidden>
+
+        {/* added top search bar for desktop version */}
+        <Hidden mdDown>
+          <TopBar />
+        </Hidden>
       </header>
 
 
@@ -31,9 +37,11 @@ export default function Gallery() {
       </React.Fragment>
 
 
-      {/* added bottom navigation */}
+      {/* added bottom navigation for mobile version */}
       <footer className="App-footer" position="sticky ">
-        <SimpleBottomNavigation />
+        <Hidden mdUp>
+          <SimpleBottomNavigation />
+        </Hidden>
       </footer>
     </div>
 

@@ -12,6 +12,10 @@ const useStyles = makeStyles({
         color: 'grey',
         indicatorColor: '#FF645A',
         textColor: '#FF645A',
+        padding: 80,
+        width: 1200,
+        alignContent: 'centre',
+        alignItems: 'centre',
     },
 
 

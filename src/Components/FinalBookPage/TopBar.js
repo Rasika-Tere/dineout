@@ -17,18 +17,21 @@ import { green } from '@material-ui/core/colors';
 const useStyles = makeStyles((theme) => ({
   grow: {
     flexGrow: 1,
-    border: 'green',
+   
     
 
   },
   menuButton: {
     marginRight: theme.spacing(2),
+    // borderColor: '#FF645A',
+    color: '#FF645A',
   },
   title: {
     display: 'none',
     [theme.breakpoints.up('sm')]: {
       display: 'block',
-border: 'green',
+      color: '#FF645A',
+  
 
     },
   },
@@ -38,14 +41,18 @@ border: 'green',
     backgroundColor: 'white',
     '&:hover': {
       backgroundColor: 'white',
+      color: '#FF645A',
+  
     },
     borderRadius: 12,
+    borderColor: '#FF645A',
     marginRight: theme.spacing(2),
     marginLeft: 0,
     width: '100%',
     [theme.breakpoints.up('sm')]: {
       marginLeft: theme.spacing(3),
       width: 'auto',
+      
     },
   },
   searchIcon: {
@@ -59,8 +66,9 @@ border: 'green',
     color: '#F2635C'
   },
   inputRoot: {
-    color: '#808080',
+    color: '#F2635C',
     width: '100%',
+    
   },
   inputInput: {
     padding: theme.spacing(1, 1, 1, 0),
@@ -69,7 +77,8 @@ border: 'green',
     transition: theme.transitions.create('width'),
     width: '100%',
     [theme.breakpoints.up('md')]: {
-      width: '100ch',
+      width: '143ch',
+      variant: "outlined"
     },
   },
   sectionDesktop: {
@@ -162,7 +171,7 @@ export default function TopBar() {
 
        
     
-    AppBar style={{ background: '#F2635C' } }>
+    AppBar style={{ background: '#dedede' } }>
 
         <Toolbar>
           {/* button added for showing location */}
