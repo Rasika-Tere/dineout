@@ -17,6 +17,7 @@ import AllTabs from './Tabs';
 import CenteredTabs from './Tabs';
 import InfoCard from './InfoCard';
 import DesktopReservationTitle from './DesktopReservationTitle';
+import CancelButton from './CancelButton';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -66,8 +67,23 @@ export default function FinalBookGrid() {
 
         <InfoCard />
 
+<CancelButton/>
 
+<Grid item  md={3} >
+<FinalCard/>
+</Grid>
 
+<Grid item  md={3} >
+<FinalCard/>
+</Grid>
+
+<Grid item  md={3} >
+<FinalCard/>
+</Grid>
+
+<Grid item  md={3} >
+<FinalCard/>
+</Grid>
 
 
 

@@ -8,9 +8,11 @@ import { Link, Router } from "react-router-dom";
 const useStyles = makeStyles((theme) => ({
   root: {
     '& > *': {
-      margin: theme.spacing(3),
-      width: theme.spacing(120),
-      height: theme.spacing(8),
+      margin: theme.spacing(5),
+      paddingBotton: '60px',
+      minHeight: 20,
+    //   width: theme.spacing(120),
+    //   height: theme.spacing(8),
     },
   },
 
