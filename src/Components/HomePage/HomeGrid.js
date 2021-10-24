@@ -17,6 +17,10 @@ import Typography from '@material-ui/core/Typography';
 import FoodButtons from './FoodButtons';
 import Button from '@material-ui/core/Button';
 import FinalCard from '../FinalBookPage/FinalCard';
+import Hotel1 from './Hotel1';
+
+
+
 
 
 
@@ -34,7 +38,7 @@ const useStyles = makeStyles((theme) => ({
     color: 'grey',
     padding: 6,
   },
-  
+
   text2: {
     fontFamily: 'Futura',
     fontSize: 20,
@@ -42,7 +46,7 @@ const useStyles = makeStyles((theme) => ({
     paddingTop: 4,
     padding: 25,
   },
-  
+
 
 }));
 
@@ -73,34 +77,22 @@ export default function HomeGrid() {
         <Typography className={classes.text2}> Check out your food new paradise ! </Typography>
 
         <FoodButtons />
-        
+
         <Button> Restuarants Near you </Button>
 
-      </Grid>
-
-
-      <Grid item md={3} >
-        <FinalCard />
-      </Grid>
-
-
-      <Typography>  </Typography>
-      <Typography> Top Picks </Typography>
+        </Grid>
 
      
-     
-     
-     
-     
-     
-     
-     
-     
-     
-     
-     
-     
-     
+
+      
+
+
+
+
+
+
+
+
       {/* this is the carousal for advertisements, component name is caorusal1 */}
       <Hidden mdUp>
         <Grid item xs={12} md={12}>
@@ -160,6 +152,38 @@ export default function HomeGrid() {
         </Grid>
       </Hidden>
 
+
+      
+      
+      
+      
+      <Grid container spacing={0.5} justifyContent="center">
+
+      <Grid item md={4}>
+       <Hotel1/>
+      </Grid>
+
+      <Grid item md={4}>
+        <FinalCard />
+      </Grid>
+
+      <Grid item md={4}>
+        <FinalCard />
+      </Grid>
+
+      <Grid item md={4}>
+        <FinalCard />
+      </Grid>
+
+      <Grid item md={4}>
+        <FinalCard />
+      </Grid>
+
+      <Grid item md={4}>
+        <FinalCard />
+      </Grid>
+
+      </Grid>
     </div>
   );
 }

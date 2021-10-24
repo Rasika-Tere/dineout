@@ -17,7 +17,7 @@ const useStyles = makeStyles({
         width: 1100,
         alignContent: 'centre',
         alignItems: 'centre',
-    },
+    },position: 'fixed',
 
 
 });
