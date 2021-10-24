@@ -5,6 +5,7 @@ import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
 
 
+
 const useStyles = makeStyles({
     root: {
         flexGrow: 1,
@@ -12,7 +13,7 @@ const useStyles = makeStyles({
         color: 'grey',
         indicatorColor: '#FF645A',
         textColor: '#FF645A',
-        padding: 50,
+        padding: 52,
         width: 1100,
         alignContent: 'centre',
         alignItems: 'centre',
@@ -29,7 +30,7 @@ export default function CenteredTabs() {
 
     };
     const [value, setValue] = React.useState(0);
-    
+
 
     const handleChange = (event, newValue) => {
         setValue(newValue);
@@ -39,21 +40,22 @@ export default function CenteredTabs() {
 
     return (
        
-       <Paper className={classes.root}>
-            <Tabs
-                value={value}
-                onChange={handleChange}
-                indicatorColor="secondary"
-                textColor="secondary"
-                centered
-            >
-                <Tab label="Home" />
-                <Tab label="Book a Table" />
-                <Tab label="Dineout Passport" />
-                <Tab label="Dineout Pay" />
-                <Tab label="Community" />
+            <Paper className={classes.root}>
+                <Tabs
+                    value={value}
+                    onChange={handleChange}
+                    indicatorColor="secondary"
+                    textColor="secondary"
+                    centered
+                >
+                    <Tab label="Home" />
+                    <Tab label="Book a Table" />
+                    <Tab label="Dineout Passport" />
+                    <Tab label="Dineout Pay" />
+                    <Tab label="Community" />
 
-            </Tabs>
-        </Paper>
+                </Tabs>
+            </Paper>
+        
     );
 }

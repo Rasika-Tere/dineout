@@ -16,6 +16,7 @@ import DesktopReservationDetailsTitle from './DesktopReservationDetailsTitle';
 
 
 
+
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
@@ -30,11 +31,11 @@ export default function ReservationGrid() {
     <div className={classes.root}>
       <Grid container spacing={3}>
 
-      <Grid item xs={8} md={12} >
+      
       <Hidden mdDown>
        <CenteredTabs/>
        </Hidden>
-       </Grid>
+       
        
        
       <Grid item xs={8} md={12} >

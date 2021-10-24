@@ -4,7 +4,6 @@ import Home from './Pages/Home.js'
 import ReservationStep from './Pages/ReservationStep.js'
 import ContactDetails from './Pages/ContactDetails.js'
 import FinalBook from './Pages/FinalBook'
-import SimpleBottomNavigation from './Components/HomePage/SimpleBottomNavigation';
 
 
 function App() {
@@ -27,7 +26,7 @@ function App() {
           </Switch>
           
       <footer className="App-footer">
-         {/* <SimpleBottomNavigation/> */}
+       
       </footer>
     </div>
   );

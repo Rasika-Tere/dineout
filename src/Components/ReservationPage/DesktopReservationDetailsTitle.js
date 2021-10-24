@@ -9,13 +9,18 @@ const useStyles = makeStyles((theme) => ({
   root: {
     '& > *': {
       margin: theme.spacing(1),
+      paddingBotton: '60px',
+      minHeight: 20,
+    //   width: theme.spacing(120),
+    //   height: theme.spacing(8),
     },
   },
 
   typography: {
     fontFamily: 'Futura',
-    fontSize: 15,
+    fontSize:30 ,
     color: '#FF645A',
+
   }
 }));
 

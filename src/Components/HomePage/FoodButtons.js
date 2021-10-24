@@ -2,10 +2,14 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
 
+
 const useStyles = makeStyles((theme) => ({
   root: {
     '& > *': {
       margin: theme.spacing(1),
+      color: 'white',
+      background: '#FF645A',
+
     },
   },
 }));
@@ -15,19 +19,23 @@ export default function FoodButtons() {
 
   return (
     <div className={classes.root}>
-      <Button variant="contained">Default</Button>
-      <Button variant="contained" color="primary">
-        Primary
+     
+      <Button >
+       Oriental
       </Button>
-      <Button variant="contained" color="secondary">
-        Secondary
+      
+      <Button  >
+       Indian
       </Button>
-      <Button variant="contained" disabled>
-        Disabled
+
+      <Button  >
+       Mexican
       </Button>
-      <Button variant="contained" color="primary" href="#contained-buttons">
-        Link
+
+      <Button  >
+       Korean
       </Button>
+
     </div>
   );
 }
