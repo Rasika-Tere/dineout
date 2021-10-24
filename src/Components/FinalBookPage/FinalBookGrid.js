@@ -60,30 +60,32 @@ export default function FinalBookGrid() {
         </Hidden>
 
         <Grid item xs={10} md={12} >
-        <DesktopReservationTitle/>
+          <DesktopReservationTitle />
         </Grid>
-      
+
         <DesktopCard />
 
         <InfoCard />
 
-<CancelButton/>
+        <CancelButton />
 
-<Grid item  md={3} >
-<FinalCard/>
-</Grid>
+        <Grid item md={3} >
+          <FinalCard />
+        </Grid>
 
-<Grid item  md={3} >
-<FinalCard/>
-</Grid>
+        <Grid item md={3} >
+          <FinalCard />
+        </Grid>
 
-<Grid item  md={3} >
-<FinalCard/>
-</Grid>
+        <Grid item md={3} >
+          <FinalCard />
+        </Grid>
 
-<Grid item  md={3} >
-<FinalCard/>
-</Grid>
+        <Grid item md={3} >
+          <FinalCard />
+        </Grid>
+
+
 
 
 

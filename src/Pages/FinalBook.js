@@ -5,6 +5,7 @@ import React from 'react';
 import Container from '@material-ui/core/Container';
 import FinalBookGrid from '../Components/FinalBookPage/FinalBookGrid';
 import SimpleBottomNavigation from '../Components/HomePage/SimpleBottomNavigation';
+import TrialFooter from '../Components/FinalBookPage/TrialFooter';
 
 
 export default function Gallery() {
@@ -26,7 +27,7 @@ export default function Gallery() {
     </React.Fragment>
      
     <footer className="App-footer" position="sticky ">
-        <SimpleBottomNavigation/>
+        <TrialFooter/>
       </footer>
     </div>
      
