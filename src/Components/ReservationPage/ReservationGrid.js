@@ -10,6 +10,9 @@ import MaterialUIPickers from './datetime';
 import MealSelection from './MealSelection';
 import TimeAccordion from './TimeAccordion';
 import ContinueButton from './ContinueButton';
+import Hidden from '@material-ui/core/Hidden';
+import CenteredTabs from '../FinalBookPage/Tabs';
+import DesktopReservationDetailsTitle from './DesktopReservationDetailsTitle';
 
 
 
@@ -27,35 +30,66 @@ export default function ReservationGrid() {
     <div className={classes.root}>
       <Grid container spacing={3}>
 
+      <Grid item xs={8} md={12} >
+      <Hidden mdDown>
+       <CenteredTabs/>
+       </Hidden>
+       </Grid>
+       
+       
+      <Grid item xs={8} md={12} >
+      <Hidden mdDown>
+       <DesktopReservationDetailsTitle/>
+       </Hidden>
+       </Grid>
+       
+
+       
+       
+       
+       {/* mobile Components */}
         {/* reservation details title */}
-        <Grid item xs={10} md={12} >
+       
+        <Grid item xs={8} md={12} >
+          <Hidden mdUp>
           <ReservationDetailsTitle />
+          </Hidden>
         </Grid>
 
         {/* illustration on the page */}
         <Grid item xs={12} md={12} >
+        <Hidden mdUp>
           <img src={Illustration1} alt="" width="270" height="300">
           </img>
+          </Hidden>
         </Grid>
 
         {/* for selecting the date, the component name is datetime*/}
         <Grid item xs={12} md={12}>
+        <Hidden mdUp>
           <MaterialUIPickers />
+          </Hidden>
         </Grid>
 
         {/* for selecting the meal */}
         <Grid item xs={12} md={12}>
+        <Hidden mdUp>
           <MealSelection />
+          </Hidden>
         </Grid>
 
         {/* for selecting the time of meal*/}
         <Grid item xs={12} md={12} >
+        <Hidden mdUp>
           <TimeAccordion />
+          </Hidden>
         </Grid>
 
         {/* the continue button */}
         <Grid item xs={12} md={12} >
+        <Hidden mdUp>
           <ContinueButton />
+          </Hidden>
         </Grid>
 
       </Grid>

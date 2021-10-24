@@ -41,139 +41,139 @@ export default function ContactDetailsGrid() {
 
       <Grid container spacing={1}>
 
-       {/* Desktop Components */}
+        {/* Desktop Components */}
 
-       <CenteredTabs/>
+        <CenteredTabs />
 
-       <DesktopReservationTitle/>
-       
-       {/* the illustration on the page */}
-       <Grid item xs={12} md={12} >
-        <Hidden mdDown>
-          <img src={Illustration2} alt="" width="325" height="350">
-          </img>
+        <DesktopReservationTitle />
+
+        {/* the illustration on the page */}
+        <Grid item xs={12} md={12} >
+          <Hidden mdDown>
+            <img src={Illustration2} alt="" width="325" height="350">
+            </img>
           </Hidden>
         </Grid>
 
-{/* for entering your details text */}
-<Grid item xs={6} md={12}>
-        <Hidden mdDown>
-          Enter Your Details
+        {/* for entering your details text */}
+        <Grid item xs={6} md={12}>
+          <Hidden mdDown>
+            Enter Your Details
           </Hidden>
         </Grid>
 
         <Grid item xs={12} md={12}>
-        <Hidden mdDown>
-       <DesktopNameTextFields/>
-       </Hidden>
+          <Hidden mdDown>
+            <DesktopNameTextFields />
+          </Hidden>
         </Grid>
 
         <Grid item xs={12} md={12}>
-        <Hidden mdDown>
-        <DesktopMobileNoTextFields/>
-        </Hidden>
+          <Hidden mdDown>
+            <DesktopMobileNoTextFields />
+          </Hidden>
         </Grid>
 
         <Grid item xs={12} md={12}>
-        <Hidden mdDown>
-        <DesktopEmailIdTextFields/>
-        </Hidden>
+          <Hidden mdDown>
+            <DesktopEmailIdTextFields />
+          </Hidden>
         </Grid>
 
         <Grid item xs={12} md={12}>
-        <Hidden mdDown>
-        Select No. of Guests (max.20)
-        </Hidden>
+          <Hidden mdDown>
+            Select No. of Guests (max.20)
+          </Hidden>
         </Grid>
 
-        
+
         <Grid item xs={12} md={12}>
-        <Hidden mdDown>
-        <DesktopGuestNoTextFields/>
-        </Hidden>
+          <Hidden mdDown>
+            <DesktopGuestNoTextFields />
+          </Hidden>
         </Grid>
 
         <Grid item xs={12} md={12}>
-        <Hidden mdDown>
-        <DeskTopConfirmButton/>
-        </Hidden>
+          <Hidden mdDown>
+            <DeskTopConfirmButton />
+          </Hidden>
         </Grid>
-       
+
         <Grid item xs={12} md={12}>
-        <Hidden mdDown>
-        <DesktopGoBackButton/>
-        </Hidden>
+          <Hidden mdDown>
+            <DesktopGoBackButton />
+          </Hidden>
         </Grid>
-      
-       
-       
-       
-       
-       
-       
+
+
+
+
+
+
+
         {/* the contact deatils title */}
-        
+
         <Grid item xs={8} md={12} >
-        <Hidden mdUp>
-          <ContactDetailsTitle />
+          <Hidden mdUp>
+            <ContactDetailsTitle />
           </Hidden>
         </Grid>
 
         {/* the illustration on the page */}
         <Grid item xs={12} md={12} >
-        <Hidden mdUp>
-          <img src={Illustration2} alt="" width="325" height="350">
-          </img>
+          <Hidden mdUp>
+            <img src={Illustration2} alt="" width="325" height="350">
+            </img>
           </Hidden>
         </Grid>
 
 
         {/* for entering your details text */}
         <Grid item xs={6} md={12}>
-        <Hidden mdUp>
-          Enter Your Details
+          <Hidden mdUp>
+            Enter Your Details
           </Hidden>
         </Grid>
 
         {/* for entering your name text */}
         <Grid item xs={12} md={12}>
-        <Hidden mdUp>
-          <NameTextFields />
+          <Hidden mdUp>
+            <NameTextFields />
           </Hidden>
         </Grid>
 
         {/* for entering your mobile no */}
         <Grid item xs={12} md={12}>
-        <Hidden mdUp>
-          <MobileNoTextFields />
+          <Hidden mdUp>
+            <MobileNoTextFields />
           </Hidden>
         </Grid>
 
         {/* for entering your email id */}
         <Grid item xs={12} md={12}>
-        <Hidden mdUp>
-          <EmailIdTextFields />
+          <Hidden mdUp>
+            <EmailIdTextFields />
           </Hidden>
         </Grid>
 
         {/* Select No. of Guests text */}
         <Grid item xs={10} md={12}>
-        <Hidden mdUp>
-          Select No. of Guests (max.20)
+          <Hidden mdUp>
+            Select No. of Guests (max.20)
           </Hidden>
         </Grid>
 
         {/* for entering your guest no*/}
         <Grid item xs={12} md={12}>
-        <Hidden mdUp>
-          <GuestNoTextFields />
+          <Hidden mdUp>
+            <GuestNoTextFields />
           </Hidden>
         </Grid>
 
         {/* this is the confirm button */}
         <Grid item xs={12} md={12}>
-        <Hidden mdUp>
-          <ConfirmButton />
+          <Hidden mdUp>
+            <ConfirmButton />
           </Hidden>
         </Grid>
 
