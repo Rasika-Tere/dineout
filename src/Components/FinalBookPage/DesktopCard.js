@@ -15,7 +15,7 @@ import SimplePaper from './extrapaper';
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    minHeight: 80,
+    
     maxWidth: 700,
     textAlign: 'left',
     padding: 10,
@@ -30,7 +30,7 @@ const useStyles = makeStyles((theme) => ({
     height: 0.5,
     paddingTop: '56.25%', // 16:9
     borderRadius: 15,
-    padding: '0 20px',
+    padding: '0 4px',
     paddingright: 30,
     paddingleft: 30,
 
@@ -76,6 +76,7 @@ export default function DesktopCard() {
             title="Hurrycane"
             // changed the title
             subheader="September 14, 2016"
+            
           />
 
           <CardMedia

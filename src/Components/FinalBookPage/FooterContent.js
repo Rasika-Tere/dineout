@@ -23,10 +23,6 @@ export default function FooterContent() {
     return (
       <React.Fragment>
        
-       
-        
-        
-        
         <Grid item xs={4}>
           Delhi
         </Grid>
@@ -73,8 +69,6 @@ export default function FooterContent() {
         <Grid container item xs={12} spacing={1}>
           <FormRow />
         </Grid>
-        
-        
       </Grid>
     </div>
   );

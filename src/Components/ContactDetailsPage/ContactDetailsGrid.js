@@ -13,13 +13,14 @@ import GuestNoTextFields from './GuestsNoTextField';
 import ConfirmButton from './ConfirmButton';
 import Hidden from '@material-ui/core/Hidden';
 import CenteredTabs from '../FinalBookPage/Tabs';
-import DesktopReservationTitle from '../FinalBookPage/DesktopReservationTitle';
+import DesktopContactDetailsTitle from './DesktopContactDetailsTitle';
 import DesktopNameTextFields from './DesktopNameTextField';
 import DesktopMobileNoTextFields from './DesktopMobileNoTextField';
 import DesktopEmailIdTextFields from './DesktopEmailIdTextField';
 import DesktopGuestNoTextFields from './DesktopGuestsNoTextField copy';
 import DeskTopConfirmButton from './DesktopConfirmButton';
 import DesktopGoBackButton from './DesktopGoBackButton copy';
+
 
 
 
@@ -39,18 +40,20 @@ export default function ContactDetailsGrid() {
   return (
     <div className={classes.root}>
 
-      <Grid container spacing={1}>
+      <Grid container spacing={1} >
 
         {/* Desktop Components */}
 
         <CenteredTabs />
 
-        <DesktopReservationTitle />
+        <Grid item md={12}>
+  <DesktopContactDetailsTitle/>
+  </Grid>
 
         {/* the illustration on the page */}
         <Grid item xs={12} md={12} >
           <Hidden mdDown>
-            <img src={Illustration2} alt="" width="325" height="350">
+            <img src={Illustration2} alt="" width="760" height="500">
             </img>
           </Hidden>
         </Grid>
@@ -93,18 +96,20 @@ export default function ContactDetailsGrid() {
           </Hidden>
         </Grid>
 
-        <Grid item xs={12} md={12}>
-          <Hidden mdDown>
-            <DeskTopConfirmButton />
-          </Hidden>
-        </Grid>
-
-        <Grid item xs={12} md={12}>
+        <Grid item xs={12} md={6}>
           <Hidden mdDown>
             <DesktopGoBackButton />
           </Hidden>
         </Grid>
 
+        
+        <Grid item xs={12} md={6}>
+          <Hidden mdDown>
+            <DeskTopConfirmButton />
+          </Hidden>
+        </Grid>
+
+       
 
 
 

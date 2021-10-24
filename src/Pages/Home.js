@@ -10,6 +10,7 @@ import TopBar from '../Components/FinalBookPage/TopBar';
 import Hidden from '@material-ui/core/Hidden';
 import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
+import FooterContent from '../Components/FinalBookPage/FooterContent';
 
 
 
@@ -46,8 +47,8 @@ export default function Gallery() {
           <SimpleBottomNavigation />
         </Hidden>
 
-<Typography>Services also available in</Typography>
-     
+        <Typography>Services also available in</Typography>
+        <FooterContent />
       </footer>
     </div>
 

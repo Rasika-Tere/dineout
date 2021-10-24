@@ -6,6 +6,8 @@ import Container from '@material-ui/core/Container';
 import ReservationGrid from '../Components/ReservationPage/ReservationGrid';
 import TopBar from '../Components/FinalBookPage/TopBar';
 import Hidden from '@material-ui/core/Hidden';
+import FooterContent from '../Components/FinalBookPage/FooterContent';
+import Typography from '@material-ui/core/Typography';
 
 export default function Gallery() {
 
@@ -27,6 +29,13 @@ export default function Gallery() {
         <ReservationGrid />
       </Container>
     </React.Fragment>
+
+    <footer className="App-footer" position="sticky ">
+    <Typography>Services also available in</Typography>
+        <FooterContent/>
+      </footer>
+    
+
     </div>
 
 

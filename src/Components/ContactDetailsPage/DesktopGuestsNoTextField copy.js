@@ -11,9 +11,8 @@ const useStyles = makeStyles((theme) => ({
   root: {
     '& > *': {
       margin: theme.spacing(1),
-      width: '30ch',
-      borderRadius: 15,
-
+      width: '70ch',
+      borderRadius: 25,
       // minheight: 15,
       height: 58,
       '& .MuiOutlinedInput-root': {  // - The Input-root, inside the TextField-root

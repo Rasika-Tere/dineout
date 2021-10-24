@@ -23,7 +23,7 @@ const useStyles = makeStyles((theme) => ({
     fontSize: 14.5,
     fontWeight: 'normal',
     height: 40,
-    padding: '0 60px',
+    
   },
 
 }));

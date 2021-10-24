@@ -56,17 +56,18 @@ export default function FinalBookGrid() {
         </Grid>
 
         <DesktopCard />
-        <Grid item md={6} >
-        <DownloadPDF />
-        </Grid>
-        
-        <Grid item md={6} >
-        <CancelButton />
+       
+        <Grid item md={4} >
+          <DownloadPDF />
         </Grid>
 
+        <Grid item md={4} >
+          <CancelButton />
+        </Grid>
 
-
-
+        <Hidden  item md={4} mdDown>
+          <ContinueBrowsingButton />
+        </Hidden>
 
 
         {/* Mobile Components */}
