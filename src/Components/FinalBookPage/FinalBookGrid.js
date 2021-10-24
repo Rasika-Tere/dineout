@@ -15,9 +15,10 @@ import DineoutLogo from '../../Assets/DineoutLogo.jpg';
 import Tabs from './Tabs';
 import AllTabs from './Tabs';
 import CenteredTabs from './Tabs';
-import InfoCard from './InfoCard';
 import DesktopReservationTitle from './DesktopReservationTitle';
 import CancelButton from './CancelButton';
+import AlertDialog from './DownloadPDF';
+import DownloadPDF from './DownloadPDF';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -38,52 +39,31 @@ export default function FinalBookGrid() {
   return (
     <div className={classes.root}>
 
-      <Grid container spacing={2} >
+      <Grid container spacing={1} >
 
         <Hidden mdDown>
-          <Grid item md={2}  >
-            <img src={DineoutLogo} alt="" width="170" height="60">
-            </img>
-          </Grid>
+          <TopBar />
         </Hidden>
-
-        <Hidden mdDown>
-          <Grid item md={10} >
-            <TopPaper />
-          </Grid>
-        </Hidden>
-
-        {/* <TopBar/>  */}
 
         <Hidden mdDown>
           <CenteredTabs />
         </Hidden>
 
         <Grid item xs={10} md={12} >
-          <DesktopReservationTitle />
+          <Hidden mdDown>
+            <DesktopReservationTitle />
+          </Hidden>
         </Grid>
 
         <DesktopCard />
-
-        <InfoCard />
-
+        <Grid item md={6} >
+        <DownloadPDF />
+        </Grid>
+        
+        <Grid item md={6} >
         <CancelButton />
-
-        <Grid item md={3} >
-          <FinalCard />
         </Grid>
 
-        <Grid item md={3} >
-          <FinalCard />
-        </Grid>
-
-        <Grid item md={3} >
-          <FinalCard />
-        </Grid>
-
-        <Grid item md={3} >
-          <FinalCard />
-        </Grid>
 
 
 

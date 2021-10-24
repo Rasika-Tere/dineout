@@ -13,6 +13,7 @@ import Grid from '@material-ui/core/Grid';
 import SimplePaper from './extrapaper';
 
 
+
 const useStyles = makeStyles((theme) => ({
   root: {
     maxWidth: 900,
@@ -104,7 +105,7 @@ export default function FinalCard() {
               ID: DO XXXX XXXX
             </Typography>
 
-            <SimplePaper />
+            <SimplePaper/>
 
             {/* download as image button */}
             <AlertDialog className={classes.AlertDialog} />

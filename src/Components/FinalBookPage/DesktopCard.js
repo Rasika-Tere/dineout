@@ -15,15 +15,15 @@ import SimplePaper from './extrapaper';
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    minHeight: 100,
-    maxWidth: 900,
+    minHeight: 80,
+    maxWidth: 700,
     textAlign: 'left',
-    padding: 20,
-    height: 760,
+    padding: 10,
+    height: 600,
     position: 'centre',
     aligncontent: 'centre',
     width: 1000,
-    borderRadius: 15,
+    borderRadius: 25,
   },
 
   media: {
@@ -104,11 +104,7 @@ export default function DesktopCard() {
             <Typography variant="body2" color="textSecondary" component="p">
               ID: DO XXXX XXXX
             </Typography>
-
-            <SimplePaper />
-
-            {/* download as image button */}
-            <AlertDialog className={classes.AlertDialog} />
+             
 
           </CardContent>
 

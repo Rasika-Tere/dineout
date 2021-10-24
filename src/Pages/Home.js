@@ -8,6 +8,9 @@ import SimpleBottomNavigation from '../Components/HomePage/SimpleBottomNavigatio
 import PrimarySearchAppBar from '../Components/HomePage/PrimarysearchBar';
 import TopBar from '../Components/FinalBookPage/TopBar';
 import Hidden from '@material-ui/core/Hidden';
+import Grid from '@material-ui/core/Grid';
+import Typography from '@material-ui/core/Typography';
+
 
 
 export default function Gallery() {
@@ -42,6 +45,9 @@ export default function Gallery() {
         <Hidden mdUp>
           <SimpleBottomNavigation />
         </Hidden>
+
+<Typography>Services also available in</Typography>
+     
       </footer>
     </div>
 

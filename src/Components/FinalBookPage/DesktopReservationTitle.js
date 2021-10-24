@@ -34,7 +34,7 @@ export default function DesktopReservationTitle() {
       <Link to={process.env.PUBLIC_URL + '/contactdetails'}>
         <Button className={classes.typography} href="" >
           <ArrowBackIosIcon />
-          Reservation Details
+         Final Booking Details
         </Button>
       </Link>
 
