@@ -1,0 +1,45 @@
+
+import React from 'react';
+import { makeStyles } from '@material-ui/core/styles';
+import Button from '@material-ui/core/Button';
+//  added the back icon here
+import ArrowBackIosIcon from '@material-ui/icons/ArrowBackIos';
+import { Link, Router } from "react-router-dom";
+
+const useStyles = makeStyles((theme) => ({
+  root: {
+    '& > *': {
+      margin: theme.spacing(5),
+      paddingBotton: '60px',
+      minHeight: 20,
+    //   width: theme.spacing(120),
+    //   height: theme.spacing(8),
+    },
+  },
+
+  // button customization
+  typography: {
+    fontFamily: 'Futura',
+    fontSize: 30,
+    color: '#FF645A',
+  }
+}));
+
+export default function DesktopContactDetailsTitle() {
+  const classes = useStyles();
+
+
+  return (
+    <div className={classes.root}>
+
+      {/* this title links back to the contact details page (previous Page) */}
+      <Link to={process.env.PUBLIC_URL + '/reservationstep'}>
+        <Button className={classes.typography} href="" >
+          <ArrowBackIosIcon />
+          Contact Details
+        </Button>
+      </Link>
+
+    </div>
+  );
+}

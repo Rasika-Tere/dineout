@@ -11,8 +11,11 @@ import TopPicksSingleLineImageList from './TopPicksImageList';
 import SuperSaversCarousel from './SuperSaversCarousel';
 import CenteredTabs from '../FinalBookPage/Tabs';
 import Hidden from '@material-ui/core/Hidden';
-import HomeBanner from './HomeBanner';
-
+import Main from '../../Assets/Main.jpg';
+import Typography from '@material-ui/core/Typography';
+import FoodButtons from './FoodButtons';
+import Button from '@material-ui/core/Button';
+import FinalCard from '../FinalBookPage/FinalCard';
 
 
 
@@ -37,73 +40,100 @@ export default function HomeGrid() {
         style={{ minHeight: '100vh' }}
         direction="column"
       >
-         <CenteredTabs/>
-        
-        <HomeBanner/>
+        <CenteredTabs />
 
+        <img src={Main} alt="" width="1205" height="650">
+        </img>
 
-        
-         {/* this is the carousal for advertisements, component name is caorusal1 */}
-         <Hidden mdUp>
-        <Grid item xs={12} md={12}>
-          <AdvertisementsCarousel />
+        <Typography> What are you waiting for? </Typography>
+        <Typography> Check out our food paradise </Typography>
+
+        <FoodButtons/>
+        <Button> Restuarants Near you </Button>
+
         </Grid>
+        
+        
+        <Grid item md={3} >
+          <FinalCard/>
+        </Grid>
+
+        <Grid item md={3} >
+          <FinalCard/>
+        </Grid>
+
+        <Grid item md={3} >
+          <FinalCard/>
+        </Grid>
+
+        <Grid item md={3} >
+          <FinalCard/>
+        </Grid>
+
+        <Typography> Super Savers </Typography>
+        <Typography> Top Picks </Typography>
+
+        {/* this is the carousal for advertisements, component name is caorusal1 */}
+        <Hidden mdUp>
+          <Grid item xs={12} md={12}>
+            <AdvertisementsCarousel />
+          </Grid>
         </Hidden>
 
         {/* this is the carousal for best offers, component name is caorusal2 */}
         <Hidden mdUp>
-        <Grid item xs={12} md={12}>
-          Best Offers
-        </Grid>
+          <Grid item xs={12} md={12}>
+            Best Offers
+          </Grid>
         </Hidden>
 
         <Hidden mdUp>
-        <Grid item xs={12} md={12}>
-          <BestOffersCarousel />
-        </Grid>
+          <Grid item xs={12} md={12}>
+            <BestOffersCarousel />
+          </Grid>
         </Hidden>
 
         <Hidden mdUp>
-        <Grid item xs={12} md={12}>
-          Restaurants Near You
-        </Grid>
+          <Grid item xs={12} md={12}>
+            Restaurants Near You
+          </Grid>
         </Hidden>
 
         <Hidden mdUp>
-        {/* this is the carousal for restaurants near you, component name is caorusal3 */}
-        <Grid item xs={12} md={12}>
-          <RestaurantsNearYouCarousel />
-        </Grid>
+          {/* this is the carousal for restaurants near you, component name is caorusal3 */}
+          <Grid item xs={12} md={12}>
+            <RestaurantsNearYouCarousel />
+          </Grid>
         </Hidden>
 
         <Hidden mdUp>
-        {/* this is the swippable image list for top picks, component name is singleimagelist */}
-        <Grid item xs={12} md={12}>
-          Top Picks
-        </Grid>
+          {/* this is the swippable image list for top picks, component name is singleimagelist */}
+          <Grid item xs={12} md={12}>
+            Top Picks
+          </Grid>
         </Hidden>
 
         <Hidden mdUp>
-        <Grid item xs={12} md={12}>
-          <TopPicksSingleLineImageList />
-        </Grid>
+          <Grid item xs={12} md={12}>
+            <TopPicksSingleLineImageList />
+          </Grid>
         </Hidden>
 
         <Hidden mdUp>
-        {/* this is the carousal for super savers, component name is caorusal4 */}
-        <Grid item xs={12} md={12}>
-          Super Savers
-        </Grid>
+          {/* this is the carousal for super savers, component name is caorusal4 */}
+          <Grid item xs={12} md={12}>
+            Super Savers
+          </Grid>
         </Hidden>
 
         <Hidden mdUp>
-        <Grid item xs={12} md={12}>
-          <SuperSaversCarousel />
-        </Grid>
+          <Grid item xs={12} md={12}>
+            <SuperSaversCarousel />
+          </Grid>
         </Hidden>
-     
-     
-      </Grid>
+
+
+      
     </div>
   );
 }
